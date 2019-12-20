@@ -1,0 +1,13 @@
+ul#refs{
+    list-style: none;
+    text-indent: -2.5em;
+    padding-left: 2.5em;
+}
+
+h1 > #subtitle {
+    font-size: smaller;
+}
+
+a#pdf {
+    font-weight: bold;
+}
