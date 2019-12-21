@@ -98,8 +98,8 @@
         \@courseInst \\
         {\small taught by} \\
         \@instructorTitle.
-        \@instructorFirst\ 
-        \ifdefempty{\@instructorMiddle}{}{\StrLeft{\@instructorMiddle}{1}.}
+        \@instructorFirst
+        \ifdefempty{\@instructorMiddle}{}{\StrLeft{\ \@instructorMiddle}{1}.}
         \@instructorLast
       \end{tabular}\par}%
     \vskip 1em%
