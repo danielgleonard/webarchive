@@ -1,0 +1,372 @@
+% find this class at https://archive.danleonard.us/scholarship/coursework/coursework.cls
+\documentclass{../../../coursework}
+
+\title{Non-Bacterial Components of the Primate Microbiome:}
+\subtitle{Against a Bacterial Bias}
+\author{Daniel}{Glenn}{Leonard}
+\newdate{date}{18}{10}{2019}
+\date{\displaydate{date}}
+\course{ANTH}{438}{Primate Life History Evolution}{University of Illinois at Urbana-Champaign}
+\instructor{Dr}{Kathryn}{B.}{Clancy}
+
+\keywords{}
+\addbibresource{microbiome.bib}
+%\addbibresource[location=remote]{https://archive.danleonard.us/scholarship/coursework/illinois/ANTH/438/microbiome.bib}
+\baseurl{https://archive.danleonard.us/scholarship/coursework/illinois/ANTH/441/stuttering.xhtml}
+
+% Packages and commands for R code in Appendix A
+\usepackage{color}
+\usepackage{framed}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+
+Since the discovery that the world in which we live is entirely filled with
+organisms too small to see with the eye, biologists have drawn a line between
+the microorganism and the multicellular organism. However, the search for the
+evolutionary apex of cellular organisms has blurred this line, from the
+theory of lateral gene flow \parencite{Woe98} to the discovery that archaea
+and eukarya share more in common with each other than either shares with
+bacteria \parencite{Woe77}. In researching the microbiome -- the physical
+commensal relationship between animals and their microbial inhabitants -- it
+is important to consider the full diversity of microbial taxa. This paper
+seeks to investigate biases in microbiome research toward specific microbial
+taxa and seek out how the less-studied varieties of microbial inhabitants may
+have effects unaccounted for.
+
+Despite a growth of research interest in archaea since its identification by
+\textcite{Woe77}, little research has been conducted into their relationships
+to other organisms, such as humans. As the domain was originally understood
+as a clade of extremophiles due to their original isolation from geothermal
+vents \parencite{DeL01}, it would be expected that archaea would be a minor
+part of more familiar environments; however, it is now known that members of
+archaea exist with great frequency in non-extreme environments, such as
+plankton, lakes, and soils \parencite{DeL01}. Regardless, research into the
+composition of human microbiota retains a strong bias toward bacteria
+\parencite{Llo16, The12}. Comparative primatology has often failed to expand
+microbiota research beyond bacteria, frequently excluding unknown or
+infrequent phyla from results of DNA extraction
+\parencite{Gar19,Mal18,Ork191,Ork19}. At its extreme, the term ``microbe''
+has been used synonymously with the term ``bacteria'' despite the far more
+precise definition of the latter \parencite[for an example, see][]{Mal18}.
+
+\section{Analysis of previous research}
+
+In order to assay the relative biases of microbiome research it would be
+necessary to compare the references to microbial phyla in published
+literature to the prevalence of such microbes in microbiomes. As much
+research into the human microbiome is undertaken from a medical perspective,
+NCBI PubMed contains a wealth of full-text and abstracts in its catalog,
+which is easily indexed for specific terms and phrases. Thus, NCBI PubMed's
+article archive was chosen as a sample for language analysis.
+
+\subsection{Methods}
+
+A search for the exact phrase ``human microbiome'' was conducted on NCBI
+PubMed in October 2019, fetching 1,779 results, which were downloaded as an
+XML file. Using R version 3.6.1 \parencite{RCol19} on Microsoft Windows 10
+18362.418, these results were indexed with \texttt{pubmed.mineR} version
+1.0.16 \parencite{Ran19} and queried for metadata from the NCBI PubTator
+service \parencite{Wei19}. PubTator analyzes the text of PubMed abstracts and
+full-text articles to determine the names of species and taxonomic tanks
+mentioned in such articles. Excluding mentions to \textit{Homo sapiens}, the
+taxonomic ranks were looked up in the NCBI Taxonomy Database
+\parencite{Nat19} using \texttt{ncbitax2lin} \parencite{Xue19} to convert the
+database to CSV.
+
+References to taxonomic ranks more specific than phylum were simplified to
+phyla, and less specific references were recorded as ``\textit{domain}
+(nonspecific).'' In the case of viruses, which have separate ranking system,
+the NCBI value ``no rank – 0'' was used in place of phylum. The number of
+references to each phylum was totaled and categorized by domain. All R code
+executed is presented in %\hyperref{Appendix A}.
+
+\subsection{Results}
+
+Of the 1,779 articles indexed, 1,730 mentioned a taxonomic rank or species.
+This totaled 5,354 individual mentions, of which 2,419 were to species or
+ranks other than humans. As visible in %\hyperref{Figure 1}, bacteria made up
+the majority of references, with the phyla Proteobacteria and Firmicutes
+second only to nonspecific references to bacteria as a domain. Eukarya were
+second to bacteria in total number of references; however, the most
+frequently discussed phylum within the domain was Chordata, which likely
+stems from discussion of vertebrate microbiomes such as Mus musculus rather
+than indicating the presence of chordates in the human microbiome. Viruses
+were referenced moderately frequently, with nonspecific virus references
+making up the greatest proportion of the domain's coverage, followed by
+bacteriophages. Finally, archaea were referenced least frequently of all,
+with nine total references amounting to less than any viral phylum.
+
+\section{The Role of Non-Bacterial Organisms in the Microbiome}
+
+\subsection{Eukarya}
+
+Yeasts have been found to colonize infant guts gradually, with an isolation
+rate of 13\% at 28-46 days old \parencite{Ben84} and 50\% as
+soon as four months of age \parencite{Ell75}.
+Notably, this rate of colonization was consistent between breast-fed and
+formula-fed infants, in contrast to the colonization rates of bacterial phyla
+which differ significantly between the two feeding mechanisms. From a
+life-history perspective, this presents a novel question of how yeast
+colonize the infant gut and whether the mechanism by which breastmilk
+contains microbiota associated with the mother's gut microbiome
+\parencite{Mar13} is also capable of providing yeast, whose eukaryotic cells
+differ in size by orders of magnitude from prokaryotic cells.
+
+However, research conducted on yeast inhabitants of animals focuses primarily
+on their pathological role. The genus \textit{Candida} is well known for its
+role in infectious disease in humans, particularly in the immunocompromised
+\parencite{Kou11}. However, species of yeast, including many
+\textit{Candida}~spp., have frequently been identified on the human body,
+including the vagina, gut, and skin, without any associated mycosis
+\parencite{Man10}. Even for species known to be infectious agents, between
+12\% \parencite{Cho86} and 80\% \parencite{Soe07} of asymptomatic healthy
+women are vaginal carriers. In place of viewing yeast through the lens of
+infection, it should be considered as a part of the ecosystem that makes up
+the human body. How it reaches and colonizes infants, and why its prevalence
+makes up far less of the population than do bacterial commensals, merits
+further study.
+
+\subsection{Archaea}
+
+In 1966 it was discovered that humans both respire and flatulate methane,
+which is not known to be biologically produced by any bacteria or eukaryote.
+Following this observation, methanogenic prokaryotes, from what would later
+be called the archaea, were identified in human feces \parencite{Not68}. The
+archaeal domain remains the only taxon with members known to be biological
+producers of methane \parencite{Tha06}, and as such is unique in its
+residence within the human gut. Despite widespread colonization by a diverse
+array of archaeal species, the ecological niche which they occupy within the
+human body and whether they are transferred vertically or environmentally
+remains unknown \parencite{Dri11}. It has been theorized that many more
+lineages of archaea remain undiscovered, as the DNA analysis methods used to
+identify bacterial genomes are incompatible with archaeal cell walls
+\parencite{Hor15}.
+
+\subsection{Viruses}
+
+Despite not fitting many definitions of biological life, viruses are the most
+diverse form of biological material on the planet. They are known to
+outnumber bacteria by a factor of nearly ten \parencite{Ore97} and are a
+major driver of evolution in prokaryotes. Although humans are susceptible to
+a wide variety of viruses, the viral community in the microbiome, so fast it
+has itself been called a ``virome'' \parencite{Wyl12}, is dominated primarily
+by bacteriophages whose sequences are novel \parencite{Dut14}. The phages
+identifiable by genetic sequence are primarily those known to attack
+bacterial phyla associated with the microbiome, yet appear to be vastly more
+diverse than the virome of the ocean \parencite{Wal14}. Unlike the theories
+of bacterial colonization, how such a vast and dynamic virome is able to
+establish itself by adulthood remains unknown. The effect of age, and whether
+milk carries a virome of similar diversity would be intriguing avenues for
+further study.
+
+\section{Limitations}
+
+Utilizing both life-history and ecological frameworks for approaching
+non-bacterial components of the microbiome, it is clear that the roles such
+taxa play within our bodies is underexplored. While this paper sought to
+touch on these issues, it is limited by both methodology and its brevity. The
+use of NCBI PubMed for language analysis suffers from a bias toward medical
+research, and so microbiome research will often consider the roles of known
+pathological agents rather than in-depth discussions of all possible
+inhabitants. Eukarya is also a domain of organisms highly diverse in physical
+makeup and metabolic strategy, while only yeasts were discussed here. The
+roles of other unicellular parasites (for instance,
+\textit{Toxoplasma gondii}) and of helminthic worms, which each form diverse
+monophyletic groups, can also be explored via the lens of the microbiome's
+life-history. More research is needed in this area to investigate how the
+diverse community of microbes within humans evolved and what role it plays
+even in the absence of pathology.
+
+\printbibliography
+
+\newpage
+\section*{Appendix A}
+
+\begin{Shaded}
+    \begin{Highlighting}[]
+    \CommentTok{\# R script to analyze PubMed abstracts}
+    \CommentTok{\# Author: Dan Leonard}
+    
+    \CommentTok{\# Import pubmed analysis library}
+    \KeywordTok{library}\NormalTok{(pubmed.mineR)}
+    \CommentTok{\# Import file{-}reading library}
+    \KeywordTok{library}\NormalTok{(readr)}
+    
+    \CommentTok{\# Load XML search result file from PubMed into list}
+    \NormalTok{abstracts <{-}}\StringTok{ }\KeywordTok{xmlreadabs}\NormalTok{(}\StringTok{"pubmed\_result.xml"}\NormalTok{)}
+    
+    \CommentTok{\# Load NCBI lineage data into list}
+    \NormalTok{lineages <{-}}\StringTok{ }\KeywordTok{read\_csv}\NormalTok{(}\StringTok{"lineages{-}2017{-}03{-}17.csv"}\NormalTok{,}
+        \DataTypeTok{col\_types =} \KeywordTok{cols}\NormalTok{(}
+            \DataTypeTok{.default =} \KeywordTok{col\_character}\NormalTok{(),}
+            \DataTypeTok{tax\_id =} \KeywordTok{col\_integer}\NormalTok{()}
+    \NormalTok{    )}
+    \NormalTok{)}
+    
+    \CommentTok{\# Run PMIDs through PubTator}
+    \NormalTok{pubtators <{-}}\StringTok{ }\KeywordTok{lapply}\NormalTok{(abstracts}\OperatorTok{@}\NormalTok{PMID, pubtator\_function)}
+    \CommentTok{\# Remove [" No Data "] from PubTator results}
+    \NormalTok{pubtators <{-}}\StringTok{ }\NormalTok{pubtators [}\OperatorTok{!}\StringTok{ }\NormalTok{pubtators }\OperatorTok{\%in\%}\StringTok{ }\KeywordTok{list}\NormalTok{(}\StringTok{" No Data "}\NormalTok{)]}
+    
+    \CommentTok{\# Get list of vectors of species names}
+    \CommentTok{\# Species names are located in column 5}
+    \NormalTok{species <{-}}\StringTok{ }\KeywordTok{sapply}\NormalTok{(pubtators, }\StringTok{"[["}\NormalTok{, }\DecValTok{5}\NormalTok{)}
+    \CommentTok{\# Remove nulls}
+    \NormalTok{species [}\KeywordTok{sapply}\NormalTok{(species, is.null)] <{-}}\StringTok{ }\OtherTok{NULL}
+    \CommentTok{\# Flatten}
+    \NormalTok{species <{-}}\StringTok{ }\KeywordTok{unlist}\NormalTok{(species)}
+    
+    \CommentTok{\# Remove species names, leave NCBI numerical ID}
+    \NormalTok{species <{-}}\StringTok{ }\KeywordTok{sapply}\NormalTok{(species, }\ControlFlowTok{function}\NormalTok{(x) }\KeywordTok{sapply}\NormalTok{(}\KeywordTok{strsplit}\NormalTok{(x, }\StringTok{">"}\NormalTok{), }\StringTok{"[["}\NormalTok{, }\DecValTok{2}\NormalTok{))}
+    \CommentTok{\# Convert to numeric form}
+    \NormalTok{species <{-}}\StringTok{ }\KeywordTok{as.numeric}\NormalTok{(species)}
+    \CommentTok{\# Remove references to Homo sapiens (NCBI ID 9606)}
+    \NormalTok{species.nohuman <{-}}\StringTok{ }\NormalTok{species [}\OperatorTok{!}\StringTok{ }\NormalTok{species }\OperatorTok{\%in\%}\StringTok{ }\DecValTok{9606}\NormalTok{]}
+    
+    \CommentTok{\# Get domain names}
+    \NormalTok{species.nohuman.domains <{-}}
+    \StringTok{    }\NormalTok{lineages}\OperatorTok{$}\NormalTok{superkingdom[}\KeywordTok{match}\NormalTok{(species.nohuman, lineages}\OperatorTok{$}\NormalTok{tax\_id)]}
+    \CommentTok{\# Get phyla names}
+    \NormalTok{species.nohuman.phyla <{-}}
+    \StringTok{    }\NormalTok{lineages}\OperatorTok{$}\NormalTok{phylum[}\KeywordTok{match}\NormalTok{(species.nohuman, lineages}\OperatorTok{$}\NormalTok{tax\_id)]}
+    
+    \CommentTok{\# Create data frame}
+    \NormalTok{phylogeny <{-}}\StringTok{ }\KeywordTok{data.frame}\NormalTok{(}
+        \DataTypeTok{Domain=}
+            \KeywordTok{c}\NormalTok{(}
+    \NormalTok{            lineages}\OperatorTok{$}\NormalTok{superkingdom[}
+                    \KeywordTok{match}\NormalTok{(species.nohuman, lineages}\OperatorTok{$}\NormalTok{tax\_id)}
+    \NormalTok{            ]}
+    \NormalTok{        ),}
+        \DataTypeTok{Phylum=}
+            \KeywordTok{c}\NormalTok{(}
+    \NormalTok{            lineages}\OperatorTok{$}\NormalTok{phylum[}
+                    \KeywordTok{match}\NormalTok{(species.nohuman, lineages}\OperatorTok{$}\NormalTok{tax\_id)}
+    \NormalTok{            ]}
+    \NormalTok{        ),}
+        \DataTypeTok{Norank=}
+            \KeywordTok{c}\NormalTok{(}
+    \NormalTok{            lineages}\OperatorTok{$}\StringTok{`}\DataTypeTok{no rank}\StringTok{`}\NormalTok{[}
+                    \KeywordTok{match}\NormalTok{(species.nohuman, lineages}\OperatorTok{$}\NormalTok{tax\_id)}
+    \NormalTok{            ]}
+    \NormalTok{        ),}
+        \DataTypeTok{stringsAsFactors=}\OtherTok{FALSE}
+    \NormalTok{)}
+    \CommentTok{\# Add additional column "Name"}
+    \NormalTok{phylogeny [ , }\KeywordTok{c}\NormalTok{(}\StringTok{"Name"}\NormalTok{)] <{-}}\StringTok{ }\OtherTok{NA}
+    \CommentTok{\# Remove unhelpful term "cellular organisms"}
+    \NormalTok{phylogeny}\OperatorTok{$}\NormalTok{Norank[phylogeny}\OperatorTok{$}\NormalTok{Norank }\OperatorTok{==}\StringTok{ "cellular organisms"}\NormalTok{] <{-}}\StringTok{ }\OtherTok{NA}
+    \CommentTok{\# Use virus types as name if present}
+    \NormalTok{phylogeny}\OperatorTok{$}\NormalTok{Name <{-}}\StringTok{ }\NormalTok{phylogeny}\OperatorTok{$}\NormalTok{Norank}
+    \CommentTok{\# Use phylum as name if present}
+    \NormalTok{phylogeny}\OperatorTok{$}\NormalTok{Name[}\KeywordTok{is.na}\NormalTok{(phylogeny}\OperatorTok{$}\NormalTok{Name)] <{-}}
+    \StringTok{    }\KeywordTok{as.character}\NormalTok{(phylogeny}\OperatorTok{$}\NormalTok{Phylum[}\KeywordTok{is.na}\NormalTok{(phylogeny}\OperatorTok{$}\NormalTok{Name)])}
+    \CommentTok{\# Use "<domain> (nonspecific)" as name if previous two not present}
+    \NormalTok{phylogeny}\OperatorTok{$}\NormalTok{Name[}\KeywordTok{is.na}\NormalTok{(phylogeny}\OperatorTok{$}\NormalTok{Name)] <{-}}
+    \StringTok{    }\KeywordTok{paste}\NormalTok{(}
+            \KeywordTok{as.character}\NormalTok{(phylogeny}\OperatorTok{$}\NormalTok{Domain[}\KeywordTok{is.na}\NormalTok{(phylogeny}\OperatorTok{$}\NormalTok{Name)]),}
+            \StringTok{"(nonspecific)"}\NormalTok{,}
+            \DataTypeTok{sep=}\StringTok{" "}
+    \NormalTok{    )}
+    \CommentTok{\# Remove phylum and virus type columns}
+    \NormalTok{phylogeny <{-}}
+    \StringTok{    }\KeywordTok{data.frame}\NormalTok{(}
+            \DataTypeTok{Domain=}\NormalTok{phylogeny}\OperatorTok{$}\NormalTok{Domain,}
+            \DataTypeTok{Name=}\NormalTok{phylogeny}\OperatorTok{$}\NormalTok{Name,}
+            \DataTypeTok{stringsAsFactors=}\OtherTok{FALSE}
+    \NormalTok{    )}
+    \CommentTok{\# Use table() to count occurrences}
+    \NormalTok{phylogeny <{-}}\StringTok{ }\KeywordTok{as.data.frame}\NormalTok{(}\KeywordTok{table}\NormalTok{(phylogeny))}
+    \CommentTok{\# Remove extraneous values}
+    \NormalTok{phylogeny <{-}}\StringTok{ }\KeywordTok{subset}\NormalTok{(phylogeny, Freq }\OperatorTok{!=}\StringTok{ }\DecValTok{0}\NormalTok{)}
+    \CommentTok{\# Sort}
+    \NormalTok{phylogeny <{-}}\StringTok{ }\NormalTok{phylogeny[}\KeywordTok{order}\NormalTok{(phylogeny}\OperatorTok{$}\NormalTok{Domain, }\OperatorTok{{-}}\NormalTok{phylogeny}\OperatorTok{$}\NormalTok{Freq),]}
+    
+    \CommentTok{\# Create dictionary for looking up colors}
+    \NormalTok{colors <{-}}
+    \StringTok{    }\KeywordTok{data.frame}\NormalTok{(}
+            \DataTypeTok{Colors=}\KeywordTok{c}\NormalTok{(}\StringTok{"Red"}\NormalTok{, }\StringTok{"Green"}\NormalTok{, }\StringTok{"Yellow"}\NormalTok{, }\StringTok{"Blue"}\NormalTok{),}
+            \DataTypeTok{Domains=}\KeywordTok{c}\NormalTok{(}\StringTok{"Archaea"}\NormalTok{, }\StringTok{"Bacteria"}\NormalTok{, }\StringTok{"Eukaryota"}\NormalTok{, }\StringTok{"Viruses"}\NormalTok{),}
+            \DataTypeTok{stringsAsFactors=}\OtherTok{FALSE}
+    \NormalTok{    )}
+    
+    \CommentTok{\# Create list of colors matching domains}
+    \NormalTok{cols <{-}}
+    \StringTok{    }\NormalTok{colors}\OperatorTok{$}\NormalTok{Colors[}
+            \KeywordTok{match}\NormalTok{(phylogeny}\OperatorTok{$}\NormalTok{Domain, colors}\OperatorTok{$}\NormalTok{Domains)}
+    \NormalTok{    ]}
+    
+    \CommentTok{\# Set margins}
+    \KeywordTok{par}\NormalTok{(}\DataTypeTok{mar=}\KeywordTok{c}\NormalTok{(}\DecValTok{7}\NormalTok{,}\DecValTok{4}\NormalTok{,}\DecValTok{4}\NormalTok{,}\DecValTok{1}\NormalTok{)}\OperatorTok{+}\FloatTok{0.1}\NormalTok{)}
+    \CommentTok{\# Print phylum plot}
+    \NormalTok{plot <{-}}\StringTok{ }\KeywordTok{barplot}\NormalTok{(}
+        \DataTypeTok{height =}\NormalTok{ phylogeny}\OperatorTok{$}\NormalTok{Freq,}
+        \DataTypeTok{ylab =} \StringTok{"log References"}\NormalTok{,}
+        \DataTypeTok{main =} \StringTok{"References to specific phyla in PubMed search for }\CharTok{\textbackslash{}"}\StringTok{Human Microbiome}\CharTok{\textbackslash{}"}\StringTok{"}\NormalTok{,}
+        \DataTypeTok{col =}\NormalTok{ cols,}
+        \DataTypeTok{names.arg =}\NormalTok{ phylogeny}\OperatorTok{$}\NormalTok{Name,}
+        \DataTypeTok{log =} \StringTok{"y"}\NormalTok{,}
+        \DataTypeTok{xaxt =} \StringTok{"n"}
+    \NormalTok{)}
+    \CommentTok{\# Add X{-}axis labels}
+    \KeywordTok{text}\NormalTok{(}
+    \NormalTok{    plot,}
+        \FloatTok{0.95}\NormalTok{,}
+        \DataTypeTok{labels =}\NormalTok{ phylogeny}\OperatorTok{$}\NormalTok{Name,}
+        \DataTypeTok{srt =} \DecValTok{45}\NormalTok{,}
+        \DataTypeTok{adj =} \KeywordTok{c}\NormalTok{(}\FloatTok{1.1}\NormalTok{,}\FloatTok{1.1}\NormalTok{),}
+        \DataTypeTok{xpd =} \OtherTok{TRUE}\NormalTok{,}
+        \DataTypeTok{cex =} \FloatTok{0.8}
+    \NormalTok{)}
+    \CommentTok{\# Add legend for domain colors}
+    \KeywordTok{legend}\NormalTok{(}
+        \StringTok{"topright"}\NormalTok{,}
+    \NormalTok{    plot,}
+        \DataTypeTok{legend =}\NormalTok{ colors}\OperatorTok{$}\NormalTok{Domains,}
+        \DataTypeTok{fill =}\NormalTok{ colors}\OperatorTok{$}\NormalTok{Colors}
+    \NormalTok{)}
+    \end{Highlighting}
+    \end{Shaded}
+
+\end{document}
