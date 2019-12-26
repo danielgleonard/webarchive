@@ -1,0 +1,98 @@
+%% Creator: Inkscape inkscape 0.92.4, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'microbiome.eps' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{487.13387557bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.61227813)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength]{microbiome.eps}}%
+    \put(0.02077393,0.29854926){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}log References\end{tabular}}}}}%
+    \put(0.06463,0.15588464){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1\end{tabular}}}}}%
+    \put(0.06463,0.19858661){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2\end{tabular}}}}}%
+    \put(0.06463,0.25513786){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}5\end{tabular}}}}}%
+    \put(0.06463,0.29270225){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}10\end{tabular}}}}}%
+    \put(0.06463,0.33540422){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}20\end{tabular}}}}}%
+    \put(0.06463,0.39195548){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}50\end{tabular}}}}}%
+    \put(0.06463,0.42951987){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}100\end{tabular}}}}}%
+    \put(0.06463,0.52761898){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}500\end{tabular}}}}}%
+    \put(0.01256833,0.00816528){\color[rgb]{0,0,0}\rotatebox{45}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Bacteria (nonspecific)\end{tabular}}}}}%
+    \put(0.07906287,0.04349892){\color[rgb]{0,0,0}\rotatebox{45}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Proteobacteria\end{tabular}}}}}%
+    \put(0.1326209,0.06589605){\color[rgb]{0,0,0}\rotatebox{45}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Firmicutes\end{tabular}}}}}%
+    \put(0.16906317,0.07233153){\color[rgb]{0,0,0}\rotatebox{45}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Chordata\end{tabular}}}}}%
+    \put(0.17552222,0.0487838){\color[rgb]{0,0,0}\rotatebox{45}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Bacteroidetes\end{tabular}}}}}%
+    \put(0.16980146,0.01190213){\color[rgb]{0,0,0}\rotatebox{45}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Viruses (nonspecific)\end{tabular}}}}}%
+    \put(0.2449394,0.05587917){\color[rgb]{0,0,0}\rotatebox{45}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Ascomycota\end{tabular}}}}}%
+    \put(0.26433849,0.0464256){\color[rgb]{0,0,0}\rotatebox{45}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Actinobacteria\end{tabular}}}}}%
+    \put(0.24723257,-0.00184123){\color[rgb]{0,0,0}\rotatebox{45}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Eukaryota (nonspecific)\end{tabular}}}}}%
+    \put(0.25189666,-0.02833805){\color[rgb]{0,0,0}\rotatebox{45}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}unclassified bacterial viruses\end{tabular}}}}}%
+    \put(0.27485122,-0.03539027){\color[rgb]{0,0,0}\rotatebox{45}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}dsDNA viruses, no RNA stage\end{tabular}}}}}%
+    \put(0.38492722,0.04352483){\color[rgb]{0,0,0}\rotatebox{45}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}ssRNA viruses\end{tabular}}}}}%
+    \put(0.42490941,0.05350023){\color[rgb]{0,0,0}\rotatebox{45}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Streptophyta\end{tabular}}}}}%
+    \put(0.45548979,0.05291977){\color[rgb]{0,0,0}\rotatebox{45}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Apicomplexa\end{tabular}}}}}%
+    \put(0.49490192,0.06232505){\color[rgb]{0,0,0}\rotatebox{45}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Arthropoda\end{tabular}}}}}%
+    \put(0.51606665,0.05232894){\color[rgb]{0,0,0}\rotatebox{45}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Fusobacteria\end{tabular}}}}}%
+    \put(0.48073582,-0.01300867){\color[rgb]{0,0,0}\rotatebox{45}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Retro-transcribing viruses\end{tabular}}}}}%
+    \put(0.59077553,0.0658702){\color[rgb]{0,0,0}\rotatebox{45}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Nematoda\end{tabular}}}}}%
+    \put(0.59841114,0.04349896){\color[rgb]{0,0,0}\rotatebox{45}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Euryarchaeota\end{tabular}}}}}%
+    \put(0.63780596,0.05173287){\color[rgb]{0,0,0}\rotatebox{45}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Spirochaetes\end{tabular}}}}}%
+    \put(0.65192363,0.03584382){\color[rgb]{0,0,0}\rotatebox{45}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Verrucomicrobia\end{tabular}}}}}%
+    \put(0.70664951,0.06056286){\color[rgb]{0,0,0}\rotatebox{45}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Tenericutes\end{tabular}}}}}%
+    \put(0.72075685,0.04350929){\color[rgb]{0,0,0}\rotatebox{45}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Basidiomycota\end{tabular}}}}}%
+    \put(0.7660498,0.05879553){\color[rgb]{0,0,0}\rotatebox{45}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Chlamydiae\end{tabular}}}}}%
+    \put(0.803114,0.06469882){\color[rgb]{0,0,0}\rotatebox{45}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Chloroflexi\end{tabular}}}}}%
+    \put(0.80602801,0.03760598){\color[rgb]{0,0,0}\rotatebox{45}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Platyhelminthes\end{tabular}}}}}%
+    \put(0.83602269,0.03643988){\color[rgb]{0,0,0}\rotatebox{45}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Chytridiomycota\end{tabular}}}}}%
+    \put(0.88635435,0.53495295){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Archaea\end{tabular}}}}%
+    \put(0.88635435,0.51302491){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Bacteria\end{tabular}}}}%
+    \put(0.88635435,0.49109688){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Eukaryota\end{tabular}}}}%
+    \put(0.88635435,0.46801473){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Viruses\end{tabular}}}}%
+  \end{picture}%
+\endgroup%

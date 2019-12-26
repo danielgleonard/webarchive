@@ -9,10 +9,10 @@
 \course{ANTH}{438}{Primate Life History Evolution}{University of Illinois at Urbana-Champaign}
 \instructor{Dr}{Kathryn}{B.}{Clancy}
 
-\keywords{}
+\keywords{archaea, bacteria, eukarya, viruses, taxonomy}
 \addbibresource{microbiome.bib}
 %\addbibresource[location=remote]{https://archive.danleonard.us/scholarship/coursework/illinois/ANTH/438/microbiome.bib}
-\baseurl{https://archive.danleonard.us/scholarship/coursework/illinois/ANTH/441/stuttering.xhtml}
+\baseurl{https://archive.danleonard.us/scholarship/coursework/illinois/ANTH/438/microbiome.xhtml}
 
 % Packages and commands for R code in Appendix A
 \usepackage{color}
@@ -104,7 +104,7 @@ article archive was chosen as a sample for language analysis.
 
 A search for the exact phrase ``human microbiome'' was conducted on NCBI
 PubMed in October 2019, fetching 1,779 results, which were downloaded as an
-XML file. Using R version 3.6.1 \parencite{RCol19} on Microsoft Windows 10
+XML file. Using R version 3.6.1 \parencite{RCo19} on Microsoft Windows 10
 18362.418, these results were indexed with \texttt{pubmed.mineR} version
 1.0.16 \parencite{Ran19} and queried for metadata from the NCBI PubTator
 service \parencite{Wei19}. PubTator analyzes the text of PubMed abstracts and
@@ -119,17 +119,27 @@ phyla, and less specific references were recorded as ``\textit{domain}
 (nonspecific).'' In the case of viruses, which have separate ranking system,
 the NCBI value ``no rank – 0'' was used in place of phylum. The number of
 references to each phylum was totaled and categorized by domain. All R code
-executed is presented in %\hyperref{Appendix A}.
+executed is presented in \hyperref[sec:appendix_a]{Appendix A}.
 
 \subsection{Results}
 
+\begin{figure}
+    \input{microbiome.eps_tex}
+    \caption{References to phyla in a PubMed search for the phrase
+             ``human microbiome.'' References less specific than phylum are
+             recorded as ``\textit{domain} (nonspecific),'' domains are
+             presented as colors. All references to humans were excluded, and
+             would have been sorted into Chordata.}
+    \label{fig:1}
+\end{figure}
+
 Of the 1,779 articles indexed, 1,730 mentioned a taxonomic rank or species.
 This totaled 5,354 individual mentions, of which 2,419 were to species or
-ranks other than humans. As visible in %\hyperref{Figure 1}, bacteria made up
-the majority of references, with the phyla Proteobacteria and Firmicutes
-second only to nonspecific references to bacteria as a domain. Eukarya were
-second to bacteria in total number of references; however, the most
-frequently discussed phylum within the domain was Chordata, which likely
+ranks other than humans. As visible in \hyperref[fig:1]{Figure 1}, bacteria
+made up the majority of references, with the phyla Proteobacteria and
+Firmicutes second only to nonspecific references to bacteria as a domain.
+Eukarya were second to bacteria in total number of references; however, the
+most frequently discussed phylum within the domain was Chordata, which likely
 stems from discussion of vertebrate microbiomes such as Mus musculus rather
 than indicating the presence of chordates in the human microbiome. Viruses
 were referenced moderately frequently, with nonspecific virus references
@@ -218,10 +228,15 @@ life-history. More research is needed in this area to investigate how the
 diverse community of microbes within humans evolved and what role it plays
 even in the absence of pathology.
 
+\parencite{Ran19,Wic18,Xue19}
+
 \printbibliography
 
+\setcounter{secnumdepth}{0}
+
 \newpage
-\section*{Appendix A}
+\section{Appendix A}
+\label{sec:appendix_a}
 
 \begin{Shaded}
     \begin{Highlighting}[]
@@ -229,14 +244,17 @@ even in the absence of pathology.
     \CommentTok{\# Author: Dan Leonard}
     
     \CommentTok{\# Import pubmed analysis library}
+    \CommentTok{\# \parencite{Ran19}}
     \KeywordTok{library}\NormalTok{(pubmed.mineR)}
     \CommentTok{\# Import file{-}reading library}
+    \CommentTok{\# \parencite{Wic18}}
     \KeywordTok{library}\NormalTok{(readr)}
     
     \CommentTok{\# Load XML search result file from PubMed into list}
     \NormalTok{abstracts <{-}}\StringTok{ }\KeywordTok{xmlreadabs}\NormalTok{(}\StringTok{"pubmed\_result.xml"}\NormalTok{)}
     
     \CommentTok{\# Load NCBI lineage data into list}
+    \CommentTok{\# \parencite{Xue19}}
     \NormalTok{lineages <{-}}\StringTok{ }\KeywordTok{read\_csv}\NormalTok{(}\StringTok{"lineages{-}2017{-}03{-}17.csv"}\NormalTok{,}
         \DataTypeTok{col\_types =} \KeywordTok{cols}\NormalTok{(}
             \DataTypeTok{.default =} \KeywordTok{col\_character}\NormalTok{(),}

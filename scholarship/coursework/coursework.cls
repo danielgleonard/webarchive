@@ -7,6 +7,7 @@
 \RequirePackage{hyperref}
 \RequirePackage[american]{babel}
 \RequirePackage[raise]{datetime}
+\RequirePackage{graphicx}
 \RequirePackage{csquotes}
 \RequirePackage{xstring}
 \RequirePackage[letterpaper, margin=1in]{geometry}
