@@ -1,3 +1,49 @@
+:root {
+    --color-bg-primary-light: #ffffff;
+    --color-bg-primary-dark: #1c1c1c;
+
+    --color-bg-secondary-light: #eeeeee;
+    --color-bg-secondary-dark: #282828;
+
+    --color-text-primary-light: #000000;
+    --color-text-primary-dark: #ffffff;
+
+    --color-accent-primary-light: rgb(255, 64, 25);
+    --color-accent-primary-dark: rgb(255, 64, 25);
+
+    --color-bg-primary: var(--color-bg-primary-light);
+    --color-bg-secondary: var(--color-bg-secondary-light);
+    --color-text-primary: var(--color-text-primary-light);
+    --color-accent-primary: var(--color-accent-primary-light);
+}
+  
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-bg-primary: var(--color-bg-primary-dark);
+        --color-bg-secondary: var(--color-bg-secondary-dark);
+        --color-text-primary: var(--color-text-primary-dark);
+        --color-accent-primary: var(--color-accent-primary-dark);
+    }
+}
+  
+body {
+    background-color: var(--color-bg-secondary);
+    color: var(--color-text-primary);
+}
+
+article {
+    max-width: 1200px;
+    padding: 1em;
+    background-color: var(--color-bg-primary);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a {
+    /*color: var(--color-accent-primary);*/
+}
+
 ol.references {
     list-style: none;
 }
@@ -13,4 +59,28 @@ h1 > #subtitle {
 
 a#pdf {
     font-weight: bold;
+}
+
+figure {
+    margin: 0;
+}
+
+@media (min-width: 750px) {
+    article{
+        padding: 3em;
+    }
+    figure {
+        margin: unset;
+        float: right;
+        max-width: 45%;
+        max-height: 50%;
+    }
+}
+
+figure > img {
+    width: 100%;
+}
+
+caption {
+    width: 100%;
 }

@@ -37,6 +37,7 @@
 \let\@instructorTitle\@empty
 \let\@instructorFirst\@empty
 \let\@instructorMiddle\@empty
+\let\@instructorMiddleSecond\@empty
 \let\@instructorLast\@empty
 
 \pagestyle{fancy}
@@ -68,12 +69,13 @@
         \gdef\@courseName{#3}
         \gdef\@courseInst{#4}
     }
-\newcommand{\instructor}[4]
+\newcommand{\instructor}[5]
     {
         \gdef\@instructorTitle{#1}
         \gdef\@instructorFirst{#2}
         \gdef\@instructorMiddle{#3}
-        \gdef\@instructorLast{#4}
+        \gdef\@instructorMiddleSecond{#4}
+        \gdef\@instructorLast{#5}
     }
 
 \def\@maketitle{%
@@ -100,7 +102,8 @@
         {\small taught by} \\
         \@instructorTitle.
         \@instructorFirst
-        \ifdefempty{\@instructorMiddle}{}{\ \StrLeft{\@instructorMiddle}{1}.}
+        \ifdefempty{\@instructorMiddle}{}{\ \StrLeft{\@instructorMiddle}{1}.}%
+        \ifdefempty{\@instructorMiddleSecond}{}{\ \StrLeft{\@instructorMiddleSecond}{1}.}
         \@instructorLast
       \end{tabular}\par}%
     \vskip 1em%
