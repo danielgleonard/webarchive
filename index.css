@@ -1,0 +1,10 @@
+td.col-title {
+    max-width: 15em;
+}
+
+td.col-course,td.col-institution {
+    max-width: 10em;
+}
+td.col-title {
+    font-style: italic;
+}
