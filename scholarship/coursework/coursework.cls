@@ -8,10 +8,15 @@
 \RequirePackage[american]{babel}
 \RequirePackage[raise]{datetime}
 \RequirePackage{graphicx}
+\RequirePackage{wrapfig}
 \RequirePackage{csquotes}
 \RequirePackage{xstring}
 \RequirePackage[letterpaper, margin=1in]{geometry}
 \RequirePackage{fancyhdr}
+\RequirePackage{lscape}
+\RequirePackage{longtable}
+\RequirePackage{tabu}
+\RequirePackage{multirow}
 \RequirePackage[
     style=apa,
     backend=biber,
