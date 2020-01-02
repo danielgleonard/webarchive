@@ -14,6 +14,7 @@
 \RequirePackage{xstring}
 \RequirePackage[letterpaper, margin=1in]{geometry}
 \RequirePackage{fancyhdr}
+\RequirePackage[inline]{enumitem}
 \RequirePackage{lscape}
 \RequirePackage{booktabs}
 \RequirePackage{longtable}
@@ -35,21 +36,17 @@
 ]{biblatex}
 
 \let\@subtitle\@empty
+\let\@shorttitle\@empty
 \let\@baseurl\@empty
 \let\@keywords\@empty
 \let\@courseDept\@empty
 \let\@courseNum\@empty
 \let\@courseName\@empty
 \let\@courseInst\@empty
-\let\@instructorTitle\@empty
-\let\@instructorFirst\@empty
-\let\@instructorMiddle\@empty
-\let\@instructorMiddleSecond\@empty
-\let\@instructorLast\@empty
 
 \pagestyle{fancy}
 \fancyhf{}
-\lhead{\textsc{\@docTitle}}
+\lhead{\textsc{\ifdefempty{\@shorttitle}{\@docTitle}{\@shorttitle}}}
 \rhead{
     \@authorLast
     \ifdefempty{\@authorFirst}{}{, \StrLeft{\@authorFirst}{1}.}
@@ -66,6 +63,7 @@
     \gdef\@author{#1\ #2\ #3}
 }
 \newcommand{\subtitle}[1]{\gdef\@subtitle{#1}}
+\newcommand{\shorttitle}[1]{\gdef\@shorttitle{#1}}
 \newcommand{\baseurl}[1]{\gdef\@baseurl{#1}}
 \newcommand{\keywords}[1]{\gdef\@keywords{#1}}
 \newcommand{\printkeywords}[0]{\textbf{Keywords:} \textit{\@keywords}}
@@ -76,14 +74,25 @@
         \gdef\@courseName{#3}
         \gdef\@courseInst{#4}
     }
-\newcommand\instructorList{}
+\newcommand{\instructorList}{}
+\makeatletter
 \newcommand{\instructor}[5]
     {
-        \gdef\@instructorTitle{#1}
-        \gdef\@instructorFirst{#2}
-        \gdef\@instructorMiddle{#3}
-        \gdef\@instructorMiddleSecond{#4}
-        \gdef\@instructorLast{#5}
+        \g@addto@macro\instructorList
+            {%
+                \item%
+                \def\@instTitle{#1}%
+                \def\@instFirst{#2}%
+                \def\@instSec{#3}%
+                \def\@instThird{#4}%
+                \def\@instLast{#5}%
+                %
+                \ifdefempty{\@instTitle}{}{\@instTitle.\ }%
+                \@instFirst%
+                \ifdefempty{\@instSec}{}{\ \StrLeft{\@instSec}{1}.}%
+                \ifdefempty{\@instThird}{}{\ \StrLeft{\@instThird}{1}.}
+                \@instLast%
+            }
     }
 
 \def\@maketitle{%
@@ -108,21 +117,15 @@
         {\small at} \\
         \@courseInst \\
         {\small taught by} \\
-        \@instructorTitle.
-        \@instructorFirst
-        \ifdefempty{\@instructorMiddle}{}{\ \StrLeft{\@instructorMiddle}{1}.}%
-        \ifdefempty{\@instructorMiddleSecond}{}{\ \StrLeft{\@instructorMiddleSecond}{1}.}
-        \@instructorLast
+        \begin{itemize*}[label={}, itemjoin={,}, itemjoin*={\ {\small and}}]
+            \instructorList
+        \end{itemize*}
       \end{tabular}\par}%
     \vskip 1em%
     %{\large \@date}%
   \end{center}%
   \par
   \vskip 1.5em}
-
-\newenvironment{smartabs}
-    {\begin{abstract}}
-    {\end{abstract} \printkeywords}
 
 \hypersetup{
 	pdflang={en-US},
@@ -141,3 +144,5 @@
     	}
 	
 }
+
+\makeatother
