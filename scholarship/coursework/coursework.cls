@@ -1,9 +1,10 @@
 \LoadClass[letterpaper]{article}
-\ProvidesClass{coursework}[2019/12/19 v1]
+\ProvidesClass{coursework}[2020/01/01 v1]
 
 \RequirePackage[utf8]{inputenc}
 \RequirePackage{lmodern}
 \RequirePackage[T1]{fontenc}
+\RequirePackage{microtype}
 \RequirePackage{hyperref}
 \RequirePackage[american]{babel}
 \RequirePackage[raise]{datetime}
@@ -14,6 +15,7 @@
 \RequirePackage[letterpaper, margin=1in]{geometry}
 \RequirePackage{fancyhdr}
 \RequirePackage{lscape}
+\RequirePackage{booktabs}
 \RequirePackage{longtable}
 \RequirePackage{tabu}
 \RequirePackage{multirow}
@@ -74,6 +76,7 @@
         \gdef\@courseName{#3}
         \gdef\@courseInst{#4}
     }
+\newcommand\instructorList{}
 \newcommand{\instructor}[5]
     {
         \gdef\@instructorTitle{#1}
