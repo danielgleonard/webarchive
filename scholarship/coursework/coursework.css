@@ -108,6 +108,10 @@ figure {
     }
 }
 
+blockquote > footer > cite {
+    font-style: unset;
+}
+
 figure > img {
     width: 100%;
 }
