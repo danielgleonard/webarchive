@@ -50,6 +50,19 @@ article {
     margin-right: auto;
 }
 
+a {
+    color: var(--color-accent-primary);
+}
+
+a.footnote-ref,  a.footnote-ref:visited,
+a.footnote-back, a.footnote-back:visited {
+    color: var(--color-accent-tertiary)
+}
+
+a:visited {
+    color: var(--color-accent-secondary);
+}
+
 td.col-title {
     max-width: 15em;
 }
