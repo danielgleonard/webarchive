@@ -95,12 +95,47 @@ section {
     clear: both; /* make floats take up max room, need better fix */
 }
 
-/* first header row of table */
-tr.header.top{
-    color: blue;
+td {
+    vertical-align: top;
+}
+
+.tableparent {
+    overflow-x: auto;
+}
+
+table {
+    border-collapse: collapse;
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
+    border-top-style: solid;
+    border-top-width: 3px;
+}
+
+th {
+    font-weight: unset;
+    text-align: left;
+}
+
+thead > tr > th.headerspan {
+    text-align: center;
+}
+
+thead > tr > th.headerspan:after {
+    /* from https://www.steckinsights.com/shorten-length-border-bottom-pure-css/ */
+    content: ""; /* This is necessary for the pseudo element to work. */ 
+    display: block; /* This will put the pseudo element on its own line. */
+    margin: 0 auto; /* This will center the border. */
+    width: 95%;
+    border-bottom: 1px solid black; /* This creates the border. Replace black with whatever color you want. */
 }
 
 /* last header row of table */
-tr.header.bottom{
-    color: green;
+thead > tr:last-child > th {
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+}
+
+tbody > tr:last-child > td {
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
 }
