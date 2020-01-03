@@ -1,3 +1,45 @@
+:root {
+    --color-bg-primary-light: #ffffff;
+    --color-bg-primary-dark: #1c1c1c;
+
+    --color-bg-secondary-light: #eeeeee;
+    --color-bg-secondary-dark: #282828;
+
+    --color-text-primary-light: #000000;
+    --color-text-primary-dark: #ffffff;
+
+    --color-accent-primary-light: rgb(255, 64, 25);
+    --color-accent-primary-dark: rgb(255, 64, 25);
+
+    --color-bg-primary: var(--color-bg-primary-light);
+    --color-bg-secondary: var(--color-bg-secondary-light);
+    --color-text-primary: var(--color-text-primary-light);
+    --color-accent-primary: var(--color-accent-primary-light);
+}
+  
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-bg-primary: var(--color-bg-primary-dark);
+        --color-bg-secondary: var(--color-bg-secondary-dark);
+        --color-text-primary: var(--color-text-primary-dark);
+        --color-accent-primary: var(--color-accent-primary-dark);
+    }
+}
+  
+body {
+    background-color: var(--color-bg-secondary);
+    color: var(--color-text-primary);
+}
+
+article {
+    max-width: 1200px;
+    padding: 1em;
+    background-color: var(--color-bg-primary);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 td.col-title {
     max-width: 15em;
 }
@@ -7,4 +49,8 @@ td.col-course,td.col-institution {
 }
 td.col-title {
     font-style: italic;
+}
+
+.tableparent {
+    overflow-x: auto;
 }
