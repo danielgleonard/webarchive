@@ -1,20 +1,28 @@
 :root {
     --color-bg-primary-light: #ffffff;
-    --color-bg-primary-dark: #1c1c1c;
+    --color-bg-primary-dark: #121212;
 
     --color-bg-secondary-light: #eeeeee;
-    --color-bg-secondary-dark: #282828;
+    --color-bg-secondary-dark: #000000;
 
     --color-text-primary-light: #000000;
     --color-text-primary-dark: #ffffff;
 
-    --color-accent-primary-light: rgb(255, 64, 25);
-    --color-accent-primary-dark: rgb(255, 64, 25);
+    --color-accent-primary-light: #0f9be0;
+    --color-accent-primary-dark: #80d9ff;
+
+    --color-accent-secondary-light: #8354f2;
+    --color-accent-secondary-dark: #9c75f5;
+
+    --color-accent-tertiary-light: #d200a4;
+    --color-accent-tertiary-dark: #f254c3;
 
     --color-bg-primary: var(--color-bg-primary-light);
     --color-bg-secondary: var(--color-bg-secondary-light);
     --color-text-primary: var(--color-text-primary-light);
     --color-accent-primary: var(--color-accent-primary-light);
+    --color-accent-secondary: var(--color-accent-secondary-light);
+    --color-accent-tertiary: var(--color-accent-tertiary-light);
 }
   
 @media (prefers-color-scheme: dark) {
@@ -22,7 +30,8 @@
         --color-bg-primary: var(--color-bg-primary-dark);
         --color-bg-secondary: var(--color-bg-secondary-dark);
         --color-text-primary: var(--color-text-primary-dark);
-        --color-accent-primary: var(--color-accent-primary-dark);
+        --color-accent-secondary: var(--color-accent-secondary-dark);
+        --color-accent-tertiary: var(--color-accent-tertiary-dark);
     }
 }
   
