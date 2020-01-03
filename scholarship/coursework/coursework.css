@@ -87,7 +87,10 @@ a#pdf {
 }
 
 figure {
-    margin: 0;
+    margin-top: 0;
+    margin-bottom: 1em;
+    margin-right: 0;
+    margin-left: 0;
 }
 
 @media (min-width: 750px) {
@@ -97,9 +100,11 @@ figure {
     figure {
         margin: unset;
         margin-left: 1em;
+        margin-bottom: 1em;
         float: right;
         max-width: 45%;
         max-height: 50%;
+        clear: both;
     }
 }
 
@@ -109,10 +114,6 @@ figure > img {
 
 caption {
     width: 100%;
-}
-
-section {
-    clear: both; /* make floats take up max room, need better fix */
 }
 
 td {
