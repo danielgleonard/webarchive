@@ -48,6 +48,11 @@ ol.references {
     list-style: none;
 }
 
+dd.instructor > ol {
+    list-style: none;
+    padding-left: unset;
+}
+
 .hanging-indent {
     text-indent: -2.5em;
     padding-left: 2.5em;
@@ -71,6 +76,7 @@ figure {
     }
     figure {
         margin: unset;
+        margin-left: 1em;
         float: right;
         max-width: 45%;
         max-height: 50%;
@@ -83,4 +89,18 @@ figure > img {
 
 caption {
     width: 100%;
+}
+
+section {
+    clear: both; /* make floats take up max room, need better fix */
+}
+
+/* first header row of table */
+tr.header.top{
+    color: blue;
+}
+
+/* last header row of table */
+tr.header.bottom{
+    color: green;
 }
