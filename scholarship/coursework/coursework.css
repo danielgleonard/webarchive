@@ -132,8 +132,10 @@ td {
 
 table {
     border-collapse: collapse;
+    border-bottom-color: var(--color-text-primary);
     border-bottom-style: solid;
     border-bottom-width: 3px;
+    border-top-color: var(--color-text-primary);
     border-top-style: solid;
     border-top-width: 3px;
 }
@@ -153,17 +155,20 @@ thead > tr > th.headerspan:after {
     display: block; /* This will put the pseudo element on its own line. */
     margin: 0 auto; /* This will center the border. */
     width: 95%;
+    border-bottom-color: var(--color-text-primary);
     border-bottom-style: solid;
     border-bottom-width: 1px;
 }
 
 /* last header row of table */
 thead > tr:last-child > th {
+    border-bottom-color: var(--color-text-primary);
     border-bottom-style: solid;
     border-bottom-width: 2px;
 }
 
 tbody > tr:last-child > td {
+    border-bottom-color: var(--color-text-primary);
     border-bottom-style: solid;
     border-bottom-width: 1px;
 }
