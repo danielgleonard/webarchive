@@ -131,6 +131,7 @@ td {
 }
 
 table {
+    min-width: 100%;
     border-collapse: collapse;
     border-bottom-color: var(--color-text-primary);
     border-bottom-style: solid;
