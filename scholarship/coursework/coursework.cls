@@ -1,9 +1,10 @@
 \LoadClass[letterpaper]{article}
 \ProvidesClass{coursework}[2020/01/01 v1]
 
-\RequirePackage[utf8]{inputenc}
 \RequirePackage{lmodern}
 \RequirePackage[T1]{fontenc}
+\RequirePackage{textcomp}
+\RequirePackage[utf8]{inputenc}
 \RequirePackage{microtype}
 \RequirePackage{hyperref}
 \RequirePackage[american]{babel}
@@ -20,6 +21,7 @@
 \RequirePackage{longtable}
 \RequirePackage{tabu}
 \RequirePackage{multirow}
+\RequirePackage{siunitx}
 \RequirePackage[
     style=apa,
     backend=biber,
