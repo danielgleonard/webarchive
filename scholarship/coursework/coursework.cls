@@ -7,7 +7,7 @@
 \RequirePackage[utf8]{inputenc}
 \RequirePackage{microtype}
 \RequirePackage{hyperref}
-\RequirePackage[american]{babel}
+\RequirePackage{babel}
 \RequirePackage[raise]{datetime}
 \RequirePackage{graphicx}
 \RequirePackage{wrapfig}
