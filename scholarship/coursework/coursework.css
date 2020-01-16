@@ -50,6 +50,10 @@ article {
     margin-right: auto;
 }
 
+article > header > h1 {
+    font-size: 2em;
+}
+
 a {
     color: var(--color-accent-primary);
 }
