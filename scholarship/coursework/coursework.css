@@ -134,6 +134,11 @@ td {
     overflow-x: auto;
 }
 
+.tableparent > footer {
+    font-size: small;
+    margin-bottom: 1em;
+}
+
 table {
     min-width: 100%;
     border-collapse: collapse;
@@ -159,7 +164,7 @@ thead > tr > th.headerspan:after {
     content: ""; /* This is necessary for the pseudo element to work. */ 
     display: block; /* This will put the pseudo element on its own line. */
     margin: 0 auto; /* This will center the border. */
-    width: 95%;
+    width: 97.5%;
     border-bottom-color: var(--color-text-primary);
     border-bottom-style: solid;
     border-bottom-width: 1px;
