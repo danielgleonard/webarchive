@@ -219,25 +219,21 @@ tbody > tr:last-child > td {
     border-bottom-width: 1px;
 }
 
-.latex sub {
-    vertical-align: -0.1ex;
-    margin-left: -0.1667em;
-    margin-right: -0.025em;
+.latex sub, .latex sup {
+    text-transform:uppercase;
+    line-height: 1ex;
+    line-height: 1ex;
 }
 
-.xetex sub {
-    vertical-align: -0.1ex;
+.latex sub {
+    vertical-align: -0.5ex;
     margin-left: -0.1667em;
     margin-right: -0.125em;
 }
 
-.latex sub, .latex sup, .xetex sub {
-    font-size: 0.9em;
-    text-transform:uppercase;
-}
 .latex sup {
-    font-size: 0.85em;
-    vertical-align: -0.2em;
-    margin-left: -0.26em;
-    margin-right: -0.05em;
+    font-size: 0.75em;
+    vertical-align: 0.25em;
+    margin-left: -0.36em;
+    margin-right: -0.15em;
 }
