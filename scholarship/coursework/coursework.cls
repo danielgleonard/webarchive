@@ -12,6 +12,7 @@
 \RequirePackage{graphicx}
 \RequirePackage{wrapfig}
 \RequirePackage{csquotes}
+\RequirePackage{epigraph}
 \RequirePackage{xstring}
 \RequirePackage[letterpaper, margin=1in]{geometry}
 \RequirePackage{fancyhdr}

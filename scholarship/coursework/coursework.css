@@ -97,6 +97,20 @@ figure {
     margin-left: 0;
 }
 
+blockquote.epigraph {
+    text-align: left;
+    text-justify: auto;
+}
+
+blockquote.epigraph > footer {
+    border-top-style: solid;
+    border-top-color: var(--color-text-primary);
+    border-top-width: 1px;
+    text-align: right;
+    margin-left: 20%;
+    width: 80%;
+}
+
 @media (min-width: 750px) {
     article{
         padding: 3em;
@@ -109,6 +123,16 @@ figure {
         max-width: 45%;
         max-height: 50%;
         clear: both;
+    }
+
+    blockquote.epigraph {
+        width: 50%;
+        margin-left: 50%
+    }
+    
+    blockquote.epigraph > footer {
+        margin-left: 40%;
+        width: 60%;
     }
 }
 
