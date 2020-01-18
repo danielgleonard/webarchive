@@ -16,6 +16,7 @@
 \RequirePackage{xstring}
 \RequirePackage[letterpaper, margin=1in]{geometry}
 \RequirePackage{fancyhdr}
+\RequirePackage{lastpage}
 \RequirePackage[inline]{enumitem}
 \RequirePackage{lscape}
 \RequirePackage{booktabs}
@@ -56,7 +57,7 @@
     \ifdefempty{\@authorMiddle}{}{\StrLeft{\@authorMiddle}{1}.}
 }
 \lfoot{\scriptsize Retrieved from\\ \href{\@baseurl}{\@baseurl}}
-\rfoot{Page \thepage}
+\rfoot{Page \thepage\ of \pageref{LastPage}}
 
 \renewcommand{\title}[1]{\gdef\@docTitle{#1} \gdef\@title{#1}}
 \renewcommand{\author}[3]{
