@@ -81,3 +81,36 @@ td.col-title {
 .tableparent {
     overflow-x: auto;
 }
+
+ul.contents {
+    list-style: none;
+}
+
+ul.contents > li {
+    text-indent: -2.5em;
+    padding-left: 2.5em;
+}
+
+ul.contents > li > a {
+    font-family: monospace;
+    font-size: 1.25em;
+    display: inline-block;
+}
+
+ul.contents > li::before {
+    padding-right: 0.75em;
+    display: inline-block;
+    width: 1.5em;
+}
+
+ul.contents > li#up::before {
+	content: "↩\FE0E"; /* left hook followed by VS-15 */
+}
+
+ul.contents > li.directory::before {
+	content: "📂\FE0F"; /* open file folder followed by VS-16 */
+}
+
+ul.contents > li.document::before {
+	content: "📄\FE0F"; /* page facing up followed by VS-16 */
+}
