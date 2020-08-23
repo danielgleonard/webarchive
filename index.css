@@ -1,106 +1,114 @@
 :root {
-    --color-bg-primary-light: #ffffff;
-    --color-bg-primary-dark: #121212;
+	--color-bg-primary-light: #ffffff;
+	--color-bg-primary-dark: #121212;
 
-    --color-bg-secondary-light: #eeeeee;
-    --color-bg-secondary-dark: #000000;
+	--color-bg-secondary-light: #eeeeee;
+	--color-bg-secondary-dark: #000000;
 
-    --color-text-primary-light: #000000;
-    --color-text-primary-dark: #ffffff;
+	--color-text-primary-light: #000000;
+	--color-text-primary-dark: #ffffff;
 
-    --color-accent-primary-light: #0f9be0;
-    --color-accent-primary-dark: #80d9ff;
+	--color-accent-primary-light: #0f9be0;
+	--color-accent-primary-dark: #80d9ff;
 
-    --color-accent-secondary-light: #8354f2;
-    --color-accent-secondary-dark: #9c75f5;
+	--color-accent-secondary-light: #8354f2;
+	--color-accent-secondary-dark: #9c75f5;
 
-    --color-accent-tertiary-light: #d200a4;
-    --color-accent-tertiary-dark: #f254c3;
+	--color-accent-tertiary-light: #d200a4;
+	--color-accent-tertiary-dark: #f254c3;
 
-    --color-bg-primary: var(--color-bg-primary-light);
-    --color-bg-secondary: var(--color-bg-secondary-light);
-    --color-text-primary: var(--color-text-primary-light);
-    --color-accent-primary: var(--color-accent-primary-light);
-    --color-accent-secondary: var(--color-accent-secondary-light);
-    --color-accent-tertiary: var(--color-accent-tertiary-light);
+	--color-bg-primary: var(--color-bg-primary-light);
+	--color-bg-secondary: var(--color-bg-secondary-light);
+	--color-text-primary: var(--color-text-primary-light);
+	--color-accent-primary: var(--color-accent-primary-light);
+	--color-accent-secondary: var(--color-accent-secondary-light);
+	--color-accent-tertiary: var(--color-accent-tertiary-light);
 }
   
 @media (prefers-color-scheme: dark) {
-    :root {
-        --color-bg-primary: var(--color-bg-primary-dark);
-        --color-bg-secondary: var(--color-bg-secondary-dark);
-        --color-text-primary: var(--color-text-primary-dark);
-        --color-accent-secondary: var(--color-accent-secondary-dark);
-        --color-accent-tertiary: var(--color-accent-tertiary-dark);
-    }
+	:root {
+		--color-bg-primary: var(--color-bg-primary-dark);
+		--color-bg-secondary: var(--color-bg-secondary-dark);
+		--color-text-primary: var(--color-text-primary-dark);
+		--color-accent-secondary: var(--color-accent-secondary-dark);
+		--color-accent-tertiary: var(--color-accent-tertiary-dark);
+	}
 }
   
 body {
-    background-color: var(--color-bg-secondary);
-    color: var(--color-text-primary);
-    font-variant-ligatures: discretionary-ligatures;
+	background-color: var(--color-bg-secondary);
+	color: var(--color-text-primary);
+	font-variant-ligatures: discretionary-ligatures;
 }
 
 article {
-    max-width: 1200px;
-    padding: 1em;
-    background-color: var(--color-bg-primary);
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+	max-width: 1200px;
+	padding: 1em;
+	background-color: var(--color-bg-primary);
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+@media (min-width: 750px) {
+	article{
+		padding: 3em;
+	}
 }
 
 article > header > h1 {
-    font-size: 2em;
+	font-size: 2em;
+	margin-top: 0;
 }
 
+
 a {
-    color: var(--color-accent-primary);
+	color: var(--color-accent-primary);
 }
 
 a.footnote-ref,  a.footnote-ref:visited,
 a.footnote-back, a.footnote-back:visited {
-    color: var(--color-accent-tertiary)
+	color: var(--color-accent-tertiary)
 }
 
 a:visited {
-    color: var(--color-accent-secondary);
+	color: var(--color-accent-secondary);
 }
 
 td.col-title {
-    max-width: 15em;
+	max-width: 15em;
 }
 
 td.col-course,td.col-institution {
-    max-width: 10em;
+	max-width: 10em;
 }
 td.col-title {
-    font-style: italic;
+	font-style: italic;
 }
 
 .tableparent {
-    overflow-x: auto;
+	overflow-x: auto;
 }
 
 ul.contents {
-    list-style: none;
+	list-style: none;
 }
 
 ul.contents > li {
-    text-indent: -2.5em;
-    padding-left: 2.5em;
+	text-indent: -2.5em;
+	padding-left: 2.5em;
 }
 
 ul.contents > li > a {
-    font-family: monospace;
-    font-size: 1.25em;
-    display: inline-block;
+	font-family: monospace;
+	font-size: 1.25em;
+	display: inline-block;
 }
 
 ul.contents > li::before {
-    padding-right: 0.75em;
-    display: inline-block;
-    width: 1.5em;
+	padding-right: 0.75em;
+	display: inline-block;
+	width: 1.5em;
 }
 
 ul.contents > li#up::before {
