@@ -1,0 +1,64 @@
+td.col-title {
+	max-width: 15em;
+}
+
+td.col-course,td.col-institution {
+	max-width: 10em;
+}
+td.col-title {
+	font-style: italic;
+}
+
+ol.paper-list {
+	list-style-type: none;
+	padding-left: 2em;
+}
+
+ol.paper-list > li {
+	display: flex;
+	flex-direction: row-reverse;
+	margin-bottom: 1em;
+	border-left-color: var(--color-accent-tertiary);
+	border-left-style: solid;
+	padding-left: 1em;
+	background-color: var(--color-bg-secondary);
+	padding-top: .1em;
+	padding-bottom: .5em;
+	line-height: 1.15;
+}
+
+ol.paper-list > li > div > p {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+ol.paper-list > li > div {
+	margin-right: 1.5em;
+}
+
+
+ol.paper-list > li > div.info {
+	flex-grow: 1;
+}
+
+ol.paper-list > li > div.info > h3 {
+	font-weight: normal;
+	font-style: italic;
+	margin-top: 0;
+	margin-bottom: .25em;
+}
+
+@media(max-width: 600px) {
+	ol.paper-list {
+		padding-left: 0;
+	}
+
+	ol.paper-list > li {
+		display: block;
+		flex-direction: row;
+	}
+	
+	ol.paper-list > li > div > p {
+		margin-bottom: .3em;
+	}
+}
