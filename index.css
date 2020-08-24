@@ -2,8 +2,8 @@
 	--color-bg-primary-light: #ffffff;
 	--color-bg-primary-dark: #121212;
 
-	--color-bg-secondary-light: #eeeeee;
-	--color-bg-secondary-dark: #000000;
+	--color-bg-secondary-light: #fcfcfc;
+	--color-bg-secondary-dark: #252525;
 
 	--color-text-primary-light: #000000;
 	--color-text-primary-dark: #ffffff;
@@ -73,17 +73,6 @@ a.footnote-back, a.footnote-back:visited {
 
 a:visited {
 	color: var(--color-accent-secondary);
-}
-
-td.col-title {
-	max-width: 15em;
-}
-
-td.col-course,td.col-institution {
-	max-width: 10em;
-}
-td.col-title {
-	font-style: italic;
 }
 
 .tableparent {
