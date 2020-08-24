@@ -23,7 +23,7 @@ ol.paper-list > li {
 	border-left-style: solid;
 	padding-left: 1em;
 	background-color: var(--color-bg-secondary);
-	padding-top: .1em;
+	padding-top: .5em;
 	padding-bottom: .5em;
 	line-height: 1.15;
 }
