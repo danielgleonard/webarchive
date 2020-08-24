@@ -37,6 +37,9 @@ ol.paper-list > li > div {
 	margin-right: 1.5em;
 }
 
+ol.paper-list > li > div.data {
+	min-width: 6em;
+}
 
 ol.paper-list > li > div.info {
 	flex-grow: 1;
@@ -65,6 +68,12 @@ p.author {
 }
 
 @media(max-width: 600px) {
+	ol.paper-list {
+		padding-left: 0.5em;
+	}
+}
+
+@media(max-width: 500px) {
 	ol.paper-list {
 		padding-left: 0;
 	}
