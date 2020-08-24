@@ -75,7 +75,7 @@ a:visited {
 	color: var(--color-accent-secondary);
 }
 
-.tableparent {
+.tableparent, .preparent {
 	overflow-x: auto;
 }
 
