@@ -12,6 +12,7 @@ td.col-title {
 ol.paper-list {
 	list-style-type: none;
 	padding-left: 2em;
+	margin-top: .25em;
 }
 
 ol.paper-list > li {
@@ -41,11 +42,26 @@ ol.paper-list > li > div.info {
 	flex-grow: 1;
 }
 
-ol.paper-list > li > div.info > h3 {
+ol.paper-list > li > div.info > h4 {
 	font-weight: normal;
 	font-style: italic;
 	margin-top: 0;
 	margin-bottom: .25em;
+	font-size: larger;
+}
+
+h2, h3 {
+	margin-bottom: 0;
+}
+
+p.subtitle {
+	margin-top: .1em;
+	margin-bottom: 0;
+	font-style: italic;
+}
+
+p.author {
+	display: none;
 }
 
 @media(max-width: 600px) {

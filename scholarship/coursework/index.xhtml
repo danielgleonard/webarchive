@@ -32,7 +32,7 @@
 			gtag('config', 'UA-56093027-5');
 		</script>
 	</head>
-	<body>
+	<body vocab="http://schema.org/">
 		<article>
 			<header>
 				<h1>Directory for my course papers</h1>
@@ -43,26 +43,37 @@
 					Parent directory
 				</li>
 			</ul>
-			<section>
-				<h2>Undergraduate Papers</h2>
+			<section typeof="ItemList">
+				<h2 property="name">Undergraduate Papers</h2>
+				<p class="subtitle">Vol. 1</p>
+				<h3>Semester 1</h3>
+				<p class="subtitle">Spring  2017</p>
 				<ol class="paper-list">
-					<li>
+					<li property="itemListElement" typeof="ScholarlyArticle">
+						<meta property="position" content="1" />
 						<div class="info">
-							<h3>Water security of Arctic peoples</h3>
+							<h4 property="name headline">Water security of Arctic peoples</h4>
+							<p class="author" property="author publisher" typeof="Person">
+								<span property="givenName">Dan</span>
+								<span property="familyName">Leonard</span>
+							</p>
 							<p>
-								<span class="course">ESE 320 Water Planet, Water Crisis</span>
+								<span property="subjectOf" typeof="Course" class="course">
+									<span property="courseCode">ESE 320</span>
+									<span property="name description">Water Planet, Water Crisis</span>
+								</span>
 								<br />
-								<span class="institution">University of Illinois at Urbana-Champaign</span>
+								<span property="sourceOrganization" typeof="EducationalOrganization" class="institution">University of Illinois at Urbana-Champaign</span>
 							</p>
 						</div>
 						<div class="data">
 							<p>
-								Pages <span class="pages">1-5</span>
+								Pages <span class="pages"><span property="pageStart">1</span>-<span property="pageEnd">5</span></span>
 								<br />
-								<time datetime="2017-05-11">May 11, 2017</time>
+								<time property="datePublished" datetime="2017-05-11">May 11, 2017</time>
 							</p>
 							<p>
-								<a href="illinois/ESE/320/arctic.xhtml" type="application/xhtml+xml">
+								<a property="url" href="illinois/ESE/320/arctic.xhtml" type="application/xhtml+xml">
 									HTML (web)
 								</a>
 								<br />
@@ -73,442 +84,506 @@
 						</div>
 					</li>
 				</ol>
-				<div class="tableparent">
-					<table>
-						<thead>
-							<tr>
-								<th class="col-pages">Pages</th>
-								<th class="col-date">Date written</th>
-								<th class="col-title">Title</th>
-								<th class="col-course">Course</th>
-								<th class="col-institution">Institution</th>
-								<th class="col-links">Link</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td class="col-pages">
-									1-5
-								</td>
-								<td class="col-date">
-									<time datetime="2017-05-11">
-										May 11, 2017
-									</time>
-								</td>
-								<td class="col-title">
-									Water security of Arctic peoples
-								</td>
-								<td class="col-course">
-									ESE 320 Water Planet, Water Crisis
-								</td>
-								<td class="col-institution">
-									<abbr title="University of Illinois at Urbana-Champaign">UIUC</abbr>
-								</td>
-								<td class="col-links">
-									<a href="illinois/ESE/320/arctic.xhtml" type="application/xhtml+xml">
-										HTML (web)
-									</a>
-									<br />
-									<a href="illinois/ESE/320/arctic.pdf" type="application/pdf">
-										PDF (print)
-									</a>
-								</td>
-							</tr>
-							<tr>
-								<td class="col-pages">
-									6-9
-								</td>
-								<td class="col-date">
-									<time datetime="2017-11-20">
-										<abbr title="November">Nov.</abbr> 20, 2017
-									</time>
-								</td>
-								<td class="col-title">
-									The familiar path of <abbr>ETA</abbr>
-								</td>
-								<td class="col-course">
-									PS 300 Terrorism
-								</td>
-								<td class="col-institution">
-									<abbr title="University of Illinois at Urbana-Champaign">UIUC</abbr>
-								</td>
-								<td class="col-links">
-									<a href="illinois/PS/300/eta.xhtml" type="application/xhtml+xml">
-										HTML (web)
-									</a>
-									<br />
-									<a href="illinois/PS/300/eta.pdf" type="application/pdf">
-										PDF (print)
-									</a>
-								</td>
-							</tr>
-							<tr>
-								<td class="col-pages">
-									10-17
-								</td>
-								<td class="col-date">
-									<time datetime="2018-02-12T13:59:59-06:00">
-										<abbr title="February">Feb.</abbr> 12, 2018
-									</time>
-								</td>
-								<td class="col-title">
-									Social spacing and subgrouping in one community of white-faced capuchins (<em lang="la" xml:lang="la">Cebus capucinus</em>)
-								</td>
-								<td class="col-course">
-									ANTH 445 Primate Behavior, Ecology, Ecosystem Sustainability, and Conservation
-								</td>
-								<td class="col-institution">
-									<abbr title="University of Illinois at Urbana-Champaign">UIUC</abbr>
-								</td>
-								<td class="col-links">
-									<a href="illinois/ANTH/445/capuchins.xhtml" type="application/xhtml+xml">
-										HTML (web)
-									</a>
-									<br />
-									<a href="illinois/ANTH/445/capuchins.pdf" type="application/pdf">
-										PDF (print)
-									</a>
-								</td>
-							</tr>
-							<tr>
-								<td class="col-pages">
-									18-22
-								</td>
-								<td class="col-date">
-									<time datetime="2018-12-14T16:28:20+03:00">
-										<abbr title="December">Dec.</abbr> 14, 2018
-									</time>
-								</td>
-								<td class="col-title">
-									The illusion of progress: How international development discourse comforts the comfortable
-								</td>
-								<td class="col-course">
-									MSID 4001 International Development: Critical Perspectives on Theory and Practice
-								</td>
-								<td class="col-institution">
-									<abbr title="University of Minnesota Twin-Cities">UMN</abbr>
-								</td>
-								<td class="col-links">
-									<a href="minnesota/MSID/4001/development.xhtml" type="application/xhtml+xml">
-										HTML (web)
-									</a>
-									<br />
-									<a href="minnesota/MSID/4001/development.pdf" type="application/pdf">
-										PDF (print)
-									</a>
-								</td>
-							</tr>
-							<tr>
-								<td class="col-pages">
-									23-27
-								</td>
-								<td class="col-date">
-									<time datetime="2018-12-14T16:28:20+03:00">
-										<abbr title="December">Dec.</abbr> 14, 2018
-									</time>
-								</td>
-								<td class="col-title">
-									Five models for development in Kenya
-								</td>
-								<td class="col-course">
-									MSID 4002 Country Analysis
-								</td>
-								<td class="col-institution">
-									<abbr title="University of Minnesota Twin-Cities">UMN</abbr>
-								</td>
-								<td class="col-links">
-									<a href="minnesota/MSID/4002/kenya.xhtml" type="application/xhtml+xml">
-										HTML (web)
-									</a>
-									<br />
-									<a href="minnesota/MSID/4002/kenya.pdf" type="application/pdf">
-										PDF (print)
-									</a>
-								</td>
-							</tr>
-							<tr>
-								<td class="col-pages">
-									28-31
-								</td>
-								<td class="col-date">
-									<time datetime="2018-12-14T16:28:20+03:00">
-										<abbr title="December">Dec.</abbr> 14, 2018
-									</time>
-								</td>
-								<td class="col-title">
-									Current disputes in the theory of African archaeology
-								</td>
-								<td class="col-course">
-									MSID 4003 Community Engagement in the Global South
-								</td>
-								<td class="col-institution">
-									<abbr title="University of Minnesota Twin-Cities">UMN</abbr>
-								</td>
-								<td class="col-links">
-									<a href="minnesota/MSID/4003/archaeology.xhtml" type="application/xhtml+xml">
-										HTML (web)
-									</a>
-									<br />
-									<a href="minnesota/MSID/4003/archaeology.pdf" type="application/pdf">
-										PDF (print)
-									</a>
-								</td>
-							</tr>
-							<tr>
-								<td class="col-pages">
-									32-36
-								</td>
-								<td class="col-date">
-									<time datetime="2018-12-14T16:28:20+03:00">
-										<abbr title="December">Dec.</abbr> 14, 2018
-									</time>
-								</td>
-								<td class="col-title">
-									Challenges faced in the termination of persons with disabilities from a segregated workshop in Mombasa, Kenya
-								</td>
-								<td class="col-course">
-									MSID 4003 Community Engagement in the Global South
-								</td>
-								<td class="col-institution">
-									<abbr title="University of Minnesota Twin-Cities">UMN</abbr>
-								</td>
-								<td class="col-links">
-									<a href="minnesota/MSID/4003/disability.xhtml" type="application/xhtml+xml">
-										HTML (web)
-									</a>
-									<br />
-									<a href="minnesota/MSID/4003/disability.xhtml" type="application/pdf">
-										PDF (print)
-									</a>
-								</td>
-							</tr>
-							<tr>
-								<td class="col-pages">
-									37-42
-								</td>
-								<td class="col-date">
-									<time datetime="2019-05-04T13:39:00-05:00">
-										May 4, 2019
-									</time>
-								</td>
-								<td class="col-title">
-									Indigenization in <span lang="la" xml:lang="la">Magna Graecia</span>: The case of Sicily
-								</td>
-								<td class="col-course">
-									CLCV 444 The Archaeology of Italy
-								</td>
-								<td class="col-institution">
-									<abbr title="University of Illinois at Urbana-Champaign">UIUC</abbr>
-								</td>
-								<td class="col-links">
-									<a href="illinois/CLCV/444/sicily.xhtml" type="application/xhtml+xml">
-										HTML (web)
-									</a>
-									<br />
-									<a href="illinois/CLCV/444/sicily.pdf" type="application/pdf">
-										PDF (print)
-									</a>
-								</td>
-							</tr>
-							<tr>
-								<td class="col-pages">
-									43-47
-								</td>
-								<td class="col-date">
-									<time datetime="2019-05-06T21:37:00-05:00">
-										May 6, 2019
-									</time>
-								</td>
-								<td class="col-title">
-									International repatriation in the Eurocentric world order
-								</td>
-								<td class="col-course">
-									ANTH 499 Ethics and <abbr>NAGPRA</abbr>
-								</td>
-								<td class="col-institution">
-									<abbr title="University of Illinois at Urbana-Champaign">UIUC</abbr>
-								</td>
-								<td class="col-links">
-									<a href="illinois/ANTH/499/nagpra.xhtml" type="application/xhtml+xml">
-										HTML (web)
-									</a>
-									<br />
-									<a href="illinois/ANTH/499/nagpra.pdf" type="application/pdf">
-										PDF (print)
-									</a>
-								</td>
-							</tr>
-							<tr>
-								<td class="col-pages">
-									48-51
-								</td>
-								<td class="col-date">
-									<time datetime="2019-07-23T19:00:00-05:00">
-										July 23, 2019
-									</time>
-								</td>
-								<td class="col-title">
-									Ethical perspectives on gambling
-								</td>
-								<td class="col-course">
-									HUM 216 Ethics
-								</td>
-								<td class="col-institution">
-									<abbr title="Elgin Community College">ECC</abbr>
-								</td>
-								<td class="col-links">
-									<a href="elgin/HUM/216/gambling.xhtml" type="application/xhtml+xml">
-										HTML (web)
-									</a>
-									<br />
-									<a href="elgin/HUM/216/gambling.pdf" type="application/pdf">
-										PDF (print)
-									</a>
-								</td>
-							</tr>
-							<tr>
-								<td class="col-pages">
-									52-59
-								</td>
-								<td class="col-date">
-									<time datetime="2019-10-18T22:31:00-06:00">
-										<abbr title="October">Oct.</abbr> 18, 2019
-									</time>
-								</td>
-								<td class="col-title">
-									Non-bacterial components of the primate microbiome: Against a bacterial bias
-								</td>
-								<td class="col-course">
-									ANTH 438 Primate Life History Evolution
-								</td>
-								<td class="col-institution">
-									<abbr title="University of Illinois at Urbana-Champaign">UIUC</abbr>
-								</td>
-								<td class="col-links">
-									<a href="illinois/ANTH/438/microbiome.xhtml" type="application/xhtml+xml">
-										HTML (web)
-									</a>
-									<br />
-									<a href="illinois/ANTH/438/microbiome.pdf" type="application/pdf">
-										PDF (print)
-									</a>
-								</td>
-							</tr>
-							<tr>
-								<td class="col-pages">
-									60-63
-								</td>
-								<td class="col-date">
-									<time datetime="2019-12-13T20:35:00-06:00">
-										<abbr title="December">Dec.</abbr> 13, 2019
-									</time>
-								</td>
-								<td class="col-title">
-									East African motherhood after decolonization
-								</td>
-								<td class="col-course">
-									ANTH 438 Primate Life History Evolution
-								</td>
-								<td class="col-institution">
-									<abbr title="University of Illinois at Urbana-Champaign">UIUC</abbr>
-								</td>
-								<td class="col-links">
-									<a href="illinois/ANTH/438/motherhood.xhtml" type="application/xhtml+xml">
-										HTML (web)
-									</a>
-									<br />
-									<a href="illinois/ANTH/438/motherhood.pdf" type="application/pdf">
-										PDF (print)
-									</a>
-								</td>
-							</tr>
-							<tr>
-								<td class="col-pages">
-									64-70
-								</td>
-								<td class="col-date">
-									<time datetime="2019-12-16T09:00:00-06:00">
-										<abbr title="December">Dec.</abbr> 16, 2019
-									</time>
-								</td>
-								<td class="col-title">
-									Do hibernating mammals lose bone mass? A review of disuse osteoporosis and mammalian torpor
-								</td>
-								<td class="col-course">
-									ANTH 408 Human Evolutionary Anatomy
-								</td>
-								<td class="col-institution">
-									<abbr title="University of Illinois at Urbana-Champaign">UIUC</abbr>
-								</td>
-								<td class="col-links">
-									<a href="illinois/ANTH/408/hibernation.xhtml" type="application/xhtml+xml">
-										HTML (web)
-									</a>
-									<br />
-									<a href="illinois/ANTH/408/hibernation.pdf" type="application/pdf">
-										PDF (print)
-									</a>
-								</td>
-							</tr>
-							<tr>
-								<td class="col-pages">
-									71-74
-								</td>
-								<td class="col-date">
-									<time datetime="2019-12-16T19:18:00-06:00">
-										<abbr title="December">Dec.</abbr> 16, 2019
-									</time>
-								</td>
-								<td class="col-title">
-									The Monster Study
-								</td>
-								<td class="col-course">
-									ANTH 441 Human Genetics
-								</td>
-								<td class="col-institution">
-									<abbr title="University of Illinois at Urbana-Champaign">UIUC</abbr>
-								</td>
-								<td class="col-links">
-									<a href="illinois/ANTH/441/stuttering.xhtml" type="application/xhtml+xml">
-										HTML (web)
-									</a>
-									<br />
-									<a href="illinois/ANTH/441/stuttering.pdf" type="application/pdf">
-										PDF (print)
-									</a>
-								</td>
-							</tr>
-							<tr>
-								<td class="col-pages">
-									75-82
-								</td>
-								<td class="col-date">
-									<time datetime="2019-12-18T10:36:00-06:00">
-										<abbr title="December">Dec.</abbr> 18, 2019
-									</time>
-								</td>
-								<td class="col-title">
-									Behavioral changes to anthropogenic environments in two species of macaque
-								</td>
-								<td class="col-course">
-									ANTH 498 Senior Capstone Seminar
-								</td>
-								<td class="col-institution">
-									<abbr title="University of Illinois at Urbana-Champaign">UIUC</abbr>
-								</td>
-								<td class="col-links">
-									<a href="illinois/ANTH/498/macaques.xhtml" type="application/xhtml+xml">
-										HTML (web)
-									</a>
-									<br />
-									<a href="illinois/ANTH/498/macaques.pdf" type="application/pdf">
-										PDF (print)
-									</a>
-								</td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
+				<h3>Semester 2</h3>
+				<p class="subtitle">Fall  2017</p>
+				<ol class="paper-list">
+					<li property="itemListElement" typeof="ScholarlyArticle">
+						<meta property="position" content="2" />
+						<div class="info">
+							<h4 property="name headline">The familiar path of <abbr>ETA</abbr></h4>
+							<p class="author" property="author publisher" typeof="Person">
+								<span property="givenName">Dan</span>
+								<span property="familyName">Leonard</span>
+							</p>
+							<p>
+								<span property="subjectOf" typeof="Course" class="course">
+									<span property="courseCode">PS 300</span>
+									<span property="name description">Terrorism</span>
+								</span>
+								<br />
+								<span property="sourceOrganization" typeof="EducationalOrganization" class="institution">University of Illinois at Urbana-Champaign</span>
+							</p>
+						</div>
+						<div class="data">
+							<p>
+								Pages <span class="pages"><span property="pageStart">6</span>-<span property="pageEnd">9</span></span>
+								<br />
+								<time property="datePublished" datetime="2017-11-20"><abbr title="November">Nov.</abbr> 20, 2017</time>
+							</p>
+							<p>
+								<a property="url" href="illinois/PS/300/eta.xhtml" type="application/xhtml+xml">
+									HTML (web)
+								</a>
+								<br />
+								<a href="illinois/PS/300/eta.pdf" type="application/pdf">
+									PDF (print)
+								</a>
+							</p>
+						</div>
+					</li>
+				</ol>
+				<h3>Semester 3</h3>
+				<p class="subtitle">Spring  2018</p>
+				<ol class="paper-list">
+					<li property="itemListElement" typeof="ScholarlyArticle">
+						<meta property="position" content="3" />
+						<div class="info">
+							<h4 property="name headline">Social spacing and subgrouping in one community of white-faced capuchins (<em lang="la" xml:lang="la">Cebus capucinus</em>)</h4>
+							<p class="author" property="author publisher" typeof="Person">
+								<span property="givenName">Dan</span>
+								<span property="familyName">Leonard</span>
+							</p>
+							<p>
+								<span property="subjectOf" typeof="Course" class="course">
+									<span property="courseCode">ANTH 445</span>
+									<span property="name description">Primate Behavior, Ecology, Ecosystem Sustainability, and Conservation</span>
+								</span>
+								<br />
+								<span property="sourceOrganization" typeof="EducationalOrganization" class="institution">University of Illinois at Urbana-Champaign</span>
+							</p>
+						</div>
+						<div class="data">
+							<p>
+								Pages <span class="pages"><span property="pageStart">10</span>-<span property="pageEnd">17</span></span>
+								<br />
+								<time property="datePublished" datetime="2018-02-12T13:59:59-06:00"><abbr title="February">Feb.</abbr> 12, 2018</time>
+							</p>
+							<p>
+								<a property="url" href="illinois/ANTH/445/capuchins.xhtml" type="application/xhtml+xml">
+									HTML (web)
+								</a>
+								<br />
+								<a href="illinois/ANTH/445/capuchins.pdf" type="application/pdf">
+									PDF (print)
+								</a>
+							</p>
+						</div>
+					</li>
+				</ol>
+				<h3>Semester 4</h3>
+				<p class="subtitle">Fall 2018</p>
+				<ol class="paper-list">
+					<li property="itemListElement" typeof="ScholarlyArticle">
+						<meta property="position" content="4" />
+						<div class="info">
+							<h4 property="name headline">The illusion of progress: How international development discourse comforts the comfortable</h4>
+							<p class="author" property="author publisher" typeof="Person">
+								<span property="givenName">Dan</span>
+								<span property="familyName">Leonard</span>
+							</p>
+							<p>
+								<span property="subjectOf" typeof="Course" class="course">
+									<span property="courseCode">MSID 4001</span>
+									<span property="name description">International Development: Critical Perspectives on Theory and Practice</span>
+								</span>
+								<br />
+								<span property="sourceOrganization" typeof="EducationalOrganization" class="institution">University of Minnesota Twin-Cities</span>
+							</p>
+						</div>
+						<div class="data">
+							<p>
+								Pages <span class="pages"><span property="pageStart">18</span>-<span property="pageEnd">22</span></span>
+								<br />
+								<time property="datePublished" datetime="2018-12-14T16:28:20+03:00"><abbr title="December">Dec.</abbr> 14, 2018</time>
+							</p>
+							<p>
+								<a property="url" href="minnesota/MSID/4001/development.xhtml" type="application/xhtml+xml">
+									HTML (web)
+								</a>
+								<br />
+								<a href="minnesota/MSID/4001/development.pdf" type="application/pdf">
+									PDF (print)
+								</a>
+							</p>
+						</div>
+					</li>
+					<li property="itemListElement" typeof="ScholarlyArticle">
+						<meta property="position" content="5" />
+						<div class="info">
+							<h4 property="name headline">Five models for development in Kenya</h4>
+							<p class="author" property="author publisher" typeof="Person">
+								<span property="givenName">Dan</span>
+								<span property="familyName">Leonard</span>
+							</p>
+							<p>
+								<span property="subjectOf" typeof="Course" class="course">
+									<span property="courseCode">MSID 4002</span>
+									<span property="name description">Country Analysis</span>
+								</span>
+								<br />
+								<span property="sourceOrganization" typeof="EducationalOrganization" class="institution">University of Minnesota Twin-Cities</span>
+							</p>
+						</div>
+						<div class="data">
+							<p>
+								Pages <span class="pages"><span property="pageStart">23</span>-<span property="pageEnd">27</span></span>
+								<br />
+								<time property="datePublished" datetime="2018-12-14T16:28:20+03:00"><abbr title="December">Dec.</abbr> 14, 2018</time>
+							</p>
+							<p>
+								<a property="url" href="minnesota/MSID/4002/kenya.xhtml" type="application/xhtml+xml">
+									HTML (web)
+								</a>
+								<br />
+								<a href="minnesota/MSID/4002/kenya.pdf" type="application/pdf">
+									PDF (print)
+								</a>
+							</p>
+						</div>
+					</li>
+					<li property="itemListElement" typeof="ScholarlyArticle">
+						<meta property="position" content="6" />
+						<div class="info">
+							<h4 property="name headline">Current disputes in the theory of African archaeology</h4>
+							<p class="author" property="author publisher" typeof="Person">
+								<span property="givenName">Dan</span>
+								<span property="familyName">Leonard</span>
+							</p>
+							<p>
+								<span property="subjectOf" typeof="Course" class="course">
+									<span property="courseCode">MSID 4003</span>
+									<span property="name description">Community Engagement in the Global South</span>
+								</span>
+								<br />
+								<span property="sourceOrganization" typeof="EducationalOrganization" class="institution">University of Minnesota Twin-Cities</span>
+							</p>
+						</div>
+						<div class="data">
+							<p>
+								Pages <span class="pages"><span property="pageStart">28</span>-<span property="pageEnd">31</span></span>
+								<br />
+								<time property="datePublished" datetime="2018-12-14T16:28:20+03:00"><abbr title="December">Dec.</abbr> 14, 2018</time>
+							</p>
+							<p>
+								<a property="url" href="minnesota/MSID/4003/archaeology.xhtml" type="application/xhtml+xml">
+									HTML (web)
+								</a>
+								<br />
+								<a href="minnesota/MSID/4003/archaeology.pdf" type="application/pdf">
+									PDF (print)
+								</a>
+							</p>
+						</div>
+					</li>
+					<li property="itemListElement" typeof="ScholarlyArticle">
+						<meta property="position" content="7" />
+						<div class="info">
+							<h4 property="name headline">Challenges faced in the termination of persons with disabilities from a segregated workshop in Mombasa, Kenya</h4>
+							<p class="author" property="author publisher" typeof="Person">
+								<span property="givenName">Dan</span>
+								<span property="familyName">Leonard</span>
+							</p>
+							<p>
+								<span property="subjectOf" typeof="Course" class="course">
+									<span property="courseCode">MSID 4003</span>
+									<span property="name description">Community Engagement in the Global South</span>
+								</span>
+								<br />
+								<span property="sourceOrganization" typeof="EducationalOrganization" class="institution">University of Minnesota Twin-Cities</span>
+							</p>
+						</div>
+						<div class="data">
+							<p>
+								Pages <span class="pages"><span property="pageStart">32</span>-<span property="pageEnd">36</span></span>
+								<br />
+								<time property="datePublished" datetime="2018-12-14T16:28:20+03:00"><abbr title="December">Dec.</abbr> 14, 2018</time>
+							</p>
+							<p>
+								<a property="url" href="minnesota/MSID/4003/disability.xhtml" type="application/xhtml+xml">
+									HTML (web)
+								</a>
+								<br />
+								<a href="minnesota/MSID/4003/disability.pdf" type="application/pdf">
+									PDF (print)
+								</a>
+							</p>
+						</div>
+					</li>
+				</ol>
+				<h3>Semester 5</h3>
+				<p class="subtitle">Spring 2019</p>
+				<ol class="paper-list">
+					<li property="itemListElement" typeof="ScholarlyArticle">
+						<meta property="position" content="8" />
+						<div class="info">
+							<h4 property="name headline">Indigenization in <span lang="la" xml:lang="la">Magna Graecia</span>: The case of Sicily</h4>
+							<p class="author" property="author publisher" typeof="Person">
+								<span property="givenName">Dan</span>
+								<span property="familyName">Leonard</span>
+							</p>
+							<p>
+								<span property="subjectOf" typeof="Course" class="course">
+									<span property="courseCode">CLCV 444</span>
+									<span property="name description">The Archaeology of Italy</span>
+								</span>
+								<br />
+								<span property="sourceOrganization" typeof="EducationalOrganization" class="institution">University of Illinois at Urbana-Champaign</span>
+							</p>
+						</div>
+						<div class="data">
+							<p>
+								Pages <span class="pages"><span property="pageStart">37</span>-<span property="pageEnd">42</span></span>
+								<br />
+								<time property="datePublished" datetime="2019-05-04T13:39:00-05:00">May 4, 2019</time>
+							</p>
+							<p>
+								<a property="url" href="illinois/CLCV/444/sicily.xhtml" type="application/xhtml+xml">
+									HTML (web)
+								</a>
+								<br />
+								<a href="illinois/CLCV/444/sicily.pdf" type="application/pdf">
+									PDF (print)
+								</a>
+							</p>
+						</div>
+					</li>
+					<li property="itemListElement" typeof="ScholarlyArticle">
+						<meta property="position" content="9" />
+						<div class="info">
+							<h4 property="name headline">International repatriation in the Eurocentric world order</h4>
+							<p class="author" property="author publisher" typeof="Person">
+								<span property="givenName">Dan</span>
+								<span property="familyName">Leonard</span>
+							</p>
+							<p>
+								<span property="subjectOf" typeof="Course" class="course">
+									<span property="courseCode">ANTH 499</span>
+									<span property="name description">Ethics and <abbr>NAGPRA</abbr></span>
+								</span>
+								<br />
+								<span property="sourceOrganization" typeof="EducationalOrganization" class="institution">University of Illinois at Urbana-Champaign</span>
+							</p>
+						</div>
+						<div class="data">
+							<p>
+								Pages <span class="pages"><span property="pageStart">43</span>-<span property="pageEnd">47</span></span>
+								<br />
+								<time property="datePublished" datetime="2019-05-06T21:37:00-05:00">May 6, 2019</time>
+							</p>
+							<p>
+								<a property="url" href="illinois/ANTH/499/nagpra.xhtml" type="application/xhtml+xml">
+									HTML (web)
+								</a>
+								<br />
+								<a href="illinois/ANTH/499/nagpra.pdf" type="application/pdf">
+									PDF (print)
+								</a>
+							</p>
+						</div>
+					</li>
+				</ol>
+				<h3>Semester 6</h3>
+				<p class="subtitle">Summer 2019</p>
+				<ol class="paper-list">
+					<li property="itemListElement" typeof="ScholarlyArticle">
+						<meta property="position" content="10" />
+						<div class="info">
+							<h4 property="name headline">Ethical perspectives on gambling</h4>
+							<p class="author" property="author publisher" typeof="Person">
+								<span property="givenName">Dan</span>
+								<span property="familyName">Leonard</span>
+							</p>
+							<p>
+								<span property="subjectOf" typeof="Course" class="course">
+									<span property="courseCode">HUM 216</span>
+									<span property="name description">Ethics</span>
+								</span>
+								<br />
+								<span property="sourceOrganization" typeof="EducationalOrganization" class="institution">Elgin Community College</span>
+							</p>
+						</div>
+						<div class="data">
+							<p>
+								Pages <span class="pages"><span property="pageStart">48</span>-<span property="pageEnd">51</span></span>
+								<br />
+								<time property="datePublished" datetime="2019-07-23T19:00:00-05:00">July 23, 2019</time>
+							</p>
+							<p>
+								<a property="url" href="elgin/HUM/216/gambling.xhtml" type="application/xhtml+xml">
+									HTML (web)
+								</a>
+								<br />
+								<a href="elgin/HUM/216/gambling.pdf" type="application/pdf">
+									PDF (print)
+								</a>
+							</p>
+						</div>
+					</li>
+				</ol>
+				<h3>Semester 7</h3>
+				<p class="subtitle">Fall 2019</p>
+				<ol class="paper-list">
+					<li property="itemListElement" typeof="ScholarlyArticle">
+						<meta property="position" content="11" />
+						<div class="info">
+							<h4 property="name headline">Non-bacterial components of the primate microbiome: Against a bacterial bias</h4>
+							<p class="author" property="author publisher" typeof="Person">
+								<span property="givenName">Dan</span>
+								<span property="familyName">Leonard</span>
+							</p>
+							<p>
+								<span property="subjectOf" typeof="Course" class="course">
+									<span property="courseCode">ANTH 438</span>
+									<span property="name description">Primate Life History Evolution</span>
+								</span>
+								<br />
+								<span property="sourceOrganization" typeof="EducationalOrganization" class="institution">University of Illinois at Urbana-Champaign</span>
+							</p>
+						</div>
+						<div class="data">
+							<p>
+								Pages <span class="pages"><span property="pageStart">52</span>-<span property="pageEnd">59</span></span>
+								<br />
+								<time property="datePublished" datetime="2019-10-18T22:31:00-06:00"><abbr title="October">Oct.</abbr> 18, 2019</time>
+							</p>
+							<p>
+								<a property="url" href="illinois/ANTH/438/microbiome.xhtml" type="application/xhtml+xml">
+									HTML (web)
+								</a>
+								<br />
+								<a href="illinois/ANTH/438/microbiome.pdf" type="application/pdf">
+									PDF (print)
+								</a>
+							</p>
+						</div>
+					</li>
+					<li property="itemListElement" typeof="ScholarlyArticle">
+						<meta property="position" content="12" />
+						<div class="info">
+							<h4 property="name headline">East African motherhood after decolonization</h4>
+							<p class="author" property="author publisher" typeof="Person">
+								<span property="givenName">Dan</span>
+								<span property="familyName">Leonard</span>
+							</p>
+							<p>
+								<span property="subjectOf" typeof="Course" class="course">
+									<span property="courseCode">ANTH 438</span>
+									<span property="name description">Primate Life History Evolution</span>
+								</span>
+								<br />
+								<span property="sourceOrganization" typeof="EducationalOrganization" class="institution">University of Illinois at Urbana-Champaign</span>
+							</p>
+						</div>
+						<div class="data">
+							<p>
+								Pages <span class="pages"><span property="pageStart">60</span>-<span property="pageEnd">63</span></span>
+								<br />
+								<time property="datePublished" datetime="2019-12-13T20:35:00-06:00"><abbr title="December">Dec.</abbr> 13, 2019</time>
+							</p>
+							<p>
+								<a property="url" href="illinois/ANTH/438/motherhood.xhtml" type="application/xhtml+xml">
+									HTML (web)
+								</a>
+								<br />
+								<a href="illinois/ANTH/438/motherhood.pdf" type="application/pdf">
+									PDF (print)
+								</a>
+							</p>
+						</div>
+					</li>
+					<li property="itemListElement" typeof="ScholarlyArticle">
+						<meta property="position" content="13" />
+						<div class="info">
+							<h4 property="name headline">Do hibernating mammals lose bone mass? A review of disuse osteoporosis and mammalian torpor</h4>
+							<p class="author" property="author publisher" typeof="Person">
+								<span property="givenName">Dan</span>
+								<span property="familyName">Leonard</span>
+							</p>
+							<p>
+								<span property="subjectOf" typeof="Course" class="course">
+									<span property="courseCode">ANTH 408</span>
+									<span property="name description">Human Evolutionary Anatomy</span>
+								</span>
+								<br />
+								<span property="sourceOrganization" typeof="EducationalOrganization" class="institution">University of Illinois at Urbana-Champaign</span>
+							</p>
+						</div>
+						<div class="data">
+							<p>
+								Pages <span class="pages"><span property="pageStart">64</span>-<span property="pageEnd">70</span></span>
+								<br />
+								<time property="datePublished" datetime="2019-12-16T09:00:00-06:00"><abbr title="December">Dec.</abbr> 16, 2019</time>
+							</p>
+							<p>
+								<a property="url" href="illinois/ANTH/408/hibernation.xhtml" type="application/xhtml+xml">
+									HTML (web)
+								</a>
+								<br />
+								<a href="illinois/ANTH/408/hibernation.pdf" type="application/pdf">
+									PDF (print)
+								</a>
+							</p>
+						</div>
+					</li>
+					<li property="itemListElement" typeof="ScholarlyArticle">
+						<meta property="position" content="14" />
+						<div class="info">
+							<h4 property="name headline">The Monster Study</h4>
+							<p class="author" property="author publisher" typeof="Person">
+								<span property="givenName">Dan</span>
+								<span property="familyName">Leonard</span>
+							</p>
+							<p>
+								<span property="subjectOf" typeof="Course" class="course">
+									<span property="courseCode">ANTH 441</span>
+									<span property="name description">Human Genetics</span>
+								</span>
+								<br />
+								<span property="sourceOrganization" typeof="EducationalOrganization" class="institution">University of Illinois at Urbana-Champaign</span>
+							</p>
+						</div>
+						<div class="data">
+							<p>
+								Pages <span class="pages"><span property="pageStart">71</span>-<span property="pageEnd">74</span></span>
+								<br />
+								<time property="datePublished" datetime="2019-12-16T19:18:00-06:00"><abbr title="December">Dec.</abbr> 16, 2019</time>
+							</p>
+							<p>
+								<a property="url" href="illinois/ANTH/441/stuttering.xhtml" type="application/xhtml+xml">
+									HTML (web)
+								</a>
+								<br />
+								<a href="illinois/ANTH/441/stuttering.pdf" type="application/pdf">
+									PDF (print)
+								</a>
+							</p>
+						</div>
+					</li>
+					<li property="itemListElement" typeof="ScholarlyArticle">
+						<meta property="position" content="15" />
+						<div class="info">
+							<h4 property="name headline">Behavioral changes to anthropogenic environments in two species of macaque</h4>
+							<p class="author" property="author publisher" typeof="Person">
+								<span property="givenName">Dan</span>
+								<span property="familyName">Leonard</span>
+							</p>
+							<p>
+								<span property="subjectOf" typeof="Course" class="course">
+									<span property="courseCode">ANTH 498</span>
+									<span property="name description">Senior Capstone Seminar</span>
+								</span>
+								<br />
+								<span property="sourceOrganization" typeof="EducationalOrganization" class="institution">University of Illinois at Urbana-Champaign</span>
+							</p>
+						</div>
+						<div class="data">
+							<p>
+								Pages <span class="pages"><span property="pageStart">75</span>-<span property="pageEnd">82</span></span>
+								<br />
+								<time property="datePublished" datetime="2019-12-18T10:36:00-06:00"><abbr title="December">Dec.</abbr> 18, 2019</time>
+							</p>
+							<p>
+								<a property="url" href="illinois/ANTH/498/macaques.xhtml" type="application/xhtml+xml">
+									HTML (web)
+								</a>
+								<br />
+								<a href="illinois/ANTH/498/macaques.pdf" type="application/pdf">
+									PDF (print)
+								</a>
+							</p>
+						</div>
+					</li>
+				</ol>
 			</section>
 		</article>
 	</body>
