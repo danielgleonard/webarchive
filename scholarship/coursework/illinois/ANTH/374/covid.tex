@@ -1,0 +1,477 @@
+% \documentclass[russian,american]{homework}
+\documentclass[russian,american]{../../../coursework}
+
+\title{Games, Schooling, and Surveillance}
+\subtitle{Notes on Technology in a Global Pandemic}
+\shorttitle{}
+\author{Dan}{}{Leonard}
+\newdate{date}{12}{05}{2020}
+\date{\displaydate{date}}
+\course{ANTH}{374}{Anthropology of Science and Technology}{University of Illinois at Urbana-Champaign}
+\instructor{Dr}{Jenny}{}{}{Davis}
+
+\newcommand{\mc}{\citetitle{Minecraft}}
+\newcommand{\tbl}{\citetitle{Tabletop}}
+
+\newdate{log-start}{19}{03}{2020}
+
+\addbibresource{practicum.bib}
+
+\usepackage[nolist,nohyperlinks]{acronym}
+\usepackage{tikz}
+
+\begin{document}
+\maketitle
+\begin{acronym}
+	\acro{covid}[COVID-19]{Coronavirus Disease 2019}
+	\acro{virus}[SARS-CoV-2]{severe acute respiratory syndrome coronavirus 2}
+	\acro{mers}[MERS]{Middle East respiratory syndrome}
+	\acro{r0}[\(R_0\)]{basic reproduction rate}
+	\acro{ict}[ICT]{information communication technology}
+	\acro{dp3t}[DP-3T]{decentralized privacy-preserving proximity tracing}
+	\acro{IP}[IP]{Internet Protocol}
+	\acro{motd}[MOTD]{message of the day}
+\end{acronym}
+\begin{abstract}
+	\noindent The \ac{covid} crisis has caused a radical change in contemporary
+	society. Whether its effects are temporary or long-lasting has yet
+	to be seen; however, the use of technology during the lockdown allows
+	us to study how we relate to our inventions.
+	I analyze the social experience of using multiplayer video games in quarantine,
+	focusing on the sandbox games \mc\ and \tbl.
+	Further, the experience of video chat for collegiate education is discussed, and
+	how its social milieu and power dynamic differs from that of in-person classes.
+	Also discussed is the coming change to smartphone technology as a result of
+	the crisis, how contact tracing technology will likely have a striking impact
+	on our relations to our own personal devices as well as the class dynamic
+	implicit in smartphone ownership.
+\end{abstract}
+\keywords{coronavirus, video games, \mc, Internet, sociolinguistics, smartphones, contact tracing}
+\printkeywords
+
+\section{Games and Interpersonal Relations}
+
+As we collectively transition into a more reclusive lifestyle,
+video games provide a sense of escapism for many, including myself.
+The sychronicity afforded by online video games allows 
+But what does it mean to play with others online when online is all that one
+can experience? \textcite{Sicart2014} describes how one's day is
+structured around the experience of play, in that \enquote{my life takes
+place in the time between play}~\parencite[6]{Sicart2014}. But for those
+who must now only interact through others in the form of a virtual environment,
+the use of play as the bounds of social interaction serves the dual purpose of creating both play
+and the daily life between.
+
+
+\subsection{\mc}
+
+\mc~\parencite{Minecraft} is a platform ripe for anthropological analysis. Its simple and relaxed
+rules allow for the production of creative works in the eyes of its player.
+Notably, the structure of \mc\ on the Internet is one of complete independence.
+Any person, even one who does not themselves own a copy of the
+game, may host server software on a home computer and expose it to the Internet
+without notifying the creators of the game or any upstream authority.
+In contrast with the \enquote{control} exerted by a player's requirement to
+\enquote{execute an algorithm in order to win}~\parencite[35]{Galloway2004} in
+single-player role-playing games, \mc\ allows for social interaction relatively
+unimpeded by goals or the 
+Players are thus free to create social structures and communities in virtual
+space accessible only to those who know the specific \ac{IP} address of the host computer.
+
+As described by \textcite{Ringland2016} in the context of a \mc\ server for
+children with autism, these virtual spaces can be decidedly formative in
+social development and in escapism from the real world.
+Surveying how these communities change and adapt in a global environment of forced physical
+isolation can provide insight into what it means to play. One of the more
+easily-surveyable parts of a server is its \ac{motd}, the text prompt displayed
+when a server is queried for its online status but before a player chooses to
+connect to it. By default this is set to read \enquote{A Minecraft Server} but
+is easily customizable to any string the owner desires.
+As the first thing every user sees when attempting to connect, whether a new or
+returning player, it serves as the initial and most basic form of
+identity establishment for the server's community. How this text message
+is presented thus provides a corpus of text for analysis in real-time. 
+
+\subsubsection{On \Ac{IP} addresses and server discovery}
+
+In the standard conception of the Internet,\footnote{IPv4, which has been technically superseded
+but remains in place alongside the \(2^{128}\) addresses of IPv6.}
+there are approximately four billion individual
+addresses\footnote{Thirty-two binary digits (bits) are used for assignment, thus
+\(2^{32} = 4,294,967,296\).}
+available for assignment to connected devices. While this number appears
+immense at a human scale, it is in fact fairly easy for computers to scan and
+enumerate these addresses, allowing researchers to view trends on the Internet
+at large. The program \citetitle{zmap}\ \parencite{zmap} can perform a scan of
+the entire address space in under an hour, which was used initially to gauge
+potential for this survey. However, its authors caution against its frequent use
+causing excess network traffic, advising users to consult with network
+administrators before deployment~\parencite{zmap-paper}.
+To prevent burdening University of Illinois' network administration staff during
+a critical period of escalation in remote network use, I utilized the
+commercial monitoring service Shodan \parencite{Shodan} to quantify
+the number of \mc\ servers online.
+
+On \displaydate{log-start}, I initiated a program to scan the
+entire Internet every half-hour for such homemade \mc\ servers.
+The only data points taken were the total number of services on \ac{IP}
+port 25565 using the exact phrase \enquote{Minecraft Server} and how many
+of those included the word \enquote{coronavirus} in their \ac{motd}.
+A plot of the data collected is shown in Fig.~\ref{fig:mcgraph}. As expected,
+there is a clear increase in the number of servers referencing \ac{virus} in some way.
+However, I find the total rate to be
+exceptionally great. From the time I started recording, at the beginning of the
+\ac{covid} crisis in the United States, there has been a near-doubling worldwide
+in the total number of servers online. I see this as an unmistakable sign that
+many people across the world have chosen to build online communities in direct
+response to the social distancing mandated in the real world.
+
+% \begin{figure}%[hp]
+% 	\include{plot}
+% 	\caption{Graphed references to \enquote{coronavirus} alongside total \mc\ servers online.}
+% 	\label{fig:mcgraph}
+% \end{figure}
+
+\subsubsection{Notes on messages}
+
+\begin{table}
+	\centering
+	\begin{tabu} to \linewidth{lllX}
+		\toprule
+		\Ac{IP} Address & Locality & Country & \Acf{motd} \\ \midrule
+		066.130.185.011 & Montreal, QC & Canada & Fucking Coronavirus \\
+		071.017.240.126 & Saskatoon, SK & Canada & The Best Coronavirus Advoidance Server \\
+		018.231.049.135 & São Paulo & Brazil & Todos unidos pelo coronavirus \\
+		176.151.006.042 & Paris & France & Fuck Le Coronavirus \\
+		091.121.134.152 && France & Coronavirus Quarantine \\
+		085.014.194.170 & Kassel & Germany & Laggt wegen Coronavirus. Nicht mein Problem \\
+		104.193.181.051 & Amsterdam & Netherlands & Coronavirus Safe Zone \\
+		109.194.114.106 && Russia & MineChest -- Coronavirus \\
+		079.150.161.039 & Alicante & Spain & CORONAVIRUS LAND \\
+		176.105.036.053 & Kiev & Ukraine & coronavirus be gone \\
+		104.154.135.127 && United States & Vik's Coronavirus Emotional Support Server \\
+		069.036.214.137 & Sparta, NC & United States & This server has the coronavirus \\
+		068.117.129.071 & Eau Claire, WI & United States & There's no coronavirus in Minecraft \\
+		\bottomrule
+	\end{tabu}
+	\caption{Selected server welcome messages and their approximate
+		(non-authrotiative) geographic locations.}
+	\label{tab:motds}
+\end{table}
+
+I chose the specific search term \enquote{coronavirus} because it is relatively
+consistent across languages. \textcite{Wikidata_virus} have connected the pages
+on the Wikipedia entry for \ac{virus} in 100 languages, allowing an easy comparison
+of the encyclopedic reference naming for the virus. The language that appears in
+the header of the English Wikipedia, \enquote{colloquially known as
+coronavirus}~\parencite{Wikipedia_virus} is present in nearly every language that
+uses the Latin script. Even the Russian Wikipedia
+uses the Latin script to write the word \enquote{coronavirus} before even the first
+mention of a transliteration to \enquote{\foreignlanguage{russian}{коронавирусом}}~\parencite{Wikipedia_virus_ru}.
+Thus, I took this to imply that worldwide and across language barriers, the term
+\enquote{coronavirus} is the colloquial word in use to describe the current situation
+and its viral cause. As can be seen in the selected messages of Table~\ref{tab:motds},
+this assumption proved to be quite true.
+
+Of the \ac{motd}s I found, most fit into one of two camps: dissatisfaction or sanctuary.
+The former messages took the form of expressions of anger or annoyance at the current
+moment or its viral cause, for instance \enquote{Fuck Le Coronavirus,}
+\enquote{coronavirus be gone.} The latter messages displayed an explicit sense of
+escapism, reminding users that because \enquote{There's no coronavirus in \mc} they
+should retreat from the world into \enquote{The Best Coronavirus Avoidance Server.}
+While certainly meant to be humorous in that no one would expect \ac{virus} to be
+transmissable through a \mc\ world, the messages do belie a very real sense that
+the constructed world of \mc\ is in a sense tangible, that entering it is an escape
+to a world unmarked by the conflict of a global pandemic.
+One server makes this sense more explicit: \enquote{Vic's Coronavirus Emotional
+Support Server} takes as a given that the current state of the world is frighening
+and that playing \mc\ is a worthwhile escape. The server is by no means a simulated
+Freudian couch, with a server operator prodding questions and providing emotional
+support to incoming player-patients. Rather, the \ac{motd} makes the argument that
+the act of playing in and of itself is emotional support, that entering the game and
+potentially interacting with others is a healthy way to spend time under the global
+quarantine.
+
+\textcite{Barker2019} describes how video games allow players to interact with the
+construct of time, and yet simultaneously have the sense of time organized for them
+by the game itself \enquote{as an exemplar of Deleuze and Guattiari's abstract
+machine}~\parencite[90]{Barker2019}. In the context of escaping a global pandemic, where players
+desire to visit the \enquote{Coronavirus Safe Zone,} they implicitly are utilizing
+the game for this purpose -- allowing it to control their sense of time such that
+the real-world future and its post-pandemic era come ever sooner.
+Thus in this instance the relinquishment of time to the machine is the end-goal rather
+than a side-effect of gameplay. Players not only hope to escape from the crisis
+but to return only when a post-crisis is at hand.
+
+\subsubsection{Player ethnography}
+
+Considering the youthful age skew of \mc's playerbase~\parencite{Mavoa2018,Kopecky2014}
+and its frequent application in
+settings of children with developmental disability~\parencite{Ringland2016}, it
+would have very likely violated the limits of ethical undergraduate research for me
+to ask questions of the hosts and players about their experiences in quarantine.
+Such prompts I devised for this purpose, which could be utilized by a
+tenure-track academic interested in ethnography of online video game communities
+in a more formal study, are thus outlined and explained.
+
+\paragraph{Who controls this server?}
+
+This question primarily is focused on teasing out who created and runs the server,
+in order to separate their perception of it from the perceptions of their clients.
+I would expect some difference in the interpersonal relations between the host
+and their players, athough mediated by their relations outside the game.
+
+\paragraph{How is it hosted?}
+
+The fact any computer is able to host a server allows people to host games on their
+home computer, a common practice amongst \mc\ players. While it is common to think
+of online spaces as being wholly divorced from the physical world, the limitations
+of computer hardware may influence how the community designs their world, possibly
+to minimize processing overhead. I expect quarantine to require such impromptu servers
+on low-end hardware to proliferate, leading to unspoken or overt rules on how the
+gameplay should relate to the hardware.
+
+\paragraph{How long has it been running?}
+
+Has the server begun as a result of \ac{covid}? If not, I would be curious to see
+how long it has been in operation. This could demonstrate a division between
+virtual replacement of formerly in-person friendships versus an already-existing
+online community.
+
+\paragraph{Has the \ac{covid} crisis changed how you play video games?}
+
+I expect that most players would have increased the time spent online as
+the in-person interaction in the world diminishes. This is certainly borne out
+by the notable increase in total servers online (Fig.~\ref{fig:mcgraph}), an
+indication of an increase in video game usage. I also wonder however if the way
+video games are used or viewed has changed in the eyes of their players. For
+those relationships that are now exclusively virtual, does the video game environment
+take on a form beyond simple escapism -- becoming a true medium of interaction?
+Is the shared virtual environment now an extension of their domestic space
+in which they once hosted guests?
+
+\paragraph{Do you know your fellow players in real life?}
+
+Much has been written about purely-online relationships in video gaming, where
+formation of relationships occurs within the online environment~\parencite{Gallup2016,Marsh2014,Williams2006}.
+Such social interactions would of course be present in these \mc\ situations; however
+I find it unlikely that the quarantine situation would radically affect relationships
+that are already primarily or exclusively online.
+More academically fascinating to me how what were recently in-person friendships
+transition to exclusive online play. How has the \ac{covid} crisis affected the relationships
+between these players?
+
+\subsubsection{Server contents}
+
+\begin{figure}[t]
+	\centering
+	\includegraphics[width=\textwidth]{screenshot_2020-04-18_91.121.134.152.png}
+	\caption{The welcome area to a server in France entitled \enquote{Coronavirus Quarantine.}}
+	\label{fig:spawnsign}
+\end{figure}
+
+\begin{figure}[t]
+	\centering
+	\includegraphics[width=\textwidth]{screenshot_2020-04-25_goldycraft.png}
+	\caption{Looking Northwest from a bridge over the light rail line on a \mc\ server dedicated to
+			reproduction of the University of Minnesota Twin-Cities campus.}
+	\label{fig:goldycraft}
+\end{figure}
+
+One aspect of the social structure of these servers that is far less likely to
+run afoul of research ethics in its analysis is the built environment. On one server,
+the welcome area consisted of an enormous sign reading
+\enquote{WELCOME 2 QUARANTINE}~(Fig.~\ref{fig:spawnsign}), indicating a dedication of
+the game to the idea of a quarantine escape beyond simply a comedic \ac{motd}.
+
+Another form of construction is the recreation of a real environment no longer
+accessible during quarantine.
+As college students are forced to flee home, many experience a
+homesickness in the loss of their familiar campuses. Thanks to a semester spent
+in a University of Minnesota program, I have found myself in a Facebook group
+entitled \enquote{UMN Memes for Frozen Northern Teens,} which satirizes life
+on the campus. As quarantine escalated, I saw calls for assistance in constructing
+a faithful reproduction of the entire university campus. This server experienced a rapid
+increase in membership, and is now effectively a virtual clone of the university (Fig.~\ref{fig:goldycraft}).
+
+This was not limited to Minnesotans, as was noted by \textcite{Anderson2020} in a
+blog post surveying several concurrent projects in universities as disparate as South Louisiana
+Community College and Boston University. Far from escapism, the use of online \mc\ servers
+permits a counterintuitive return to the real world: an experience of one's own
+environment both idealized in its unchaging pristine state, locked at high noon and 
+subject to the will of whomever controls the server; yet simultaneously flawed
+in that it remains only an approximation bound to the
+\enquote{rules that operate in the universe constructed by the game}~\parencite[222]{Manovich2001},
+in this case a finite material selection restricted to \SI{1}{\cubic\metre} cubes.
+
+\subsection{Tabletop Games}
+
+Board games play an integral role in human culture, with evidence of their
+existence apparent for millenia in areas as disparate as Mesoamerica~\parencite{Voorhies2013}
+and Southern Africa~\parencite{Townshend1979}. During a period of social distancing,
+this specific form of social interaction is impossible as people are physically isolated.
+The video game \tbl~\parencite{Tabletop} however allows a simulation of the board game
+experience. By simply being a physics engine connected to a multiplayer network, players
+can use a computer to play effectively any board or card game as if they were around
+a table in real life. Throughout the \ac{covid} crisis, I have had the opportunity to
+play a wide variety of card games with friends using this technology, which has been
+enjoyable. However, the experience is by no means equivalent to playing in real life.
+
+The initial hurdle in using \tbl\ is in mastering the controls. When in real life drawing
+an extra card from a stack could be easily corrected by placing it back on top using one's
+non-dominant hand or an expert manipulation of one's fingers, it becomes a hassle when
+limited to a mouse pointer. It is easy to misplace or mismaneuver items on the table,
+causing the game to slow down in a way one would never see in a real life game.
+
+The more salient difference -- and what I consider to be more anthropologically
+intriguing -- between the experiences of real-life tabletop gameplay and that of
+\tbl\ is the lack of human connection. While I have always played the games with
+some audio chat running to allow talking to my friends, playing \tbl\ has
+allowed me to discover how much gesture and facial expressions mediate communication
+in the setting of a tabletop game. In a game of poker, for instance, it becomes exceptionally
+difficult to tell if an opponent is bluffing: without facial expressions all a player can
+use is their voice, and an unreliable source of voice at that. Players can feign network
+problems for going silent rather than attempt to lie if they feel as if their tone
+of voice may betray them. Even the most simple mechanic of gameplay -- taking turns -- becomes
+a slow and arduous process. While I see no real difference between saying \enquote{okay,
+your turn} in real life versus virtually, it somehow becomes more alien and even
+confusing within \tbl. I cannot tease out what makes turn-taking so seamless in real
+life gameplay, and following the end of quarantine I intend to study gameplay carefully
+to see what visual cues accompany play that are absent from \tbl.
+
+\section{Video Chat}
+
+The experience of videoconferencing is not in any sense new to twenty-first century
+American life. However, the change from in-person classes to virtual brings with
+it a somewhat novel social experience. In one class on paleolithics, it was no
+longer possible to fracture rocks in the controlled environment of a classroom.
+Instead, we were tasked with going outdoors and finding rocks that looked promising
+for the task despite our inexpertise in identifying rock types.
+Artifacts had to be displayed via grainy webcam video rather than felt in students'
+hands, undoubtedly detracting from a tangible understanding of how fracture
+patterns work and indicate technological properties.
+
+In another class, the discussion sections began quarantine with concurrent video
+chat, where all two dozen students had video trained on their faces for the
+hour-long class. As the semester progressed, fewer and fewer students chose to
+enable video, preferring to only communicate via audio. I actually had a hard
+drive failure on my laptop mid-quarantine
+and had to move to a desktop with no webcam, thus ending any ability to join
+video chat for the rest of the semester.
+In the final discussion section of this class, not a single student had their
+video enabled. This occurred without any explicit discussion of the rules regarding
+discussion participation; rather, students collectively decided not to show their
+faces and seemingly overwhelmed the TA to the point it became the norm.
+The students' ability to control the structure and social setting of a class would
+be shocking if it occurred in an in-person setting, yet when over Zoom it was 
+effortlessly accepted.
+
+\section{Contact Tracing and the Future of the Personal Smartphone}
+
+In an epidemic, some degree of trust in authority is required of the
+public at large. Doctors, for example, are the sole holders of the
+requisite training to diagnose and treat patients. Public health officials
+are understood to likewise have knowledge in disease prevention, and are
+thus entrusted with the ability to advise and dictate behavior. This
+conscious choice to entrust the powerful with greater authority during an
+emergency is neither novel nor concerning in and of itself, but the use of tecnhology in
+the \ac{covid} crisis and its aftermath is interesting in its potential to
+affect social and power relations.
+
+\subsection{Surveillance}
+
+In attempting to inhibit the transmission of \ac{virus}, scientists and public
+agencies have explored the viability of the use of surveillance technologies.
+\textcite{Ferretti2020} argue that manual contact tracing methods thus far employed
+(interviews with patients, individual isolation) are insufficient at halting the
+spread of disease. They explicitly call for a technological solution as the only
+effective method of disease prevention, specifically via smartphone tracking.
+
+In China, where \ac{virus} was first identified, the initial stages of smartphone
+surveillance were implemented. In order to access public transportation and some
+other services outside the home, citizens were required to use a smartphone app
+which opaquely identified themselves as permitted or prohibited from the service
+they attempted to access~\parencite{NYT.alipay}.
+Studying public response to the SARS outbreak at the turn of the twenty-first century,
+\textcite{Lee2009} note that public health crises often cause the public
+to pay great attention to and critique the bureaucratic nature of the state.
+The state's ability to control movement, from blocking access to the subway to
+changing the date of the New Year~\parencite{Chen2020}, is far more easily percieved
+under these crisis situations.
+
+\subsection{Contact Tracing}
+
+Scholars of computer science and mathematics have worked toward some method of
+performing the contact tracing outlined by \textcite{Ferretti2020}. The most
+prominent of these is currently \ac{dp3t}, an evolving suite of algorithms
+under development in Europe by \textcite{DP-3T}. The main methodology of
+\ac{dp3t} is the continuous transmission and reception of emphemeral identifiers
+by all enabled devices, such that every device in the system would possess a log
+of every device which it had encountered in the past. When a person is declared
+infected, the ephemeral signals transmitted over the course of their
+infectious period would be publicised, allowing every device which had
+encountered the infected person's phone to notify its user of potential exposure.
+The \ac{dp3t} designers have gone to great lengths to design a fully-anonymous
+system without location data or tracking potential, and their cryptographic work
+is commendable. However, the authors' original release of the proposal was
+explicitly just that -- a proposal: \enquote{we are publishing this document to
+seek feedback from a broad audience on the high-level design, its security and
+privacy \dots\ so that further protection mechanisms can be added}~\parencite[2]{DP-3T}.
+
+Despite these qualms, \textcite{AppleCT.Announcement} announced a collaborative
+derivative project to introduce this form of contact tracing to millions of
+smartphones. Along with releasing documentation for software developers at public
+health institutions to implement the system~\parencite*{AppleCT.API}, they have also
+published information on how the Bluetooth~\parencite*{AppleCT.Bluetooth} and
+crypotography~\parencite*{AppleCT.Crypto} are expected to operate.
+While the latter two documents include statements on privacy protection, they lack
+the discussion of protections against state-level adversaries that make up
+much of the \ac{dp3t} proposal.
+Regardless, it is expected that by the end of the year, devices manufactured by
+\citeauthor{AppleCT.Announcement} will be constantly broadcasting and listening
+for these contact signals. If the \ac{covid} crisis persists by the time this
+becomes an integral part of smartphone operating systems, it will likely be the
+norm for people to experience notifications warning them of previous contact
+with an infectious person.
+
+While the privacy implications of broadcasting one's presence are of course 
+wide-reaching, I am intrigued by what this will mean for our personal relations
+to our devices. The implication made by both the cryptographic research team
+and the corporate manufacturers is that our devices are extensions of our bodies.
+Our expulsion of viral particles emanating from our respiration, an exclusively physical and biological act,
+is in the minds of the proposals inexorably tied to the virtual signals of our
+smartphones emanating from our pockets. 
+Every physical interaction between people, no matter how brief, will be logged.
+So long as both participants have up-to-date smartphones, they will exchange
+information. While phone notifications of potential infection persist, people
+will become more and more aware of this logging and transmission, further
+entrenching the idea of the phone as a part of the body.
+
+\subsection{Access and Cross-Cultural Considerations}
+
+Not everyone has a smartphone. In fact, it is likely that smartphone owners
+constitute a minority of the global population~\parencite{pew.phone}.
+People's lack of smartphones can occur for socioeconomic, political, or
+reasons of personal choice. Should
+smartphones become a major part of public health diagnosis and communication,
+those most likely to possess them (the young, the educated, and the rich) will
+have greater access to warnings regarding illness. 
+Those without still have biological bodies capable of transmitting and receiving
+illness, but without the technological appendage capable of transmitting and
+receiving signals, they are excluded from perceptions of epidemic transmission.
+
+Conceptions of privacy differ amongst societies. The implementation of a
+sudden and global change to smartphones could cause rifts between people and
+between societies. The conception of privacy in Islamic societies, as detailed
+by \textcite{Abokhodair2016}, for instance, may be alien to the software
+developers in California who are implementing the contact tracing systems.
+
+The moment the first batch of notifications appear on smartphones reading
+\enquote{you have been near someone infected with \ac{covid} in the last
+fourteen days} I believe will be a moment that both the individual recipients
+and global society as a whole find unforgettable. The relation of technology to the
+body will not be the same after this crisis.
+
+\clearpage\printbibliography
+
+\end{document}
