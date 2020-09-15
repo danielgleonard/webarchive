@@ -1,0 +1,84 @@
+\documentclass[2020/08/28 v2]{fanfic_book}
+
+\title{My Immortal}
+%\shorttitle{}
+\author{XXXbloodyrists666XXX}
+\editor{Daniel}{Glenn}{Leonard}
+\DTMsavedate{date}{2020-09-13}
+\date{\DTMusedate{date}}
+
+\addbibresource{./tex/my_immortal.bib}
+
+\baseurl{https://archive.danleonard.us/uncategorized/my_immortal/my_immortal.tex}
+
+\newcommand{\Xfill}{\leavevmode\xleaders\hbox{X}\hfill\kern0pt}
+\newcommand{\AN}[2][{\textbf{AN}}: ]{{#1}#2}
+\newcommand{\XXX}[1]{\vspace{1em}\noindent\textbf{#1}\vspace{1em}}
+
+% \setcounter{secnumdepth}{3}
+\renewcommand{\thechapter}{}% Remove section references...
+\renewcommand{\thesection}{\arabic{section}}%... from subsections
+
+\begin{document}
+\setcounter{page}{-1}
+\maketitle
+\frontmatter
+\tableofcontents
+
+% \patchcmd{\chapter}{\clearpage}{\cleardoublepage}{}{}
+\include{./tex/introduction}
+\include{./tex/characters}
+
+\mainmatter
+\begingroup\let\clearpage\bigskip
+\include{./tex/chapter_01}
+\include{./tex/chapter_02}
+\include{./tex/chapter_03}
+\include{./tex/chapter_04}
+\include{./tex/chapter_05}
+\include{./tex/chapter_06}
+\include{./tex/chapter_07}
+\include{./tex/chapter_08}
+\include{./tex/chapter_09}
+\include{./tex/chapter_10}
+\include{./tex/chapter_11}
+\include{./tex/chapter_12}
+\include{./tex/chapter_13}
+\include{./tex/chapter_14}
+\include{./tex/chapter_15}
+\include{./tex/chapter_16}
+\include{./tex/chapter_17}
+\include{./tex/chapter_18}
+\include{./tex/chapter_19}
+\include{./tex/chapter_20}
+\include{./tex/chapter_21}
+\include{./tex/chapter_22}
+\include{./tex/chapter_23}
+\include{./tex/chapter_24}
+\include{./tex/chapter_25}
+\include{./tex/chapter_26}
+\include{./tex/chapter_27}
+\include{./tex/chapter_28}
+\include{./tex/chapter_29}
+\include{./tex/chapter_30}
+\include{./tex/chapter_31}
+\include{./tex/chapter_32}
+\include{./tex/chapter_33}
+\include{./tex/chapter_34}
+\include{./tex/chapter_35}
+\include{./tex/chapter_36}
+\include{./tex/chapter_37}
+\include{./tex/chapter_38}
+\include{./tex/chapter_39}
+\include{./tex/chapter_40}
+\include{./tex/chapter_41}
+\include{./tex/chapter_42}
+\include{./tex/chapter_43}
+\include{./tex/chapter_44}
+\endgroup
+
+\cleardoublepage\printEndnotes
+\begin{sloppypar}
+    \printbibliography
+\end{sloppypar}
+\end{document}

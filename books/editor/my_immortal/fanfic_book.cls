@@ -1,0 +1,231 @@
+\LoadClass[10pt,draft,titlepage]{octavo}
+% \LoadClass[letterpaper,twoside]{scrbook}
+\ProvidesClass{fanfic_book}[2020/09/13 v1]
+\linespread{1.15}
+
+\makeatletter
+
+\usepackage{iftex}
+\RequireXeTeX
+
+\ifXeTeX
+	\RequirePackage{fontspec}
+	\RequirePackage{polyglossia}
+	\setdefaultlanguage[variant=american]{english}
+	\usepackage{unicode-math}
+	% \setmainfont{CMU Serif}
+	\setmainfont[Numbers=OldStyle]{Adobe Garamond}
+	% \setmainfont[Numbers=OldStyle]{Linux Libertine}
+	\setsansfont{CMU Sans Serif}
+	\setmonofont{CMU Typewriter Text}
+	\setmathfont{Latin Modern Math}
+
+	\newfontfamily\MCRfont{My Chemical Romance}
+\else
+	\RequirePackage{lmodern}
+	\RequirePackage[T1]{fontenc}
+	\RequirePackage{textcomp}
+	\RequirePackage[utf8]{inputenc}
+	\RequirePackage{babel}
+\fi
+
+\RequirePackage{microtype}
+\RequirePackage{hyperref}
+\RequirePackage[en-US,showdow]{datetime2}
+\DTMlangsetup[en-US]{ord=raise}
+\renewcommand*{\DTMenglishampmfmt}[1]{~\textsc{#1}}
+\RequirePackage{graphicx}
+% \RequirePackage{newclude}
+\RequirePackage{wrapfig}
+\RequirePackage{csquotes}
+\RequirePackage{fmtcount}
+\RequirePackage{epigraph}
+\RequirePackage{xstring}
+\RequirePackage{xifthen}
+% \RequirePackage[
+	% top=0.5in,
+	% bottom=0.75in,
+	% headheight=13pt, % as per the warning by fancyhdr
+	% includehead,includefoot,
+	% heightrounded, % to avoid spurious underfull messages
+% ]{geometry}
+\RequirePackage{setspace}
+\RequirePackage{lipsum}
+\RequirePackage{titlesec}
+\RequirePackage{fancyhdr}
+\RequirePackage{lastpage}
+\RequirePackage[inline]{enumitem}
+\RequirePackage{lscape}
+\RequirePackage{booktabs}
+\RequirePackage{marginnote}
+% \RequirePackage{parskip}
+\RequirePackage{longtable}
+\RequirePackage{tabu}
+\RequirePackage{multirow}
+\RequirePackage{etoolbox}
+\patchcmd{\chapter}{\if@openright\cleardoublepage\else\clearpage\fi}{}{}{}
+\RequirePackage{scrextend}
+\RequirePackage{siunitx}
+% \RequirePackage{glossaries}
+\RequirePackage[
+	% authordate,
+	backend=biber,
+	hyperref=true,
+	backref=true,
+	bibencoding=utf8
+]{biblatex-chicago}
+\DeclareFieldFormat{doi}{%
+  \mkbibacro{DOI}\addcolon\space
+  \ifhyperref
+    {\href{https://doi.org/#1}{\nolinkurl{#1}}}
+    {\nolinkurl{#1}}}
+\urlstyle{tt}
+
+\let\@titlepunct\@empty
+\let\@subtitle\@empty
+\let\@shorttitle\@empty
+\let\@baseurl\@empty
+\let\@keywords\@empty
+\let\@courseDept\@empty
+\let\@courseNum\@empty
+\let\@courseName\@empty
+\let\@courseInst\@empty
+
+\if@titlepage
+    \renewcommand\maketitle{\begin{titlepage}%
+    \let\footnotesize\small
+    \let\footnoterule\relax
+    \let\footnote\thanks
+%    \end{macrocode}
+%    The title itself is centered vertically, with a little offset brought by
+%    a |\vskip|.
+%    \begin{macrocode}
+    \null\vfil
+    \vspace{-1.5in}
+%    \end{macrocode}
+%    Now we can set the title, using the |\LARGE| fount, followed by a little
+%    bit of vertical space, and then the authors, set in |\large| fount. To
+%    ensure everything lines up nicely in a single column, we resort to the
+%    tabular environment. A little vertical space is then followed by the date.
+%    \begin{macrocode}
+    \begin{center}%
+        {\Huge \MCRfont \@title \par}%
+        % \vskip 3em%
+        {\Large
+        \lineskip .75em%
+        \begin{tabular}[t]{c}%
+            \@author
+        \end{tabular}\par}%
+		\vskip 2.5em%
+		{\normalfont With a new introduction by\par}%
+		\vskip .5em%
+        {\large \@editor \par}%
+    \end{center}\par
+%    \end{macrocode}
+%    Calling |\@thanks| prints the information to go into the footnote, and
+%    completes the printing on the page.
+%    \begin{macrocode}
+    \@thanks
+    \vfil\null
+    \end{titlepage}%
+%    \end{macrocode}
+%    Having finished the printing of the title page, we now clean up.
+%    \begin{macrocode}
+    \setcounter{footnote}{0}%
+    \let\thanks\relax
+    \let\maketitle\relax
+    \gdef\@thanks{}
+    % \gdef\@author{}
+    \gdef\@title{}}
+\fi
+
+\renewcommand\@dotsep{2}
+
+% \pagestyle{fancy}
+% \fancyhf{}
+% \fancyhead[CE]{\textsc{\ifdefempty{\@shorttitle}{\@docTitle}{\@shorttitle}}}
+% % \fancyhead[CO]{}
+% \fancyhead[LE,RO]{\thepage}
+
+\renewcommand{\title}[1]{\gdef\@docTitle{#1} \gdef\@title{#1}}
+\newcommand{\editor}[3]{
+	\gdef\@editorFirst{#1}
+	\gdef\@editorMiddle{#2}
+	\gdef\@editorLast{#3}
+	\gdef\@editor{\@editorFirst\ \ifdefempty{\@editorMiddle}{}{\StrLeft{\@editorMiddle}{1}.\ }\@editorLast}
+}
+\newcommand{\titlepunct}[1]{\gdef\@titlepunct{#1}}
+% \newcommand{\subtitle}[1]{\gdef\@subtitle{#1}}
+\newcommand{\shorttitle}[1]{\gdef\@shorttitle{#1}}
+\newcommand{\baseurl}[1]{\gdef\@baseurl{#1}}
+
+\usepackage{suffix}
+
+\newcommand\chapterauthor[1]{\authortoc{#1}\printchapterauthor{#1}}
+\WithSuffix\newcommand\chapterauthor*[1]{\printchapterauthor{#1}}
+
+\newcommand{\printchapterauthor}[1]{%
+  {\parindent0pt\vspace{-3em}%
+  \scshape#1%
+  \par\nobreak\vspace*{1.5\baselineskip \@minus 2\p@}}
+  \@afterheading%
+}
+\newcommand{\authortoc}[1]{%
+  \addtocontents{toc}{\vskip-10pt}%
+  \addtocontents{toc}{%
+    \protect\contentsline{chapter}%
+    {\mdseries\scshape\protect\footnotesize#1}{}{}}
+  \addtocontents{toc}{\vskip5pt}%
+}
+
+\titleformat{\section}[display]
+	{\large\centering\scshape}
+    {\chaptername~\oldstylenums{\thesection}}
+    {0em}
+	{}
+\titlespacing*{\section}
+    {0em}
+    {-0.5\baselineskip \@minus -2\p@}
+    {0.75\baselineskip \@minus 2\p@}
+
+\hypersetup{
+	pdflang={en-US},
+	pdfdisplaydoctitle=true,
+	unicode=true,
+	baseurl=\@baseurl
+}
+
+\AtBeginDocument{
+	% Add hyperref info that depends on author input
+	\hypersetup
+		{
+			pdftitle=\@docTitle\ \@subtitle,
+			pdfauthor=\@author,
+			pdfkeywords=\@keywords
+		}
+	
+}
+
+\newcommand{\printEndnotes}%
+{%
+	\chapter{Notes}
+	\tabulinesep=3mm%
+	\begin{longtabu} to \linewidth{@{}X[0.75]>{\itshape}X[l,4]X[p,12]@{}}%
+		\theEndnotes%
+	\end{longtabu}%
+}
+\newcommand{\theEndnotes}{}
+\newcommand{\makeEndnote}[4][]%
+	{%
+		\g@addto@macro\theEndnotes%
+			{%
+				\pageref{enl:#3}%
+				&%
+				\ifthenelse{\equal{#1}{}}{#2}{#1}~\label{end:#3}%
+				&%
+				#4\\%
+			}%
+		#2\label{enl:#3}\hyperref[end:#3]{\**}%
+	}%
+
+\makeatother
