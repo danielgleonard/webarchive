@@ -1,3 +1,5 @@
+% !TeX root = ./my_immortal.tex
+
 \documentclass[2020/08/28 v2]{fanfic_book}
 
 \title{My Immortal}
@@ -16,11 +18,11 @@
 \newcommand{\XXX}[1]{\vspace{1em}\noindent\textbf{#1}\vspace{1em}}
 
 % \setcounter{secnumdepth}{3}
-\renewcommand{\thechapter}{}% Remove section references...
-\renewcommand{\thesection}{\arabic{section}}%... from subsections
+% \renewcommand{\thechapter}{}% Remove section references...
+% \renewcommand{\thesection}{\arabic{section}}%... from subsections
 
 \begin{document}
-\setcounter{page}{-1}
+% \setcounter{page}{-3}
 \maketitle
 \frontmatter
 \tableofcontents
@@ -77,8 +79,12 @@
 \include{./tex/chapter_44}
 \endgroup
 
-\cleardoublepage\printEndnotes
-\begin{sloppypar}
+\backmatter
+\printEndnotes
+\cleardoublepage\begin{sloppypar}
     \printbibliography
 \end{sloppypar}
+
+\include{./tex/appendix}
+
 \end{document}

@@ -1,4 +1,7 @@
-\LoadClass[10pt,draft,titlepage]{octavo}
+% !TeX root = ./my_immortal.tex
+
+\LoadClass[10pt,draft,titlepage]{myoctavo}
+% \LoadClass[10pt]{book}
 % \LoadClass[letterpaper,twoside]{scrbook}
 \ProvidesClass{fanfic_book}[2020/09/13 v1]
 \linespread{1.15}
@@ -18,6 +21,7 @@
 	% \setmainfont[Numbers=OldStyle]{Linux Libertine}
 	\setsansfont{CMU Sans Serif}
 	\setmonofont{CMU Typewriter Text}
+	% \setmonofont{Courier New}
 	\setmathfont{Latin Modern Math}
 
 	\newfontfamily\MCRfont{My Chemical Romance}
@@ -30,7 +34,9 @@
 \fi
 
 \RequirePackage{microtype}
+\PassOptionsToPackage{hyphens}{url}
 \RequirePackage{hyperref}
+\def\UrlBreaks{\do\/\do-}
 \RequirePackage[en-US,showdow]{datetime2}
 \DTMlangsetup[en-US]{ord=raise}
 \renewcommand*{\DTMenglishampmfmt}[1]{~\textsc{#1}}
@@ -52,6 +58,8 @@
 \RequirePackage{setspace}
 \RequirePackage{lipsum}
 \RequirePackage{titlesec}
+\RequirePackage[titles]{tocloft}
+\RequirePackage{titletoc}
 \RequirePackage{fancyhdr}
 \RequirePackage{lastpage}
 \RequirePackage[inline]{enumitem}
@@ -92,7 +100,7 @@
 \let\@courseInst\@empty
 
 \if@titlepage
-    \renewcommand\maketitle{\begin{titlepage}%
+    \renewcommand\maketitle{\pagenumbering{gobble}\phantom{}\cleardoublepage\begin{titlepage}%
     \let\footnotesize\small
     \let\footnoterule\relax
     \let\footnote\thanks
@@ -139,8 +147,6 @@
     \gdef\@title{}}
 \fi
 
-\renewcommand\@dotsep{2}
-
 % \pagestyle{fancy}
 % \fancyhf{}
 % \fancyhead[CE]{\textsc{\ifdefempty{\@shorttitle}{\@docTitle}{\@shorttitle}}}
@@ -178,15 +184,33 @@
   \addtocontents{toc}{\vskip5pt}%
 }
 
-\titleformat{\section}[display]
-	{\large\centering\scshape}
-    {\chaptername~\oldstylenums{\thesection}}
-    {0em}
-	{}
-\titlespacing*{\section}
-    {0em}
-    {-0.5\baselineskip \@minus -2\p@}
-    {0.75\baselineskip \@minus 2\p@}
+% \titleformat{\section}[display]
+% 	{\large\centering\scshape}
+%     {\sectionmark}
+%     {0em}
+% 	{}
+% \titlespacing*{\section}
+%     {0em}
+%     {-0.5\baselineskip \@minus -2\p@}
+%     {0.75\baselineskip \@minus 2\p@}
+
+\titlecontents			% Modify TOC
+	{chapter}			% section level
+	[0em]				% left
+	{\vspace{10pt}}		% above-code
+	{}					% numbered-entry-format
+	{}					% numberless-entry-format
+	{\hfill\contentspage}					% filler-page-format
+%	[]					% below-code
+%\dottedcontents			% Modify TOC
+%	{section}			% section level
+%	[0em]				% left
+%	{}					% above-code
+%	{6em}					% label width
+%	{6em}					% leader width
+\addtolength{\cftsecnumwidth}{26pt}
+\renewcommand\@dotsep{2}
+\renewcommand{\cftdotsep}{2}
 
 \hypersetup{
 	pdflang={en-US},
