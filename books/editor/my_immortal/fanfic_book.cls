@@ -4,7 +4,7 @@
 % \LoadClass[10pt]{book}
 % \LoadClass[letterpaper,twoside]{scrbook}
 \ProvidesClass{fanfic_book}[2020/09/13 v1]
-\linespread{1.15}
+% \linespread{1.15}
 
 \makeatletter
 
@@ -184,11 +184,11 @@
   \addtocontents{toc}{\vskip5pt}%
 }
 
-% \titleformat{\section}[display]
-% 	{\large\centering\scshape}
-%     {\sectionmark}
-%     {0em}
-% 	{}
+\titleformat{\section}%[display]
+	{\large\centering}
+    {\thesection}
+    {0em}
+	{}
 % \titlespacing*{\section}
 %     {0em}
 %     {-0.5\baselineskip \@minus -2\p@}
@@ -233,8 +233,9 @@
 \newcommand{\printEndnotes}%
 {%
 	\chapter{Notes}
-	\tabulinesep=3mm%
-	\begin{longtabu} to \linewidth{@{}X[0.75]>{\itshape}X[l,4]X[p,12]@{}}%
+	\tabulinesep=1.5mm%
+	% \begin{longtabu} to \linewidth{@{}X[0.75]>{\itshape}X[l,4]X[p,12]@{}}%
+	\begin{longtabu} to \linewidth{@{}X[r,0.75]>{\leftskip 0.1in \parindent -0.1in}X[p,12]@{}}%
 		\theEndnotes%
 	\end{longtabu}%
 }
@@ -243,10 +244,10 @@
 	{%
 		\g@addto@macro\theEndnotes%
 			{%
-				\pageref{enl:#3}%
+				\hyperref[enl:#3]{\pageref*{enl:#3}}\label{end:#3}%
 				&%
-				\ifthenelse{\equal{#1}{}}{#2}{#1}~\label{end:#3}%
-				&%
+				\emph{\ifthenelse{\equal{#1}{}}{#2}{#1}}:
+				% &%
 				#4\\%
 			}%
 		#2\label{enl:#3}\hyperref[end:#3]{\**}%

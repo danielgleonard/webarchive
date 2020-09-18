@@ -41,6 +41,8 @@
 \LoadClass{book}
 \ProvidesClass{myoctavo}
 
+\RequirePackage[all]{nowidow}
+
 \newif\if@openbib
 \@openbibfalse
 \newif\if@mainmatter
@@ -149,7 +151,7 @@
 \def\sectionmark##1{%
     \markright {%
     \ifnum \c@secnumdepth >\z@
-        \thesection\ %
+        \ \thesection\ %
     \fi
     ##1}}}
 \def\ps@myheadings{%

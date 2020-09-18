@@ -15,7 +15,7 @@
 
 \newcommand{\Xfill}{\leavevmode\xleaders\hbox{X}\hfill\kern0pt}
 \newcommand{\AN}[2][{\textbf{AN}}: ]{{#1}#2}
-\newcommand{\XXX}[1]{\vspace{1em}\noindent\textbf{#1}\vspace{1em}}
+\newcommand{\XXX}[1]{\nopagebreak\vspace{1em}\noindent\textbf{#1}\vspace{1em}}
 
 % \setcounter{secnumdepth}{3}
 % \renewcommand{\thechapter}{}% Remove section references...
@@ -30,7 +30,8 @@
 % \patchcmd{\chapter}{\clearpage}{\cleardoublepage}{}{}
 \include{./tex/introduction}
 \include{./tex/characters}
-
+\cleardoublepage\chapter*{}
+\renewcommand{\epigraphflush}{center}\epigraph{\centering[Guitar Solo]}{\centering\citetitle{MCR-black_parade-dead}\\\citeauthor{MCR-black_parade-dead}}
 \mainmatter
 \begingroup\let\clearpage\bigskip
 \include{./tex/chapter_01}
