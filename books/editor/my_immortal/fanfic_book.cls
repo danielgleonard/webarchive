@@ -17,7 +17,8 @@
 	\setdefaultlanguage[variant=american]{english}
 	\usepackage{unicode-math}
 	% \setmainfont{CMU Serif}
-	\RequirePackage{garamondlibre}
+	% \RequirePackage{garamondlibre}
+	\RequirePackage{CormorantGaramond}
 	% \setmainfont[Numbers=OldStyle]{Adobe Garamond}
 	% \RequirePackage[proportional,defaultfeatures={Variant=05}]{libertine}
 	\setsansfont{CMU Sans Serif}
@@ -48,6 +49,7 @@
 \RequirePackage{fmtcount}
 \RequirePackage{epigraph}
 \RequirePackage{xstring}
+\RequirePackage{ifdraft}
 \RequirePackage{xifthen}
 % \RequirePackage[
 	% top=0.5in,
@@ -57,6 +59,8 @@
 	% heightrounded, % to avoid spurious underfull messages
 % ]{geometry}
 \RequirePackage{setspace}\singlespacing
+\RequirePackage{textcase}
+\newcommand\textlcsc[1]{\textsc{\MakeTextLowercase{#1}}}
 \RequirePackage{lipsum}
 \RequirePackage{titlesec}
 \RequirePackage[titles]{tocloft}
@@ -117,18 +121,20 @@
 %    ensure everything lines up nicely in a single column, we resort to the
 %    tabular environment. A little vertical space is then followed by the date.
 %    \begin{macrocode}
-    \begin{center}%
-        {\Huge \MCRfont \@title \par}%
-        % \vskip 3em%
+	\begin{center}%
+		\vskip 3cm
         {\Large
         \lineskip .75em%
         \begin{tabular}[t]{c}%
             \@author
-        \end{tabular}\par}%
-		\vskip 2.5em%
-		{\normalfont With a new introduction by\par}%
+		\end{tabular}\par}%
+		\vskip 2cm
+        {\Huge \MCRfont \@title \par}%
+        % \vskip 3em%
+		\vskip 4cm%
+		{\textlcsc{With a new introduction by}\par}%
 		\vskip .5em%
-        {\large \@editor \par}%
+        {\scshape \@editor \par}%
     \end{center}\par
 %    \end{macrocode}
 %    Calling |\@thanks| prints the information to go into the footnote, and
@@ -232,6 +238,8 @@
 		}
 	
 }
+
+\renewcommand{\dotfill}{\marginpar{\texttt{\textbackslash dotfill}} {}\leavevmode \cleaders \hb@xt@ .44em{\hss .\hss }\hfill \kern \z@}
 
 \newcommand{\printEndnotes}%
 {%

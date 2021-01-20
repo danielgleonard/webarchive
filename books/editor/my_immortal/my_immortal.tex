@@ -14,7 +14,7 @@
 \baseurl{https://archive.danleonard.us/uncategorized/my_immortal/my_immortal.tex}
 
 \newcommand{\Xfill}{\leavevmode\xleaders\hbox{X}\hfill\kern0pt}
-\newcommand{\AN}[2][{\textbf{AN}}: ]{{#1}#2}
+\newcommand{\AN}[2][{\textlcsc{AN}}: ]{{#1}#2}
 \newcommand{\XXX}[1]{\nopagebreak\vspace{1em}\noindent\textbf{#1}\vspace{1em}}
 
 % \setcounter{secnumdepth}{3}
@@ -29,7 +29,7 @@
 
 % \patchcmd{\chapter}{\clearpage}{\cleardoublepage}{}{}
 \include{./tex/introduction}
-\include{./tex/characters}
+% \include{./tex/characters}
 \cleardoublepage\chapter*{}
 \renewcommand{\epigraphflush}{center}\epigraph{\centering\emph{[guitar solo]}}{\centering\citetitle{MCR-black_parade-dead}\\\citeauthor{MCR-black_parade-dead}}
 \mainmatter
@@ -83,9 +83,18 @@
 \backmatter
 \printEndnotes
 \cleardoublepage\begin{sloppypar}
-    \printbibliography[heading=bibintoc,title={References}]
+	% \defbibnote{References}{\markboth{References}{References}}
+	% \printbibliography[heading=bibintoc,title={References},prenote=References]
+	\chapter{References}
+	\printbibliography[heading=none,nottype=music]
+	\section{Music}
+	\printbibliography[heading=none,type=music]
+	% \subsection{Albums}
+	% \printbibliography[heading=none,subtype=album]
+	% \subsection{Songs}
+	% \printbibliography[heading=none,subtype=song]
 \end{sloppypar}
 
-\include{./tex/appendix}
+\include{./tex/profiles}
 
 \end{document}

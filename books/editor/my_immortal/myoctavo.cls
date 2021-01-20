@@ -334,10 +334,10 @@
 \renewcommand\subsection{%
     \@startsection{subsection}%
     {2}%
-    {1em}%
+    {0em}%
     {-0.666\baselineskip \@minus -2\p@}%
     {0.333\baselineskip \@minus 2\p@}%
-    {\normalfont\normalsize\scshape}}
+    {\centering\normalfont\scshape}}
 \renewcommand\subsubsection{%
     \@startsection{subsubsection}%
     {3}%
@@ -518,13 +518,10 @@
 \setlength\columnseprule{0\p@}
 
 \pagestyle{headings}
-% \RequirePackage{fancyhdr}
-% \pagestyle{fancy}
-% \fancyhf{}
-% \renewcommand{\headrulewidth}{0pt}
-% \fancyhead[LE,RO]{\thepage}
-% \fancyhead[CE]{\scshape\rightmark}
-% \fancyhead[CO]{\scshape\leftmark}
+
+\RequirePackage{etoolbox}   % Make ToC lowercase in header
+\patchcmd{\tableofcontents}{\MakeUppercase\contentsname}{\contentsname}{}{}
+\patchcmd{\tableofcontents}{\MakeUppercase\contentsname}{\contentsname}{}{}
 
 \pagenumbering{arabic}
 \if@twocolumn
