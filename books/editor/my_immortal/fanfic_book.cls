@@ -17,11 +17,12 @@
 	\setdefaultlanguage[variant=american]{english}
 	\usepackage{unicode-math}
 	% \setmainfont{CMU Serif}
-	\setmainfont[Numbers=OldStyle]{Adobe Garamond}
-	% \setmainfont[Numbers=OldStyle]{Linux Libertine}
+	\RequirePackage{garamondlibre}
+	% \setmainfont[Numbers=OldStyle]{Adobe Garamond}
+	% \RequirePackage[proportional,defaultfeatures={Variant=05}]{libertine}
 	\setsansfont{CMU Sans Serif}
 	\setmonofont{CMU Typewriter Text}
-	% \setmonofont{Courier New}
+	\setmonofont{Courier New}
 	\setmathfont{Latin Modern Math}
 
 	\newfontfamily\MCRfont{My Chemical Romance}
@@ -55,7 +56,7 @@
 	% includehead,includefoot,
 	% heightrounded, % to avoid spurious underfull messages
 % ]{geometry}
-\RequirePackage{setspace}
+\RequirePackage{setspace}\singlespacing
 \RequirePackage{lipsum}
 \RequirePackage{titlesec}
 \RequirePackage[titles]{tocloft}
@@ -184,11 +185,13 @@
   \addtocontents{toc}{\vskip5pt}%
 }
 
+\newlength{\interwordspace}
+\settowidth{\interwordspace}{\ }
 \titleformat{\section}%[display]
-	{\large\centering}
-    {\thesection}
-    {0em}
-	{}
+	{\large\centering}	% format
+    {\thesection}		% label
+    {\interwordspace}				% sep
+	{}					% before
 % \titlespacing*{\section}
 %     {0em}
 %     {-0.5\baselineskip \@minus -2\p@}

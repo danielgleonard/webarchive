@@ -1,3 +1,4 @@
+% !TeX root = ./my_immortal.tex
 %%
 %% This is file `octavo.cls',
 %% generated with the docstrip utility.
@@ -38,7 +39,7 @@
 %%   Right brace   \}     Tilde         \~}
 %%
 \NeedsTeXFormat{LaTeX2e}[1995/12/01]
-\LoadClass{book}
+\LoadClass[draft]{book}
 \ProvidesClass{myoctavo}
 
 \RequirePackage[all]{nowidow}
@@ -137,8 +138,8 @@
 \def\ps@headings{%
     \def\@oddfoot{\hfil\thepage\hfil}%
     \def\@evenfoot{\hfil\thepage\hfil}%
-    \def\@evenhead{\hfil{\scshape\leftmark}\hfil}%
     \def\@oddhead{\hfil{\scshape\rightmark}\hfil}%
+    \def\@evenhead{\hfil{\scshape\leftmark}\hfil}%
     \let\@mkboth\markboth
 \def\chaptermark##1{%
     \markboth {%
@@ -151,7 +152,7 @@
 \def\sectionmark##1{%
     \markright {%
     \ifnum \c@secnumdepth >\z@
-        \ \thesection\ %
+        \thesection\ %
     \fi
     ##1}}}
 \def\ps@myheadings{%
@@ -515,7 +516,16 @@
   \ \number\year}
 \setlength\columnsep{10\p@}
 \setlength\columnseprule{0\p@}
+
 \pagestyle{headings}
+% \RequirePackage{fancyhdr}
+% \pagestyle{fancy}
+% \fancyhf{}
+% \renewcommand{\headrulewidth}{0pt}
+% \fancyhead[LE,RO]{\thepage}
+% \fancyhead[CE]{\scshape\rightmark}
+% \fancyhead[CO]{\scshape\leftmark}
+
 \pagenumbering{arabic}
 \if@twocolumn
   \twocolumn

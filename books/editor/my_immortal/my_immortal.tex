@@ -31,7 +31,7 @@
 \include{./tex/introduction}
 \include{./tex/characters}
 \cleardoublepage\chapter*{}
-\renewcommand{\epigraphflush}{center}\epigraph{\centering[Guitar Solo]}{\centering\citetitle{MCR-black_parade-dead}\\\citeauthor{MCR-black_parade-dead}}
+\renewcommand{\epigraphflush}{center}\epigraph{\centering\emph{[guitar solo]}}{\centering\citetitle{MCR-black_parade-dead}\\\citeauthor{MCR-black_parade-dead}}
 \mainmatter
 \begingroup\let\clearpage\bigskip
 \include{./tex/chapter_01}
@@ -83,7 +83,7 @@
 \backmatter
 \printEndnotes
 \cleardoublepage\begin{sloppypar}
-    \printbibliography
+    \printbibliography[heading=bibintoc,title={References}]
 \end{sloppypar}
 
 \include{./tex/appendix}
