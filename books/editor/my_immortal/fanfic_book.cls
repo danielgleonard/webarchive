@@ -49,6 +49,8 @@
 \RequirePackage{fmtcount}
 \RequirePackage{epigraph}
 \RequirePackage{xstring}
+\RequirePackage{ellipsis}
+\renewcommand{\ellipsisgap}{0.1em}
 \RequirePackage{ifdraft}
 \RequirePackage{xifthen}
 % \RequirePackage[
@@ -58,6 +60,7 @@
 	% includehead,includefoot,
 	% heightrounded, % to avoid spurious underfull messages
 % ]{geometry}
+\RequirePackage[showframe]{geometry}
 \RequirePackage{setspace}\singlespacing
 \RequirePackage{textcase}
 \newcommand\textlcsc[1]{\textsc{\MakeTextLowercase{#1}}}
@@ -84,7 +87,7 @@
 	% authordate,
 	backend=biber,
 	hyperref=true,
-	backref=true,
+	% backref=true,
 	bibencoding=utf8
 ]{biblatex-chicago}
 \DeclareFieldFormat{doi}{%
@@ -129,7 +132,9 @@
             \@author
 		\end{tabular}\par}%
 		\vskip 2cm
-        {\Huge \MCRfont \@title \par}%
+		{\Huge \MCRfont \@title \par}%
+		\vskip 1em
+		{\large\MakeUppercase{\@subtitle}}
         % \vskip 3em%
 		\vskip 4cm%
 		{\textlcsc{With a new introduction by}\par}%
@@ -168,7 +173,7 @@
 	\gdef\@editor{\@editorFirst\ \ifdefempty{\@editorMiddle}{}{\StrLeft{\@editorMiddle}{1}.\ }\@editorLast}
 }
 \newcommand{\titlepunct}[1]{\gdef\@titlepunct{#1}}
-% \newcommand{\subtitle}[1]{\gdef\@subtitle{#1}}
+\newcommand{\subtitle}[1]{\gdef\@subtitle{#1}}
 \newcommand{\shorttitle}[1]{\gdef\@shorttitle{#1}}
 \newcommand{\baseurl}[1]{\gdef\@baseurl{#1}}
 
@@ -181,7 +186,7 @@
   {\parindent0pt\vspace{-3em}%
   \scshape#1%
   \par\nobreak\vspace*{1.5\baselineskip \@minus 2\p@}}
-  \@afterheading%
+  \nobreak\@afterheading\nobreak%
 }
 \newcommand{\authortoc}[1]{%
   \addtocontents{toc}{\vskip-10pt}%
@@ -239,7 +244,8 @@
 	
 }
 
-\renewcommand{\dotfill}{\marginpar{\texttt{\textbackslash dotfill}} {}\leavevmode \cleaders \hb@xt@ .44em{\hss .\hss }\hfill \kern \z@}
+% \renewcommand{\dotfill}{\marginpar[\raggedleft\texttt{\textbackslash dotfill}]{\texttt{\textbackslash dotfill}} {}\leavevmode \cleaders \hb@xt@ .44em{\hss .\hss }\hfill \kern \z@}
+\renewcommand{\dotfill}{\marginpar[\raggedleft\texttt{\textbackslash dotfill}]{\texttt{\textbackslash dotfill}}\leavevmode \cleaders \hb@xt@ .25em{\hss .\hss }\hfill \kern \z@}
 
 \newcommand{\printEndnotes}%
 {%
@@ -255,7 +261,7 @@
 	{%
 		\g@addto@macro\theEndnotes%
 			{%
-				\hyperref[enl:#3]{\pageref*{enl:#3}}\label{end:#3}%
+				\tabularnums{\hyperref[enl:#3]{\pageref*{enl:#3}}\label{end:#3}}%
 				&%
 				\emph{\ifthenelse{\equal{#1}{}}{#2}{#1}}:
 				% &%
