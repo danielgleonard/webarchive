@@ -31,7 +31,7 @@
 
 % \patchcmd{\chapter}{\clearpage}{\cleardoublepage}{}{}
 \include{./tex/introduction}
-% \include{./tex/characters}
+\include{./tex/characters}
 \cleardoublepage\chapter*{}
 \renewcommand{\epigraphflush}{center}\epigraph{\centering\emph{[guitar solo]}}{\centering\citetitle{MCR-black_parade-dead}\\\citeauthor{MCR-black_parade-dead}}
 \mainmatter
@@ -110,11 +110,12 @@
 	\chapter{References}
 	\printbibliography[heading=none,nottype=music]
 	\section{Music}
-	\printbibliography[heading=none,type=music]
-	% \subsection{Albums}
-	% \printbibliography[heading=none,subtype=album]
-	% \subsection{Songs}
-	% \printbibliography[heading=none,subtype=song]
+	\nocite{MCR-bullets,MCR-three_cheers,MCR-black_parade,Evanescence-Fallen,GC-chronicles_life_death}
+	% \printbibliography[heading=none,type=music]
+	\subsection{Albums}
+	\printbibliography[heading=none,type=music,notsubtype=song]
+	\subsection{Songs}
+	\printbibliography[heading=none,subtype=song]
 \end{sloppypar}
 
 \end{document}

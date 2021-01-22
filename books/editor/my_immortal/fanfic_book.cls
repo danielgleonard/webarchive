@@ -96,6 +96,11 @@
     {\href{https://doi.org/#1}{\nolinkurl{#1}}}
     {\nolinkurl{#1}}}
 \urlstyle{tt}
+\newrobustcmd*{\citefirstlastauthor}{\AtNextCite{\DeclareNameAlias{labelname}{given-family}}\citeauthor}
+% \DeclareLabelname[movie]{
+%       \field{director}
+%       \field{producer}
+	% }
 
 \let\@titlepunct\@empty
 \let\@subtitle\@empty
@@ -185,7 +190,8 @@
 \newcommand{\printchapterauthor}[1]{%
   {\parindent0pt\vspace{-3em}%
   \scshape#1%
-  \par\nobreak\vspace*{1.5\baselineskip \@minus 2\p@}}
+%   \par\nobreak\vspace*{1.5\baselineskip \@minus 2\p@}}
+  \\*\vspace*{1.5\baselineskip \@minus 2\p@}}
   \nobreak\@afterheading\nobreak%
 }
 \newcommand{\authortoc}[1]{%
