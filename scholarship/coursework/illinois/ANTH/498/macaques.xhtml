@@ -54,9 +54,9 @@
 		</script>
     </head>
     <body vocab="https://schema.org/">
-        <article> <!-- references -->
-            <header>
-                <h1>
+		<article typeof="ScholarlyArticle">
+			<header>
+				<h1 property="name headline">
                     <span id="title">Behavioral changes to anthropogenic environments in two species of macaque</span>
                 </h1>
                 <aside>
@@ -64,6 +64,8 @@
                     <br/>
                     <a href="../../../../">Directory index</a>
                 </aside>
+				<meta property="pageStart" content="75" />
+				<meta property="pageEnd" content="82" />
                 <a id="pdf" rel="alternate" href="./macaques.pdf" media="print" type="application/pdf">🖨︎ Printable version (PDF)</a>
                 <a id="tex" rel="alternate" href="./macaques.tex" type="application/x-tex"><span class="latex">L<sup>a</sup>T<sub>e</sub>X</span> source</a>
                 <dl id="pageinfo">
@@ -77,32 +79,33 @@
                         <span property="additionalName">G.</span>
                         <span property="familyName">Leonard</span>
                     </dd>
-                    <dt class="course">Course</dt>
-                    <dd class="course" typeof="Course">
-                        <span property="courseCode">
-                            ANTH 498
-                        </span> 
-                        <span property="name">
-                            Senior Capstone Seminar
-                        </span>
-                    </dd>
-                    <dt class="institution">Institution</dt>
-                    <dd class="institution" typeof="EducationalOrganization">
-                        <span property="name">University of Illinois at Urbana-Champaign</span>
-                    </dd>
+					<div property="exampleOfWork" typeof="Course">
+						<dt>Course</dt>
+                        <dd>
+                            <span property="courseCode">
+                                ANTH 498
+                            </span> 
+                            <span property="name">
+                                Senior Capstone Seminar
+                            </span>
+							<!-- <meta property="url" content="https://courses.illinois.edu/schedule/2019/FALL/ANTH/498" /> -->
+							<meta property="description" content="A guided independent research seminar for Anthropology majors normally taken during the Fall of the senior year. Students may select to conduct significant and original research in any of the four sub-fields of anthropology or combine interdisciplinary interests. Working closely with the course instructors and with additional guidance from a chosen anthropology faculty advisor, student will develop a research topic of their choice, identify significant research questions, before collecting and analyzing their field data." />
+                        </dd>
+                        <dt class="institution">Institution</dt>
+                        <dd property="provider" class="institution" typeof="EducationalOrganization">
+                            <span property="name">University of Illinois at Urbana-Champaign</span>
+                        </dd>
+                    </div>
                     <dt class="instructor">Instructor</dt>
                     <dd class="instructor">
-                        <ol typeof="ItemList">
-                            <link property="itemListOrder" href="http://schema.org/ItemListOrderDescending" />
-                            <li property="itemListElement" typeof="Person">
-                                <meta property="position" content="1" />
+                        <ol>
+                            <li property="editor" typeof="Person">
                                 <span property="honorificPrefix">Dr.</span>
                                 <span property="givenName">Petra</span>
                                 <span property="additionalName">E.</span>
                                 <span property="familyName">Jelinek</span>
                             </li>
-                            <li property="itemListElement" typeof="Person">
-                                <meta property="position" content="2" />
+                            <li property="editor" typeof="Person">
                                 <span property="honorificPrefix">Dr.</span>
                                 <span property="givenName">Brenda</span>
                                 <span property="additionalName">M.</span>
@@ -111,10 +114,11 @@
                         </ol>
                     </dd>
                 </dl>
+                <link property="image" type="image/png" href="https://archive.danleonard.us/scholarship/coursework/illinois/ANTH/498/macaques_table_4.png" />
             </header>
             <section id="abstract">
                 <h2>Abstract</h2>
-                <p>
+                <p property="abstract">
                     Primatology is often conducted in the wild, focusing on elucidating how
                     species live in the ecology of their native habitat. As human development
                     has increased across the globe, more attention should be paid to how
@@ -130,98 +134,100 @@
                     research into these populations' ecology and behavior is presented.
                 </p>
             </section>
-            <section id="introduction">
-                <h2>Introduction</h2>
-                <p>The sciences of ecology and wildlife biology were born of a sense of exoticism, a Romanticist question of how the natural world came to be that in its climax allowed thinkers like Darwin to explore the world in pursuit of ever more novel findings and ideas (<a class="citation" href="#ref-Nic05" data-cites="Nic05">Nichols 2005</a>). Today biologists continue to focus on the pristine, basing their models of species and ecological change on the “natural” world unmolested by human encroachment. Today, however, humans have changed the face of the planet in many cases beyond recognition from the “natural” order. Despite its frequent dismissal in ecological study, the human environment has its own ecology and unique resources that it itself should be considered from an ecological lens. An analysis of the primatology fieldwork that has heretofore been conducted in such environments is needed to understand the state of the field.</p>
-                <section id="the-anthropogenic-world">
-                    <h3>The Anthropogenic World</h3>
-                    <p>Human society has had a profound impact on the ecosystems of the Earth, radically changing in only a few centuries how wide swaths of the planet, terrestrial and marine, Accordingly, geologists and climate scientists have donned the current epoch the <q cite="#ref-Cru00">Anthropocene</q> (<a class="citation" href="#ref-Cru00" data-cites="Cru00">Crutzen and Stoermer 2000</a>; <a class="citation" href="#ref-Lew15" data-cites="Lew15">Lewis and Maslin 2015</a>). While scholars debate the exact onset of this geologic era, whether 8,000 years before present (<a class="citation" href="#ref-Rud03" data-cites="Rud03">Ruddiman 2003</a>; <a class="citation" href="#ref-Kir05" data-cites="Kir05">Kirch 2005</a>) or as recent as the Industrial Revolution (<a class="citation" href="#ref-Cru02" data-cites="Cru02">Crutzen 2002</a>), it is indisputable that the majority of terrestrial life on the planet has been impacted in some way by human expansion.</p>
-                    <p>Conservation of the natural environment is a laudable goal, as there is no better way to protect biodiversity and endangered species than to set aside undisturbed land (<a class="citation" href="#ref-New95" data-cites="New95">Newmark 1995</a>; <a class="citation" href="#ref-Hat19" data-cites="Hat19">Hatfield et al. 2019</a>). However, it cannot be denied that human settlement has drastically reduced the total land area possible for such undisturbed conservation. The anthropogenic environment is as much a part of the ecological landscape as is a coral reef, and its study can provide insight into the evolution and development of populations in an increasingly human-dominated world.</p>
-                    <p>Despite this pressing need to consider anthropogenic environments, ecology research – and primatology in particular – has persistently remained far from human environments. Only between 0.4% and 6% of ecology research has been conducted in the 75% of Earth’s ice-free terrestrial surface that harbors human settlement (<a class="citation" href="#ref-Col00" data-cites="Col00">Collins et al. 2000</a>; <a class="citation" href="#ref-Mil02" data-cites="Mil02">Miller and Hobbs 2002</a>). Conservation biologists’ and ecologists’ focus on the idea of a <q cite="#ref-Nie99">wilderness</q> leaves the flora and fauna of cities little understood (<a class="citation" href="#ref-Nie99" data-cites="Nie99">Niemelä 1999</a>), although when population censuses are taken in cities as developed as Phoenix, Arizona and Baltimore, Maryland, researchers have been surprised by the diversity present (<a class="citation" href="#ref-Klo99" data-cites="Klo99">Kloor 1999</a>).</p>
-                </section> <!-- the-anthropogenic-world -->
-                <section id="anthropogenic-environments-as-primate-habitats">
-                    <h3>Anthropogenic Environments as Primate Habitats</h3>
-                    <p>Primatologists in particular prefer to conduct research at a small array of permanent, long-term field sites, which fails to account for the primates who are not represented (<a class="citation" href="#ref-Bez19" data-cites="Bez19">Bezanson and McNamara 2019</a>). This model of research has of course benefits, mainly its desire to maintain relations with the local community and in its producing comparative and consistent results. Certainly the exotic field-site model has served conservationists and researchers well in the past half-century. However, understanding how the subjects of primatology research fit into the rest of the world is just as – if not more – important in the current global environment.</p>
-                    <p>Most of the prevailing research of the human-nonhuman divide falls into one of two camps: that of ethnoprimatology or that of interspecies conflict management. The former primarily looks at the species divide through an ethnographic lens, in which humans and nonhuman primates together shape a social space each with shared and distinct roles (<a class="citation" href="#ref-Fue12" data-cites="Fue12">Fuentes 2012</a>; <a class="citation" href="#ref-Ril13" data-cites="Ril13">Riley 2013</a>). The latter consists of a diverse array of ecological scholarship aimed at reducing primate endangerment in human environments such as roadways (<a class="citation" href="#ref-Lin16" data-cites="Lin16">Lindshield 2016</a>), analyzing primate effects on cultivated crops (<a class="citation" href="#ref-Hil17" data-cites="Hil17">Hill 2017</a>; <a class="citation" href="#ref-Hoc17" data-cites="Hoc17">Hockings, Yamakoshi, and Matsuzawa 2017</a>; <a class="citation" href="#ref-McK15" data-cites="McK15">McKinney, Westin, and Serio-Silva 2015</a>), and physical conflict (<a class="citation" href="#ref-Hof12" data-cites="Hof12">Hoffman and O’Riain 2012</a>). Recently, researchers have begun to apply focal-animal sampling techniques to primates in troops that have made their home ranges either wholly or partially inside heavily developed areas. Specifically, there is now a wealth of <em>Macaca</em> spp. diet and range information which can be directly compared to research on those same species in less anthropogenic environments. Urban primate populations that have undergone recent study include those of <em>M. sylvanus</em> in Gibraltar (<a class="citation" href="#ref-Ethnoprimatology6" data-cites="Ethnoprimatology6">Kwiatt 2017</a>; <a class="citation" href="#ref-Kle17" data-cites="Kle17">Klegarth et al. 2017</a>) and Béjaïa (<a class="citation" href="#ref-Mai15" data-cites="Mai15">Maibeche et al. 2015</a>) and of <em>M. fascicularis</em> in Singapore (<a class="citation" href="#ref-Kle17" data-cites="Kle17">Klegarth et al. 2017</a>).</p>
-                </section> <!-- anthropogenic-environments-as-primate-habitats -->
-                <section id="hypotheses">
-                    <h3>Hypotheses</h3>
-                    <p>The null hypothesis is the prediction that in all surveyed characteristics, <em>M. sylvanus</em> and <em>M. fascicularis</em> individuals do not differ when in anthropogenic versus wild environments. Four alternative hypotheses are presented:</p>
-                    <ol>
-                        <li><p><em>Anthropogenic-dwelling macaques exhibit a dietary shift with a bias toward human foods.</em> The higher relative availability of human foods in such environments provides an ample source of nutrition when the foods that make up the animals’ natural diets are not obtainable.</p></li>
-                        <li><p><em>Anthropogenic-dwelling macaques exhibit smaller ranges and shorter daily path lengths.</em> Urban and rural human-inhabited areas present a higher density of environmental hazards, including vehicular traffic and physical conflict with people. It is predicted that in such environments, animals would travel less to avoid danger.</p></li>
-                        <li><p><em>Time spent resting is directly correlated with consumption of human foods, while time spent feeding is indirectly correlated.</em> The energy density of human foods is often much higher than that of foods growing in the wild, as a result of both processing and domestication. Macaques that can access such foods regularly may be able to decrease the amount of time spent feeding to reach their needed caloric intake.</p></li>
-                        <li><p><em>Anthropogenic-dwelling macaques live in larger social groups.</em> A lack of predation and more reliable access to food are expected to reduce a pressure toward small group sizes, allowing macaque groups in such environments to grow to larger sizes than would be expected in the wild.</p></li>
-                    </ol>
-                </section> <!-- hypotheses -->
-                <section id="review-of-literature">
-                    <h3>Review of Literature</h3>
-                    <section id="collection-of-data">
-                        <h4>Collection of Data</h4>
-                        <p>Due to the frequency with which researchers survey urban populations of the two species, <em>M. sylvanus</em> and <em>M. fascicularis</em> were chosen as the target species for comparison. 13 studies were found to cover at least one of the two species’ behavioral patterns in anthropogenic or “wild” habitat. Data collected from each study, where present, included the environment (as urban/park, peri-urban, rural, or forest), the percentage of the group’s home range that was anthropogenic, the number (minimum, maximum, and mean) of individuals, survey method, home range (either MCP or KDE), daily path length, movement rate, diet (natural: yes, no; refuse: no, minor, extensive; sanctioned provisioned: no, yes; illicit provisioned: no, minor, extensive; and raided: no, minor, extensive, also as percentages when available), and activity budget (percent of time spent resting or feeding).</p>
-                    </section> <!-- collection-of-data -->
-                </section> <!-- review-of-literature -->
-            </section> <!-- introduction -->
-            <section id="results">
-                <h2>Results</h2>
-                <section id="data-analysis">
-                    <h3>Data Analysis</h3>
-                    <p>Data were entered into a spreadsheet and analyzed using Microsoft Excel version 1911. A list of all macaque groups identified is available in Table <a href="#tab_maindata" data-reference-type="ref" data-reference="tab_maindata">1</a>.</p>
-                    <section id="hypothesis-1">
-                        <h4>Hypothesis 1</h4>
-                        <figure id="fig_1">
-                            <img src="macaques_table_1.png" title="Figure 1" type="image/png"
-                                alt="Box-and-whisker plot showing high variange in diet composition amongst urban populations, less in forest and rural." />
-                            <figcaption>
-                                <em class="figname" label="fig_1">Figure 1.</em>
-                                Dietary Composition of Macaques by Habitat
-                            </figcaption>
-                        </figure>
-                        <p>On the question of anthropogenic foods in macaque diets, very little information was found in studies of forest- or rural-dwelling animals of either species. Furthermore, there were multiple groups of urban-dwelling macaques whose anthropogenic food consumption was far lower than expected, and even lower than some forest groups (<em>M. fascicularis</em> min. 3%, <em>M. sylvanus</em> min. 0%; see Figure <a href="#fig_1" data-reference-type="ref" data-reference="fig_1">1</a>). The first hypothesis, that anthropogenic foods are correlated with anthropogenic habitation, is not accepted.</p>
-                    </section> <!-- hypothesis-1 -->
-                    <section id="hypothesis-2">
-                        <h4>Hypothesis 2</h4>
-                        <figure id="fig_2">
-                            <img src="macaques_table_2.png" title="Figure 2" type="image/png"
-                                alt="Box-and-whisker plot only surveying M. fascicularis showing high home range variance amongst urban populations, tending toward smaller ranges." />
-                            <figcaption>
-                                <em class="figname" label="fig_2">Figure 2.</em>
-                                Home Range Size of Macaque Groups by Habitat
-                            </figcaption>
-                        </figure>
-                        <p><em>M. Sylvanus</em> studies were excluded from home range size comparisons as they lacked enough data for the three habitat types. In <em>M. fascicularis</em>, while rural home ranges were overwhelmingly smaller than forest ranges, there was an extremely wide range of urban home ranges (min. 2.0 ha, mean 4.3 ha, max. 88.8 ha; see Figure <a href="#fig_2" data-reference-type="ref" data-reference="fig_2">2</a>) that overlaps the ranges for both forest and rural macaques’ home ranges. On this count there is not enough information to accept the second hypothesis.</p>
-                    </section> <!-- hypothesis-2 -->
-                    <section id="hypothesis-3">
-                        <h4>Hypothesis 3</h4>
-                        <figure id="fig_3">
-                            <img src="macaques_table_3.svg" title="Figure 3" type="image/svg+xml"
-                                alt="Scatterplot showing positive trend between anthropogenic foods and resting time amongst M. fascicularis; only two data points for M. sylvanus." />
-                            <figcaption>
-                                <em class="figname" label="fig_3">Figure 3.</em>
-                                Resting Time as a Function of Anthropogenic Food Consumption
-                            </figcaption>
-                        </figure>
-                        <p>Few studies included both the time spent resting and the proportion of animals’ diet deriving from anthropogenic sources, with two and five in <em>M. sylvanus</em> and <em>fascicularis</em>, respectively. Making a linear model is of no use in the two-datapoint set, so only <em>M. fascicularis</em> was analyzed. With a positive trendline and <math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mi>R</mi><mn>2</mn></msup></math> of 0.52, there is tentative evidence of a correlation between diet and energy expenditure. Without more data, however, hypothesis 3 cannot be reliably accepted.</p>
-                    </section> <!-- hypothesis-3 -->
-                    <section id="hypothesis-4">
-                        <h4>Hypothesis 4</h4>
-                        <figure id="fig_4">
-                            <img src="macaques_table_4.png" title="Figure 4" type="image/png"
-                                alt="Box-and-whisker plot showing trend for group size correlated with habitat, where urban/park groups have largest group size, rural moderate, and forest smallest. Few data points for M. sylvanus." />
-                            <figcaption>
-                                <em class="figname" label="fig_4">Figure 4.</em>
-                                Individuals per Macaque Group by Habitat
-                            </figcaption>
-                        </figure>
-                        <p>Of the 53 <em>Macaca</em> groups identified from the literature, 19 lacked censuses of group size. There is not enough data for a conclusive picture of <em>M. sylvanus</em>, but some conclusions may be drawn from the data on <em>M. fascicularis</em>. While forest-inhabiting groups ranged from 22 to 40 individuals in size, urban-dwelling populations existed in a much larger range of group sizes from 10 to 198 individuals, with most occurring in the 24-94 range. Albeit with large margins of error (see Figure <a href="#fig_4" data-reference-type="ref" data-reference="fig_4">4</a>), there is a statistically significant (<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi><mo>&lt;</mo><mn>0.05</mn></math>) result for group size. At least for <em>M. fascicularis</em>, the fourth hypothesis – that anthropogenic-dwelling macaques live in larger social groups – can be tentatively accepted.</p>
-                    </section> <!-- hypothesis-4 -->
-                </section> <!-- data-analysis -->
-            </section> <!-- results -->
-            <section id="discussion">
-                <h2>Discussion</h2>
-                <p>It was difficult to find enough primatology studies that had been conducted in anthropogenic environments, a finding reflective of <span class="citation" data-cites="Col00">Collins et al.</span>’s (<a class="citation" href="#ref-Col00" data-cites="Col00">2000</a>) finding of 0.4% of ecology research having an urban focus. A more thorough investigation of which species are most heavily focused on in such research may allow for a more comprehensive comparison. More importantly, however, it is necessary to grow the state of the primary literature so that a more comprehensive understanding of the ecologies of both cities and these species.</p>
-                <p>Overall, there is not enough published data to confirm or reject the null hypothesis, let alone any of the four alternative hypotheses proposed. There was tentative evidence for hypotheses three and four: a connection between diet and activity budget and between group size and habitat. On the former, it is necessary to perform more studies that include both anthropogenic diets and activity budget, which can allow for a larger sample size in comparisons. Furthermore, a correlation does not fully explain such a phenomenon. The energy densities of those specific foods which are eaten by the studied populations should be evaluated to ensure that the hypothesis is backed with biological significance. Few studies, even those which described anthropogenic food consumption, explained which foods the animals were eating, be they fruits or processed foods. In pursuit of the latter hypothesis, group size data on <em>M. sylvanus</em> would help to allow a cross-species comparison, but it remains interesting that the group sizes observed have such a wide range. It is likely that the hypothesis of lower predation allowing larger group sizes is too simple a model to explain the phenomenon of anthropogenic-dwelling macaques.</p>
-            </section> <!-- discussion -->
+            <section id="main" property="articleBody">
+                <section id="introduction">
+                    <h2>Introduction</h2>
+                    <p>The sciences of ecology and wildlife biology were born of a sense of exoticism, a Romanticist question of how the natural world came to be that in its climax allowed thinkers like Darwin to explore the world in pursuit of ever more novel findings and ideas (<a class="citation" href="#ref-Nic05" data-cites="Nic05">Nichols 2005</a>). Today biologists continue to focus on the pristine, basing their models of species and ecological change on the “natural” world unmolested by human encroachment. Today, however, humans have changed the face of the planet in many cases beyond recognition from the “natural” order. Despite its frequent dismissal in ecological study, the human environment has its own ecology and unique resources that it itself should be considered from an ecological lens. An analysis of the primatology fieldwork that has heretofore been conducted in such environments is needed to understand the state of the field.</p>
+                    <section id="the-anthropogenic-world">
+                        <h3>The Anthropogenic World</h3>
+                        <p>Human society has had a profound impact on the ecosystems of the Earth, radically changing in only a few centuries how wide swaths of the planet, terrestrial and marine, Accordingly, geologists and climate scientists have donned the current epoch the <q cite="#ref-Cru00">Anthropocene</q> (<a class="citation" href="#ref-Cru00" data-cites="Cru00">Crutzen and Stoermer 2000</a>; <a class="citation" href="#ref-Lew15" data-cites="Lew15">Lewis and Maslin 2015</a>). While scholars debate the exact onset of this geologic era, whether 8,000 years before present (<a class="citation" href="#ref-Rud03" data-cites="Rud03">Ruddiman 2003</a>; <a class="citation" href="#ref-Kir05" data-cites="Kir05">Kirch 2005</a>) or as recent as the Industrial Revolution (<a class="citation" href="#ref-Cru02" data-cites="Cru02">Crutzen 2002</a>), it is indisputable that the majority of terrestrial life on the planet has been impacted in some way by human expansion.</p>
+                        <p>Conservation of the natural environment is a laudable goal, as there is no better way to protect biodiversity and endangered species than to set aside undisturbed land (<a class="citation" href="#ref-New95" data-cites="New95">Newmark 1995</a>; <a class="citation" href="#ref-Hat19" data-cites="Hat19">Hatfield et al. 2019</a>). However, it cannot be denied that human settlement has drastically reduced the total land area possible for such undisturbed conservation. The anthropogenic environment is as much a part of the ecological landscape as is a coral reef, and its study can provide insight into the evolution and development of populations in an increasingly human-dominated world.</p>
+                        <p>Despite this pressing need to consider anthropogenic environments, ecology research – and primatology in particular – has persistently remained far from human environments. Only between 0.4% and 6% of ecology research has been conducted in the 75% of Earth’s ice-free terrestrial surface that harbors human settlement (<a class="citation" href="#ref-Col00" data-cites="Col00">Collins et al. 2000</a>; <a class="citation" href="#ref-Mil02" data-cites="Mil02">Miller and Hobbs 2002</a>). Conservation biologists’ and ecologists’ focus on the idea of a <q cite="#ref-Nie99">wilderness</q> leaves the flora and fauna of cities little understood (<a class="citation" href="#ref-Nie99" data-cites="Nie99">Niemelä 1999</a>), although when population censuses are taken in cities as developed as Phoenix, Arizona and Baltimore, Maryland, researchers have been surprised by the diversity present (<a class="citation" href="#ref-Klo99" data-cites="Klo99">Kloor 1999</a>).</p>
+                    </section> <!-- the-anthropogenic-world -->
+                    <section id="anthropogenic-environments-as-primate-habitats">
+                        <h3>Anthropogenic Environments as Primate Habitats</h3>
+                        <p>Primatologists in particular prefer to conduct research at a small array of permanent, long-term field sites, which fails to account for the primates who are not represented (<a class="citation" href="#ref-Bez19" data-cites="Bez19">Bezanson and McNamara 2019</a>). This model of research has of course benefits, mainly its desire to maintain relations with the local community and in its producing comparative and consistent results. Certainly the exotic field-site model has served conservationists and researchers well in the past half-century. However, understanding how the subjects of primatology research fit into the rest of the world is just as – if not more – important in the current global environment.</p>
+                        <p>Most of the prevailing research of the human-nonhuman divide falls into one of two camps: that of ethnoprimatology or that of interspecies conflict management. The former primarily looks at the species divide through an ethnographic lens, in which humans and nonhuman primates together shape a social space each with shared and distinct roles (<a class="citation" href="#ref-Fue12" data-cites="Fue12">Fuentes 2012</a>; <a class="citation" href="#ref-Ril13" data-cites="Ril13">Riley 2013</a>). The latter consists of a diverse array of ecological scholarship aimed at reducing primate endangerment in human environments such as roadways (<a class="citation" href="#ref-Lin16" data-cites="Lin16">Lindshield 2016</a>), analyzing primate effects on cultivated crops (<a class="citation" href="#ref-Hil17" data-cites="Hil17">Hill 2017</a>; <a class="citation" href="#ref-Hoc17" data-cites="Hoc17">Hockings, Yamakoshi, and Matsuzawa 2017</a>; <a class="citation" href="#ref-McK15" data-cites="McK15">McKinney, Westin, and Serio-Silva 2015</a>), and physical conflict (<a class="citation" href="#ref-Hof12" data-cites="Hof12">Hoffman and O’Riain 2012</a>). Recently, researchers have begun to apply focal-animal sampling techniques to primates in troops that have made their home ranges either wholly or partially inside heavily developed areas. Specifically, there is now a wealth of <em>Macaca</em> spp. diet and range information which can be directly compared to research on those same species in less anthropogenic environments. Urban primate populations that have undergone recent study include those of <em>M. sylvanus</em> in Gibraltar (<a class="citation" href="#ref-Ethnoprimatology6" data-cites="Ethnoprimatology6">Kwiatt 2017</a>; <a class="citation" href="#ref-Kle17" data-cites="Kle17">Klegarth et al. 2017</a>) and Béjaïa (<a class="citation" href="#ref-Mai15" data-cites="Mai15">Maibeche et al. 2015</a>) and of <em>M. fascicularis</em> in Singapore (<a class="citation" href="#ref-Kle17" data-cites="Kle17">Klegarth et al. 2017</a>).</p>
+                    </section> <!-- anthropogenic-environments-as-primate-habitats -->
+                    <section id="hypotheses">
+                        <h3>Hypotheses</h3>
+                        <p>The null hypothesis is the prediction that in all surveyed characteristics, <em>M. sylvanus</em> and <em>M. fascicularis</em> individuals do not differ when in anthropogenic versus wild environments. Four alternative hypotheses are presented:</p>
+                        <ol>
+                            <li><p><em>Anthropogenic-dwelling macaques exhibit a dietary shift with a bias toward human foods.</em> The higher relative availability of human foods in such environments provides an ample source of nutrition when the foods that make up the animals’ natural diets are not obtainable.</p></li>
+                            <li><p><em>Anthropogenic-dwelling macaques exhibit smaller ranges and shorter daily path lengths.</em> Urban and rural human-inhabited areas present a higher density of environmental hazards, including vehicular traffic and physical conflict with people. It is predicted that in such environments, animals would travel less to avoid danger.</p></li>
+                            <li><p><em>Time spent resting is directly correlated with consumption of human foods, while time spent feeding is indirectly correlated.</em> The energy density of human foods is often much higher than that of foods growing in the wild, as a result of both processing and domestication. Macaques that can access such foods regularly may be able to decrease the amount of time spent feeding to reach their needed caloric intake.</p></li>
+                            <li><p><em>Anthropogenic-dwelling macaques live in larger social groups.</em> A lack of predation and more reliable access to food are expected to reduce a pressure toward small group sizes, allowing macaque groups in such environments to grow to larger sizes than would be expected in the wild.</p></li>
+                        </ol>
+                    </section> <!-- hypotheses -->
+                    <section id="review-of-literature">
+                        <h3>Review of Literature</h3>
+                        <section id="collection-of-data">
+                            <h4>Collection of Data</h4>
+                            <p>Due to the frequency with which researchers survey urban populations of the two species, <em>M. sylvanus</em> and <em>M. fascicularis</em> were chosen as the target species for comparison. 13 studies were found to cover at least one of the two species’ behavioral patterns in anthropogenic or “wild” habitat. Data collected from each study, where present, included the environment (as urban/park, peri-urban, rural, or forest), the percentage of the group’s home range that was anthropogenic, the number (minimum, maximum, and mean) of individuals, survey method, home range (either MCP or KDE), daily path length, movement rate, diet (natural: yes, no; refuse: no, minor, extensive; sanctioned provisioned: no, yes; illicit provisioned: no, minor, extensive; and raided: no, minor, extensive, also as percentages when available), and activity budget (percent of time spent resting or feeding).</p>
+                        </section> <!-- collection-of-data -->
+                    </section> <!-- review-of-literature -->
+                </section> <!-- introduction -->
+                <section id="results">
+                    <h2>Results</h2>
+                    <section id="data-analysis">
+                        <h3>Data Analysis</h3>
+                        <p>Data were entered into a spreadsheet and analyzed using Microsoft Excel version 1911. A list of all macaque groups identified is available in Table <a href="#tab_maindata" data-reference-type="ref" data-reference="tab_maindata">1</a>.</p>
+                        <section id="hypothesis-1">
+                            <h4>Hypothesis 1</h4>
+                            <figure id="fig_1">
+                                <img src="macaques_table_1.png" title="Figure 1" type="image/png"
+                                    alt="Box-and-whisker plot showing high variange in diet composition amongst urban populations, less in forest and rural." />
+                                <figcaption>
+                                    <em class="figname" label="fig_1">Figure 1.</em>
+                                    Dietary Composition of Macaques by Habitat
+                                </figcaption>
+                            </figure>
+                            <p>On the question of anthropogenic foods in macaque diets, very little information was found in studies of forest- or rural-dwelling animals of either species. Furthermore, there were multiple groups of urban-dwelling macaques whose anthropogenic food consumption was far lower than expected, and even lower than some forest groups (<em>M. fascicularis</em> min. 3%, <em>M. sylvanus</em> min. 0%; see Figure <a href="#fig_1" data-reference-type="ref" data-reference="fig_1">1</a>). The first hypothesis, that anthropogenic foods are correlated with anthropogenic habitation, is not accepted.</p>
+                        </section> <!-- hypothesis-1 -->
+                        <section id="hypothesis-2">
+                            <h4>Hypothesis 2</h4>
+                            <figure id="fig_2">
+                                <img src="macaques_table_2.png" title="Figure 2" type="image/png"
+                                    alt="Box-and-whisker plot only surveying M. fascicularis showing high home range variance amongst urban populations, tending toward smaller ranges." />
+                                <figcaption>
+                                    <em class="figname" label="fig_2">Figure 2.</em>
+                                    Home Range Size of Macaque Groups by Habitat
+                                </figcaption>
+                            </figure>
+                            <p><em>M. Sylvanus</em> studies were excluded from home range size comparisons as they lacked enough data for the three habitat types. In <em>M. fascicularis</em>, while rural home ranges were overwhelmingly smaller than forest ranges, there was an extremely wide range of urban home ranges (min. 2.0 ha, mean 4.3 ha, max. 88.8 ha; see Figure <a href="#fig_2" data-reference-type="ref" data-reference="fig_2">2</a>) that overlaps the ranges for both forest and rural macaques’ home ranges. On this count there is not enough information to accept the second hypothesis.</p>
+                        </section> <!-- hypothesis-2 -->
+                        <section id="hypothesis-3">
+                            <h4>Hypothesis 3</h4>
+                            <figure id="fig_3">
+                                <img src="macaques_table_3.svg" title="Figure 3" type="image/svg+xml"
+                                    alt="Scatterplot showing positive trend between anthropogenic foods and resting time amongst M. fascicularis; only two data points for M. sylvanus." />
+                                <figcaption>
+                                    <em class="figname" label="fig_3">Figure 3.</em>
+                                    Resting Time as a Function of Anthropogenic Food Consumption
+                                </figcaption>
+                            </figure>
+                            <p>Few studies included both the time spent resting and the proportion of animals’ diet deriving from anthropogenic sources, with two and five in <em>M. sylvanus</em> and <em>fascicularis</em>, respectively. Making a linear model is of no use in the two-datapoint set, so only <em>M. fascicularis</em> was analyzed. With a positive trendline and <math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mi>R</mi><mn>2</mn></msup></math> of 0.52, there is tentative evidence of a correlation between diet and energy expenditure. Without more data, however, hypothesis 3 cannot be reliably accepted.</p>
+                        </section> <!-- hypothesis-3 -->
+                        <section id="hypothesis-4">
+                            <h4>Hypothesis 4</h4>
+                            <figure id="fig_4">
+                                <img src="macaques_table_4.png" title="Figure 4" type="image/png"
+                                    alt="Box-and-whisker plot showing trend for group size correlated with habitat, where urban/park groups have largest group size, rural moderate, and forest smallest. Few data points for M. sylvanus." />
+                                <figcaption>
+                                    <em class="figname" label="fig_4">Figure 4.</em>
+                                    Individuals per Macaque Group by Habitat
+                                </figcaption>
+                            </figure>
+                            <p>Of the 53 <em>Macaca</em> groups identified from the literature, 19 lacked censuses of group size. There is not enough data for a conclusive picture of <em>M. sylvanus</em>, but some conclusions may be drawn from the data on <em>M. fascicularis</em>. While forest-inhabiting groups ranged from 22 to 40 individuals in size, urban-dwelling populations existed in a much larger range of group sizes from 10 to 198 individuals, with most occurring in the 24-94 range. Albeit with large margins of error (see Figure <a href="#fig_4" data-reference-type="ref" data-reference="fig_4">4</a>), there is a statistically significant (<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi><mo>&lt;</mo><mn>0.05</mn></math>) result for group size. At least for <em>M. fascicularis</em>, the fourth hypothesis – that anthropogenic-dwelling macaques live in larger social groups – can be tentatively accepted.</p>
+                        </section> <!-- hypothesis-4 -->
+                    </section> <!-- data-analysis -->
+                </section> <!-- results -->
+                <section id="discussion">
+                    <h2>Discussion</h2>
+                    <p>It was difficult to find enough primatology studies that had been conducted in anthropogenic environments, a finding reflective of <span class="citation" data-cites="Col00">Collins et al.</span>’s (<a class="citation" href="#ref-Col00" data-cites="Col00">2000</a>) finding of 0.4% of ecology research having an urban focus. A more thorough investigation of which species are most heavily focused on in such research may allow for a more comprehensive comparison. More importantly, however, it is necessary to grow the state of the primary literature so that a more comprehensive understanding of the ecologies of both cities and these species.</p>
+                    <p>Overall, there is not enough published data to confirm or reject the null hypothesis, let alone any of the four alternative hypotheses proposed. There was tentative evidence for hypotheses three and four: a connection between diet and activity budget and between group size and habitat. On the former, it is necessary to perform more studies that include both anthropogenic diets and activity budget, which can allow for a larger sample size in comparisons. Furthermore, a correlation does not fully explain such a phenomenon. The energy densities of those specific foods which are eaten by the studied populations should be evaluated to ensure that the hypothesis is backed with biological significance. Few studies, even those which described anthropogenic food consumption, explained which foods the animals were eating, be they fruits or processed foods. In pursuit of the latter hypothesis, group size data on <em>M. sylvanus</em> would help to allow a cross-species comparison, but it remains interesting that the group sizes observed have such a wide range. It is likely that the hypothesis of lower predation allowing larger group sizes is too simple a model to explain the phenomenon of anthropogenic-dwelling macaques.</p>
+                </section> <!-- discussion -->
+            </section>
             <section id="references">
                 <h2>References</h2>
                 <ol id="refs" class="references hanging-indent" role="doc-bibliography">
