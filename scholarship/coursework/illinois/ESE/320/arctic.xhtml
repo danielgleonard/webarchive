@@ -52,9 +52,9 @@
 		</script>
     </head>
     <body vocab="https://schema.org/">
-        <article>
-            <header>
-                <h1>
+		<article typeof="ScholarlyArticle">
+			<header>
+				<h1 property="name headline">
                     <span id="title">Water security of Arctic peoples</span>
                 </h1>
                 <aside>
@@ -62,12 +62,14 @@
                     <br/>
                     <a href="../../../../">Directory index</a>
                 </aside>
+				<meta property="pageStart" content="1" />
+				<meta property="pageEnd" content="5" />
                 <a id="pdf" rel="alternate" href="./arctic.pdf" media="print" type="application/pdf">🖨︎ Printable version (PDF)</a>
                 <a id="tex" rel="alternate" href="./arctic.tex" type="application/x-tex"><span class="latex">L<sup>a</sup>T<sub>e</sub>X</span> source</a>
                 <dl id="pageinfo">
                     <dt>Submitted</dt>
-                    <dd>
-                        <time datetime="2017-05-11">May 11, 2017</time>
+                    <dd property="datePublished">
+						<time typeof="DateTime" content="2017-05-11" datetime="2017-05-11">May 11, 2017</time>
                     </dd>
                     <dt>Author</dt>
                     <dd rel="author" typeof="Person">
@@ -75,35 +77,39 @@
                         <span property="additionalName">G.</span>
                         <span property="familyName">Leonard</span>
                     </dd>
-                    <dt>Course</dt>
-                    <dd typeof="Course">
-                        <span property="courseCode">
-                            ESE 320
-                        </span> 
-                        <span property="name">
-                            Water Planet, Water Crisis
-                        </span>
-                    </dd>
-                    <dt>Institution</dt>
-                    <dd typeof="EducationalOrganization">
-                        <span property="name">University of Illinois at Urbana-Champaign</span>
-                    </dd>
+					<div property="exampleOfWork" typeof="Course">
+                        <dt>Course</dt>
+                        <dd>
+                            <span property="courseCode">
+                                ESE 320
+                            </span> 
+                            <span property="name">
+                                Water Planet, Water Crisis
+                            </span>
+                            <!-- <meta property="url" content="https://courses.illinois.edu/schedule/2017/SPRING/ESE/320" /> -->
+							<meta property="description" content="Study of the science of water on planet earth, the developing water crisis, and some possible solutions to it. Topics include water's unique physical and chemical properties; how it profoundly shapes the earth/ocean/atmosphere system; dynamics of oceans, atmosphere, lakes, rivers, groundwater, and ice masses; current fresh water supplies and their distribution on earth relative to population; current and future water crises and the compounding effects of droughts, floods, and global change; and prospects for some technological and economic approaches to easing the crisis." />
+                        </dd>
+                        <dt>Institution</dt>
+                        <dd property="provider" typeof="EducationalOrganization">
+                            <span property="name">University of Illinois at Urbana-Champaign</span>
+                        </dd>
+                    </div>
                     <dt>Instructor</dt>
-                    <dd typeof="Person">
+                    <dd property="editor" typeof="Person">
                         <span property="honorificPrefix">Dr.</span>
                         <span property="givenName">Murugesu</span>
                         <span property="familyName">Sivapalan</span>
                     </dd>
                 </dl>
+                <link property="image" href="https://archive.danleonard.us/scholarship/coursework/illinois/ESE/320/arctic_photo.png" />
             </header>
-            <section id="body">
+            <section id="main" property="articleBody">
                 <p>Arctic peoples, especially indigenous subsistence hunters, are often overlooked when it comes to the global water crisis. Although some may have been surviving on ice for thousands of years, many communities are still subject to poor infrastructure and are especially affected by global climate change. Solutions to these crises depend strongly on region, with soft-path rainwater harvesting working in some subarctic communities but others requiring hard-path infrastructure such as piped running water.</p>
                 <p>The Millennium Development Goals of the United Nations (UN) are targets that include the access to clean water for everyone on Earth. For good reason, programs to help in the achievement of these focus on less-developed nations, where the eight Arctic countries are all considered developed due to their expansive southern populations. However, the polar areas of these countries contain marginalized communities with low access to clean water that would not qualify as meeting the UN’s targets, the “fourth world”.</p>
                 <p>Many homes in rural Alaska do not have piped water service. Without such service, people there must get water directly from the environment or from stores which charge a high price for the service of transporting it. Thus, these households, on average, only use 5.7 liters per person per day (<a class="citation" href="#ref-Hennessy2016" data-cites="Hennessy2016">Hennessy and Bressler 2016</a>), what the World Health Organization considers “no access” and of “very high” health concern (<a class="citation" href="#ref-Howard2003" data-cites="Howard2003">Howard and Bartram 2003</a>). Doctors with the Alaskan Centers for Disease Control have noted that Alaskan Native children have some of the world’s highest rates of invasive pneumococcal disease, even after introduction of the PCV7 vaccine. The researchers strongly connect this problem to a lack of running water in the homes of these children which limits handwashing (<a class="citation" href="#ref-Wenger2010" data-cites="Wenger2010">Wenger et al. 2010</a>).</p>
                 <p>In the Labrador town of Black Tickle, the Inuit residents must retrieve water from shallow wells in town or from a small brook twenty-five kilometers away. Counterintuitively, winter is the easiest season to retrieve water, as traditional Inuit sleds allow for quick and easy travel. In the spring, however, the ground is so wet that inhabitants must carry water on their backs. As a result, nearly every man in the town reports chronic back and shoulder pain and cannot undergo surgery as they are needed daily to procure water. When the relatively new provincial water filtration system broke down in 2012, the community saw an outbreak of gastrointestinal illness. Many older members of the community have said that illness was a normal condition of the town in the past (<a class="citation" href="#ref-Hanrahan2014" data-cites="Hanrahan2014">Hanrahan, Sarkar, and Hudson 2014</a>).</p>
                 <p>Indigenous peoples of Siberia have lived there for much longer than those of the New World, but they still suffer from the many problems of all Arctic peoples. Researchers have surveyed the saturation of hot running water to homes within all of Russia’s regions. In Eastern Chukotka, the indigenous home of Chukchi people, only 30% of communities across the region had any access to hot water (<a class="citation" href="#ref-Hennessy2016" data-cites="Hennessy2016">Hennessy and Bressler 2016</a>). It should be noted that access to running water, even if hot, is safe for human use. In Arctic and Siberian regions, centralized surface water sources have extreme levels of contamination by both chemicals and biological agents. The study found over 50% of sources had chlorine or magnesium, and nearly 1% of water contained Rotavirus or <em>Clostridium</em> spores (<a class="citation" href="#ref-Dudarev2013" data-cites="Dudarev2013">Dudarev et al. 2013</a>). The water crisis involves more than just drinking water. Drastic health impacts result from lack of modern sewerage. The United Nations has noted that only 25-50% of housing in Nenets Autonomous Okrug has sewerage installed (<a class="citation" href="#ref-2007" data-cites="2007">“Russia’s Regions: Goals, Challenges, Achievements” 2007</a>), and this is likely to be far more severe in the rural parts of the federal subject.</p>
                 <p>Indigenous people of the Arctic are overwhelmingly subsistence hunters, and for the Inuit, hunting is an important coming-of-age milestone. In North America, the melting of sea ice in spring heralds the return of narwhal, whose skin contains the greatest concentration of Vitamin C in the Arctic. Without the narwhal, it’s unlikely that the Inuit would have ever survived in much of their territory (<a class="citation" href="#ref-Brown2011" data-cites="Brown2011">Brown et al. 2011</a>).</p>
-                <p><span>r</span><span>0.5</span></p>
                 <p>Climate change is causing Arctic sea ice to melt drastically faster than it had previously. Weakened sea ice prevents hunters from going out as far as in past decades, as the ice can crack underfoot and subject the hunter to a hypothermic plunge (<a class="citation" href="#ref-Brown2011" data-cites="Brown2011">Brown et al. 2011</a>). In 2013, two Inuit communities were forced to cut short their hunting seasons after sea ice melted early and, as a consequence, the Governor of Alaska declared them disaster areas. After the ice melted even earlier the next year, the state government flew in 10,000 pounds of fish to save the communities (<a class="citation" href="#ref-Struzik2016" data-cites="Struzik2016">Struzik 2016</a>).</p>
                 <p>In one Inuit village, hunting means scouring for mussels. Normally impossible with the permanent cover of ice, the community of Kangiqsujuaq breaks into caverns under the sea ice, where the tide varies an incredible twelve meters. There, they scour the exposed ocean floor for mollusks for a half hour until the tide returns (<a class="citation" href="#ref-Brown2011" data-cites="Brown2011">Brown et al. 2011</a>). Rising ocean levels threaten to shorten the gap between sea and land ice, possibly leading to such caverns being permanently submerged. Without mussels, the residents of Kangiqsujuaq will go without a major source of nutrition.</p>
                 <p>In the northwest Alaskan island of Kivalina, the community shares a single facility with running water for showers, laundry, and toilets. A report by the regional Department of Community Health Services discovered that since 2004, storm surges resulting from lack of ice formation have caused this facility to close frequently for extended periods. The sudden lack of flush toilets has resulted in drastic health impacts, with increases in visits to the community clinic for soft tissue infections (<a class="citation" href="#ref-Thomas2013" data-cites="Thomas2013">Thomas et al. 2013</a>).</p>

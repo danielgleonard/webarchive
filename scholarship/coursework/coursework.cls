@@ -60,7 +60,7 @@
   \ifhyperref
     {\href{https://doi.org/#1}{\nolinkurl{#1}}}
     {\nolinkurl{#1}}}
-\urlstyle{tt}
+% \urlstyle{tt}
 
 \let\@titlepunct\@empty
 \let\@subtitle\@empty

@@ -52,9 +52,9 @@
 		</script>
     </head>
     <body vocab="https://schema.org/">
-        <article>
-            <header>
-                <h1>
+		<article typeof="ScholarlyArticle">
+			<header>
+				<h1 property="name headline">
                     <span id="title">The familiar path of <abbr>ETA</abbr></span>
                 </h1>
                 <aside>
@@ -62,12 +62,14 @@
                     <br/>
                     <a href="../../../../">Directory index</a>
                 </aside>
+				<meta property="pageStart" content="6" />
+				<meta property="pageEnd" content="9" />
                 <a id="pdf" rel="alternate" href="./eta.pdf" media="print" type="application/pdf">🖨︎ Printable version (PDF)</a>
                 <a id="tex" rel="alternate" href="./eta.tex" type="application/x-tex"><span class="latex">L<sup>a</sup>T<sub>e</sub>X</span> source</a>
                 <dl id="pageinfo">
                     <dt>Submitted</dt>
-                    <dd>
-                        <time datetime="2017-11-20">November 20, 2017</time>
+                    <dd property="datePublished">
+						<time typeof="DateTime" content="2017-11-20" datetime="2017-11-20">November 20, 2017</time>
                     </dd>
                     <dt>Author</dt>
                     <dd rel="author" typeof="Person">
@@ -75,21 +77,25 @@
                         <span property="additionalName">G.</span>
                         <span property="familyName">Leonard</span>
                     </dd>
-                    <dt>Course</dt>
-                    <dd typeof="Course">
-                        <span property="courseCode">
-                            PS 300
-                        </span> 
-                        <span property="name">
-                            Terrorism
-                        </span>
-                    </dd>
-                    <dt>Institution</dt>
-                    <dd typeof="EducationalOrganization">
-                        <span property="name">University of Illinois at Urbana-Champaign</span>
-                    </dd>
+					<div property="exampleOfWork" typeof="Course">
+						<dt>Course</dt>
+                        <dd>
+                            <span property="courseCode">
+                                PS 300
+                            </span> 
+                            <span property="name">
+                                The Character and History of Radical Terrorism since the Mid-Nineteenth Century
+                            </span>
+							<!-- <meta property="url" content="https://courses.illinois.edu/schedule/2017/FALL/PS/300" /> -->
+							<meta property="description" content="Terrorism, a violent tactic with a strikingly long history of use, has become a central security concern and political issue in the U.S. in recent years. This course relies on both theoretical and empirical literature to examine a host of questions about terrorism in an advanced, intensive, discussion-based seminar. In particular, we investigate the definition(s) of terrorism, its historical use and evolution, the motivations of various types of groups that employ or have employed this tactic, different forms of terrorism, variation in state responses to terrorism (or, where and when terrorism successfully results in concessions), and the effectiveness of a range of counterterrorism strategies and tactics." />
+                        </dd>
+                        <dt>Institution</dt>
+                        <dd property="provider" typeof="EducationalOrganization">
+                            <span property="name">University of Illinois at Urbana-Champaign</span>
+                        </dd>
+                    </div>
                     <dt>Instructor</dt>
-                    <dd typeof="Person">
+                    <dd property="editor" typeof="Person">
                         <span property="honorificPrefix">Dr.</span>
                         <span property="givenName">John</span>
                         <span property="additionalName">A.</span>
@@ -97,7 +103,7 @@
                     </dd>
                 </dl>
             </header>
-            <section id="body">
+            <section id="main" property="articleBody">
                 <p><span lang="eu">Euskadi Ta Askatasuna</span>, or <abbr>ETA</abbr>, was a Basque separatist group that engaged in armed insurrection against the Spanish state until its disarmament in 2017. In its armed lifetime, <abbr>ETA</abbr> militants killed hundreds of Spanish security forces and civilians alike. <abbr>ETA</abbr>’s persistence and ferocity, not seen elsewhere within Spain, has echoes of and often directly mimicked the strategies and philosophies within the various forms of the Irish Republican Army. <abbr>ETA</abbr> and the <abbr>IRA</abbr> saw both formed in response to imperialism, represented a disaffected agrarian society, employed cellular guerilla warfare, and had strong left-wing goals for a future independent state.</p>
                 <p>While <abbr>ETA</abbr> was formed in 1959, the roots of Basque nationalism run much deeper. The Basque people, while residents of France and Spain, are entirely unrelated to Indo-European peoples linguistically and genetically. A 2015 study was able to identify an independent lineage tracing back at least to Neolithic farmers and hunter-gatherers inhabiting the same region 5,500 years ago (<a class="citation" href="#ref-Guenther2015" data-cites="Guenther2015">Günther et al. 2015</a>). Basque nationalism was thus understood by its early adherents within a racial context, distinct from other European independence movements against an ethnically related state such as in Catalonia or Ireland.</p>
                 <p>While the Basque region had been part of empires and kingdoms since Roman conquest circa 50 BCE, the rural social organization consisting of farmers and fishermen allowed Basques to stay quiet and self-sufficient underneath the kingdoms of the middle ages (<a class="citation" href="#ref-Watson2007" data-cites="Watson2007">Watson 2007, 31</a>). The kingdoms of Castile and Navarre codified the relationships with their respective Basque regions under a system of fueros, charters allowing independent, autonomous regional councils that could tax and mobilize soldiers in return for their recognition of the respective Crown. This historic and ancient ideal of autonomy, and especially the well-documented fueros, would be a driving force for Basque nationalism.</p>
