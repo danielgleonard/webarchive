@@ -7,7 +7,7 @@ article > section > section > section > section {
 	margin-bottom: 1em;
 }
 
-article > section > section > section > section > h5, p {
+article > section > section > section > section > h5 {
 	display: inline;
 	font-size: 1em;
 }
