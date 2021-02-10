@@ -52,9 +52,9 @@
         </script>
     </head>
     <body vocab="https://schema.org/">
-        <article>
-            <header>
-                <h1>
+		<article typeof="ScholarlyArticle">
+			<header>
+				<h1 property="name headline">
                     <span id="title">Indigenization in <span lang="la" xml:lang="la">Magna Graecia</span>:</span>
                     <br />
                     <span id="subtitle">The case of Sicily</span>
@@ -64,12 +64,14 @@
                     <br/>
                     <a href="../../../../">Directory index</a>
                 </aside>
+				<meta property="pageStart" content="37" />
+				<meta property="pageEnd" content="42" />
                 <a id="pdf" rel="alternate" href="./sicily.pdf" media="print" type="application/pdf">🖨︎ Printable version (PDF)</a>
                 <a id="tex" rel="alternate" href="./sicily.tex" type="application/x-tex"><span class="latex">L<sup>a</sup>T<sub>e</sub>X</span> source</a>
                 <dl id="pageinfo">
                     <dt>Submitted</dt>
-                    <dd>
-                        <time datetime="2019-05-04T13:39:00-06:00">May 4, 2019</time>
+                    <dd property="datePublished">
+						<time typeof="DateTime" content="2019-05-04T13:39:00-06:00" datetime="2019-05-04T13:39:00-06:00">May 4, 2019</time>
                     </dd>
                     <dt>Author</dt>
                     <dd rel="author" typeof="Person">
@@ -77,135 +79,142 @@
                         <span property="additionalName">G.</span>
                         <span property="familyName">Leonard</span>
                     </dd>
-                    <dt>Course</dt>
-                    <dd typeof="Course">
-                        <span property="courseCode">
-                            CLCV 444
-                        </span> 
-                        <span property="name">
-                            The Archaeology of Italy
-                        </span>
-                    </dd>
-                    <dt>Institution</dt>
-                    <dd typeof="EducationalOrganization">
-                        <span property="name">University of Illinois at Urbana-Champaign</span>
-                    </dd>
+					<div property="exampleOfWork" typeof="Course">
+						<dt>Course</dt>
+                        <dd>
+                            <span property="courseCode">
+                                CLCV 444
+                            </span> 
+                            <span property="name">
+                                The Archaeology of Italy
+                            </span>
+							<!-- <meta property="url" content="https://courses.illinois.edu/schedule/2019/SPRING/CLCV/444" /> -->
+							<meta property="description" content="Monuments, material remains, and sculpture and other arts illustrating the development of Greco-Roman and other ancient Italian civilizations to 330 A. D." />
+                        </dd>
+                        <dt>Institution</dt>
+                        <dd property="provider" typeof="EducationalOrganization">
+                            <span property="name">University of Illinois at Urbana-Champaign</span>
+                        </dd>
+                    </div>
                     <dt>Instructor</dt>
-                    <dd typeof="Person">
+                    <dd property="editor" typeof="Person">
                         <span property="honorificPrefix">Dr.</span>
                         <span property="givenName">Brett</span>
                         <span property="additionalName">S.</span>
                         <span property="familyName">Kaufman</span>
                     </dd>
                 </dl>
+                <link property="image" type="image/png" href="https://archive.danleonard.us/scholarship/coursework/illinois/CLCV/444/sicily_fig_leighton.png" />
             </header>
-            <section id="introduction">
-                <h2>Introduction</h2>
-                <p>Sicily’s geographic position in the Mediterranean Sea allowed it to be conferred strategic advantages by several generations of Classical-era empires. Phoenicians, Greeks, and Romans all at some point colonized the island of Sicily for trade, material wealth, and military advantage. At the same time, indigenous Sicilian societies reckoned with the encroachment of foreign empires upon their island. This interrelation between indigenous and imperial played out in a variety of ways in ancient Sicily, creating a microcosm of Classical-era empire and conquest.</p>
-            </section> <!-- introduction -->
-            <section id="history-of-sicilian-colonization">
-                <h2>History of Sicilian Colonization</h2>
-                <section id="indigenous-sicilian-context">
-                    <h3>Indigenous Sicilian Context</h3>
-                    <figure id="fig_Balco">
-                        <img src="sicily_fig_balco.png" type="image/png" alt="The island of Sicily, labeled with “Elymi” in the West, “Sicans” in the center, and “Sikels” on the Eastern coast." />
-                        <figcaption>
-                            <em class="figname" label="fig_Balco">Figure 1.</em>
-                            Map showing the general distribution of Iron Age Sicilian cultures based on ancient texts. Reprinted from <cite href="#ref-Bal12">Material Expressions of Social Change: Indigenous Sicilian Responses to External Influences in the First Millennium B.C.</cite> (doctoral dissertation), by W. M. Balco Jr., 2012, University of Wisconsin-Milwaukee. Copyright (<a class="citation" href="#ref-Bal12" data-cites="Bal12">2012</a>) by <a class="citation" href="#ref-Bal12" data-cites="Bal12">William Balco</a>.
-                        </figcaption>
-                    </figure>
-                    <p>The vast majority of our understanding of indigenous Sicilians comes from the Greek general <span class="citation" data-cites="Thucydides">Thucydides</span>, whose History of the Peloponnesian War devotes much of its sixth book to the history and current affairs of Sicilian colonies. <span class="citation" data-cites="Thucydides">Thucydides</span> describes three independent societies living within Sicily at the time of Greek colonization, namely Elymi, Sicani, and Sicels (for a map of the locations given by historical writers, see Figure <a href="#fig_Balco" data-reference-type="ref" data-reference="fig_Balco">1</a>). The Greeks believed Sicily to have been the home of Cyclopes and Laestrygonians, thus considering the three ethnic groups encountered to have been recent immigrants who displaced the creatures of legend (<a class="citation" href="#ref-Thucydides" data-cites="Thucydides">Thucydides 1903, 8:VI.2</a>). Modern scholars have however attributed these ethnic groups to inhabitation since at least 1270 BCE (<a class="citation" href="#ref-Lei99" data-cites="Lei99">Leighton 1999</a>).</p>
-                    <p><span class="citation" data-cites="Thucydides">Thucydides</span> described the Sicani as Iberian settlers who initially displaced the mythical beasts of Sicily (<a class="citation" href="#ref-Thucydides" data-cites="Thucydides">Thucydides 1903, 8:VI.2</a>). However, modern scholarship opposes this origin. While scholars today agree with <span class="citation" data-cites="Thucydides">Thucydides</span> that the Sicani had the longest history of Sicilian inhabitation at the time of Greek conquest, there is evidence for their descent from the Illyrian peoples of the Balkans (<a class="citation" href="#ref-Fin83" data-cites="Fin83">Fine 1983</a>). Culturally, historians have described a historical Sicani claim to have <q cite="#ref-Fre92">sprung from the earth</q> in Sicily (<a class="citation" href="#ref-Fre92" data-cites="Fre92">Freeman 1892, 12</a>), evidence of the people’s internal myth of indigeneity.</p>
-                    <p>On the Western portion of the island lay the Elymians, whose social structure revolved around the two large cities of Segesta and Eryx (<a class="citation" href="#ref-Thucydides" data-cites="Thucydides">Thucydides 1903, 8:VI.2</a>). The Greeks attributed their origin to the inhabitants of Troy, a view that would persist into Roman times (<a class="citation" href="#ref-Fre92" data-cites="Fre92">Freeman 1892</a>). There is no known evidence to suggest a Trojan origin, although it is possible that the Elymi descend from seafaring peoples in Asia Minor. Their language remains undeciphered, yet it has been asserted that it is likely Indo-European (<a class="citation" href="#ref-Mar12" data-cites="Mar12">Marchesini 2012</a>) in contrast to the language isolate of the Sicani.</p>
-                    <p>Finally, the Sicels inhabited the eastern portion of the island. At the time of Greek colonization, this group displayed bronzeworking skill and spoke a decidedly Indo-European language.</p>
-                    <figure id="fig_Leighton">
-                        <img src="sicily_fig_leighton.png" type="image/png" alt="Map of the island of Sicily, pockmarked by numbered dots and stars, most dense in the southeastern corner of the island." />
-                        <figcaption>
-                            <em class="figname" label="fig_Leighton">Figure 2.</em>
-                            Map of archaeological sites in Sicily. Dots represent indigenous sites, stars represent Greek and Phoenician sites. Reprinted from <cite href="#ref-Bal12">Sicily Before History</cite> (p. 222), by R. Leighton, 1999, London: Gerald Duckworth &amp; Co. Ltd. Copyright (<a class="citation" href="#ref-Lei99" data-cites="Lei99">1999</a>) by <a class="citation" href="#ref-Lei99" data-cites="Lei99">Robert Leighton</a>.
-                        </figcaption>
-                    </figure>
-                    <p>Despite these seemingly clear and named divisions of Sicily’s precolonial peoples, it has been recently called into question whether such distinct cultures can be identified archaeologically. <a class="citation" href="#ref-Lei99" data-cites="Lei99">Leighton (1999)</a> points out that there has been difficulty in outlining three independent material cultures, despite avid archaeological work on this island. In fact, the vast majority of known archaeological sites on Sicily are of indigenous communities (see Figure <a href="#fig_Leighton" data-reference-type="ref" data-reference="fig_Leighton">2</a>). Likewise, <a class="citation" href="#ref-Bal12" data-cites="Bal12">Balco (2012)</a> notes that many of the Greek histories of these three cultures differ greatly, often contradicting one another.</p>
-                </section> <!-- indigenous-sicilian-context -->
-                <section id="early-colonization">
-                    <h3>Early Colonization</h3>
-                    <section id="geographic-location">
-                        <h4>Geographic Location</h4>
-                        <p>Sicily is located in the center of the Mediterranean Sea, providing many advantages for colonizing empires. Its highly diverse soils (<a class="citation" href="#ref-Bal68" data-cites="Bal68">Ballatore and Fierotti 1968</a>) are exceptionally fertile, allowing for the production of olives, grapes, and grains, assets that have been vital to Mediterranean civilizations for millennia (<a class="citation" href="#ref-Bal12" data-cites="Bal12">Balco 2012</a>). The location relative to the European and North African mainlands provides further advantages, in control of inter-Mediterranean trade, a fact that did not go unnoticed by Greeks or Phoenicians (<a class="citation" href="#ref-DeA03" data-cites="DeA03">Angelis 2003</a>).</p>
-                    </section> <!-- geographic-location -->
-                    <section id="phoenician-settlement">
-                        <h4>Phoenician Settlement</h4>
-                        <p>Phoenicians have long been credited with early settlement of Sicily: <span class="citation" data-cites="Thucydides">Thucydides</span> gives a date of at least the 10th century BCE, and historians had frequently used that date for the first founding of Phoenician colonies. However, there is little to no archaeological evidence to support such an assertion. The first sign of any Phoenician settlement is the presence of imported Greek pottery on the western offshore island of Motya, which dates only to 720 BCE (<a class="citation" href="#ref-Lei99" data-cites="Lei99">Leighton 1999</a>). Carthaginians rapidly formed settlements on several islands off the coasts of Sicily, as was common practice for Phoenician settlement. However, <a class="citation" href="#ref-Fre92" data-cites="Fre92">Freeman (1892)</a> notes that only in the western cape were such settlements large enough as to be considered colonies, with claimed territory attached to the city proper. Motya specifically would grow to wield great influence in the region, benefitting from its location on a small island in a sheltered and easily-defended bay. In addition Phoenicians built cities inland, such as Solous and Panormos in a northern bay, which allowed for large volumes of trade with much of Europe from the position of this central Mediterranean island (<a class="citation" href="#ref-Fre92" data-cites="Fre92">Freeman 1892</a>).</p>
-                        <p>Phoenician contact with indigenous groups on Sicily is poorly documented in the historical record. <a class="citation" href="#ref-Lei99" data-cites="Lei99">Leighton (1999)</a> notes that Phoenician settlement <q cite="#ref-Lei99">is a history with no autonomous literary tradition</q>&#160;(p. 219). Thus, the historical analysis of Phoenician settlement is based almost exclusively on the writings of <span class="citation" data-cites="Thucydides">Thucydides</span>. Until the arrival of, and interactions with, Greek settlers it has been accepted that Phoenicians in the west had noncombative relations with the Elymi due to a lack of conflict in the archaeological record.</p>
-                    </section> <!-- phoenician-settlement -->
-                    <section id="greek-settlement">
-                        <h4>Greek Settlement</h4>
-                        <p><a class="citation" href="#ref-Hol91" data-cites="Hol91">Holloway (1991)</a> notes that in the historical record, <q cite="#ref-Hol91">the beginning of Greek settlement seems to be among the best documented events in the Greek history of the island</q>&#160;(p. 45). <span class="citation" data-cites="Thucydides">Thucydides</span> depicts a rapid race of Greek colonists for the conquest of Sicily’s east coast. Beginning with Naxos, several colonies were founded within a span of seven years, and Syracuse is listed as appearing within a year of Naxos’s construction (<a class="citation" href="#ref-Thucydides" data-cites="Thucydides">Thucydides 1903, 8:VI.3</a>). However, Greek pottery before the year 750 appears only at Syracuse, arriving almost simultaneously many years later at Naxos, Megara, and others. This discrepancy in chronology persists across most early Greek sites in Sicily, casting doubt on the accuracy of the historical record (see Table <a href="#table_Leighton" data-reference-type="ref" data-reference="table_Leighton">1</a>).</p>
-                        <div class="tableparent">
-                            <table id="table_Leighton">
-                                <caption><em>Table 1</em>. Foundation dates (Thucydides) and Greek imported pottery in Greek colonies</caption>
-                                <thead>
-                                    <tr>
-                                        <th>City</th>
-                                        <th>Foundation date (<span class="citation" data-cites="Thucydides">Thucydides</span>)</th>
-                                        <th>MG pottery &lt;&#160;750</th>
-                                        <th>LG pottery 750–700</th>
-                                        <th>EPC pottery 720–680</th>
-                                        <th>MPC pottery 680–650</th>
-                                        <th>LPC pottery 650–610</th>
-                                        <th>EC pottery &gt;&#160;610</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr><td>Naxos</td><td>734</td><td style="text-align: center;"></td><td style="text-align: center;">•</td><td style="text-align: center;">•</td><td style="text-align: center;">•</td><td style="text-align: center;">•</td><td style="text-align: center;">•</td></tr>
-                                    <tr><td>Syracuse</td><td>733</td><td style="text-align: center;">•</td><td style="text-align: center;">•</td><td style="text-align: center;">•</td><td style="text-align: center;">•</td><td style="text-align: center;">•</td><td style="text-align: center;">•</td></tr>
-                                    <tr><td>Lentini</td><td>729</td><td style="text-align: center;"></td><td style="text-align: center;">•</td><td style="text-align: center;">•</td><td style="text-align: center;">•</td><td style="text-align: center;">•</td><td style="text-align: center;">•</td></tr>
-                                    <tr><td>Catania</td><td>729</td><td style="text-align: center;"></td><td style="text-align: center;">•</td><td style="text-align: center;"></td><td style="text-align: center;"></td><td style="text-align: center;"></td><td style="text-align: center;"></td></tr>
-                                    <tr><td>Megara</td><td>728</td><td style="text-align: center;">?</td><td style="text-align: center;">•</td><td style="text-align: center;">•</td><td style="text-align: center;">•</td><td style="text-align: center;">•</td><td style="text-align: center;">•</td></tr>
-                                    <tr><td>Gela</td><td>688</td><td style="text-align: center;"></td><td style="text-align: center;">•</td><td style="text-align: center;">•</td><td style="text-align: center;">•</td><td style="text-align: center;">•</td><td style="text-align: center;">•</td></tr>
-                                    <tr><td>Selinux</td><td>628</td><td style="text-align: center;"></td><td style="text-align: center;"></td><td style="text-align: center;"></td><td style="text-align: center;">•</td><td style="text-align: center;">•</td><td style="text-align: center;">•</td></tr>
-                                </tbody>
-                            </table>
+            <section id="main" property="articleBody">
+                <section id="introduction">
+                    <h2>Introduction</h2>
+                    <p>Sicily’s geographic position in the Mediterranean Sea allowed it to be conferred strategic advantages by several generations of Classical-era empires. Phoenicians, Greeks, and Romans all at some point colonized the island of Sicily for trade, material wealth, and military advantage. At the same time, indigenous Sicilian societies reckoned with the encroachment of foreign empires upon their island. This interrelation between indigenous and imperial played out in a variety of ways in ancient Sicily, creating a microcosm of Classical-era empire and conquest.</p>
+                </section> <!-- introduction -->
+                <section id="history-of-sicilian-colonization">
+                    <h2>History of Sicilian Colonization</h2>
+                    <section id="indigenous-sicilian-context">
+                        <h3>Indigenous Sicilian Context</h3>
+                        <figure id="fig_Balco">
+                            <img src="sicily_fig_balco.png" type="image/png" alt="The island of Sicily, labeled with “Elymi” in the West, “Sicans” in the center, and “Sikels” on the Eastern coast." />
                             <figcaption>
-                                <em>Note:</em> Reprinted from <cite href="#ref-Bal12">Sicily Before History</cite> (p. 222), by R. Leighton, 1999, London: Gerald Duckworth &amp; Co. Ltd. Copyright (<a class="citation" href="#ref-Lei99" data-cites="Lei99">1999</a>) by <a class="citation" href="#ref-Lei99" data-cites="Lei99">Robert Leighton</a>.
+                                <em class="figname" label="fig_Balco">Figure 1.</em>
+                                Map showing the general distribution of Iron Age Sicilian cultures based on ancient texts. Reprinted from <cite href="#ref-Bal12">Material Expressions of Social Change: Indigenous Sicilian Responses to External Influences in the First Millennium B.C.</cite> (doctoral dissertation), by W. M. Balco Jr., 2012, University of Wisconsin-Milwaukee. Copyright (<a class="citation" href="#ref-Bal12" data-cites="Bal12">2012</a>) by <a class="citation" href="#ref-Bal12" data-cites="Bal12">William Balco</a>.
                             </figcaption>
-                        </div>
-                        <p><a class="citation" href="#ref-Lei99" data-cites="Lei99">Leighton (1999)</a> however notes that there is evidence of decidedly Hellenic pottery and sculpture present in Sicily centuries before known colonies. It is posited thus that Sicily’s geographic position lent it to at least occasionally interact with Mediterranean trade networks long before the onset of <span lang="la" xml:lang="la">Magna Graecian</span> colonization.</p>
-                    </section> <!-- greek-settlement -->
-                </section> <!-- early-colonization -->
-            </section> <!-- history-of-sicilian-colonization -->
-            <section id="indigenous-relations">
-                <h2>Indigenous Relations</h2>
-                <section id="comparative-analysis-of-indigenous-cultures">
-                    <h3>Comparative Analysis of Indigenous Cultures</h3>
-                    <p>If the divisions of the indigenous inhabitants given by ancient writers are to be taken for granted (<a class="citation" href="#ref-Bal12" data-cites="Bal12">for discussion of the necessity of critical interpretation, see Balco 2012</a>), we can see great diversity in the treatment and development of colonization between the groups. While all were militarily unmatched, Sicels, Sicani, and Elymi interacted differently with the Greek colonists.</p>
-                    <section id="sicels">
-                        <h4>Sicels</h4>
-                        <p>Very soon after the arrival of Greek colonists, Sicel communities adopted Hellenic vase styles and Greek script. Residing in the eastern portion of Sicily, it is likely that their close proximity to the first Greek colonies, and especially Syracuse, led to rapid adoption of Greek culture. However, <a class="citation" href="#ref-Hol91" data-cites="Hol91">Holloway (1991)</a> notes that many Sicel sites show prolonged persistence of traditional cults, many lasting without Hellenization into the Roman era.</p>
-                        <p>Despite maintaining many forms of their culture, Sicels were certainly subjugated by their new neighbors. Any Sicel residents near Dorian cities were rapidly diminished to serfdom to the Greek elite (<a class="citation" href="#ref-Fin83" data-cites="Fin83">Fine 1983</a>). Notably, nearly every Dorian city on the east coast appears to have been initially inhabited by Sicel communities (<a class="citation" href="#ref-Boa80" data-cites="Boa80">Boardman 1980</a>), confirmed in the historic record: <q cite="#ref-Thucydides">the first to arrive were Chalcidians from Euboea with Thucles, their founder … Syracuse was founded the year afterwards by Archias, … who began by driving out the Sicels from the island upon which the inner city now stands</q> (<a class="citation" href="#ref-Thucydides" data-cites="Thucydides">Thucydides 1903, 8:VI.3</a>). These evictions suggest the Greeks saw indigenous towns as exploitable not just for their resources but for the existence of a built environment. Syracuse would remain expansionist and come to take over much of the island through violence (<a class="citation" href="#ref-Sjo73" data-cites="Sjo73">Sjöqvist 1973</a>).</p>
-                        <p>By the mid-fifth century BCE, there is strong evidence that Sicels and Greeks had begun some processes of cultural cohesion. From 459-456 BCE, Sicels dissatisfied with serfdom under Syracuse’s attempted to gain autonomy. Following the Sicel leader Ducetius, they were eventually crushed and reduced again to a subject population. However, it is notable that Ducetius himself surrendered and was granted the right to Dorian protection, eventually moving to Syracuse (<a class="citation" href="#ref-Hol91" data-cites="Hol91">Holloway 1991</a>). Thus, despite general dissatisfaction with Hellenic hegemony, at least the elites of Sicel communities had become well-versed in Greek customs and language, to the point of being able to negotiate safe passage to and inhabitation in Corinth.</p>
-                    </section> <!-- sicels -->
-                    <section id="sicani">
-                        <h4>Sicani</h4>
-                        <p>Many indigenous Sicani sites were either razed entirely or taken over violently by expansionist colonists from Syracuse (<a class="citation" href="#ref-Boa80" data-cites="Boa80">Boardman 1980</a>), not unlike the practice performed upon the Sicels. However, Chalcidian Greeks appear to have penetrated central Sicily from the north coast with little archaeological evidence of conflict (<a class="citation" href="#ref-Sjo73" data-cites="Sjo73">Sjöqvist 1973</a>). It is likely that this penetration is the result of rapid cross-cultural exchange rather than violent conquest, as the Sicani leave little trace in the archaeological record post-colonization. However, it should be noted that the map of archaeological sites in Sicily (Figure <a href="#fig_Leighton" data-reference-type="ref" data-reference="fig_Leighton">2</a>) leaves a wide expanse uninvestigated in the north-central region, which is often cited as the home of the Sicani civilization (see Figure <a href="#fig_Leighton" data-reference-type="ref" data-reference="fig_Leighton">2</a>).</p>
-                    </section> <!-- sicani -->
-                    <section id="elymians">
-                        <h4>Elymians</h4>
-                        <p>Unlike the other two indigenous groups in Sicily, the Elymi were not militarily conquered by either Phoenicians or Greeks. Phoenicians are frequently noted as having frequent trade with the Elymi, having located their most permanent settlements on the islands surrounding Elymian territory. During the Pelopponeisan War, <span class="citation" data-cites="Thucydides">Thucydides</span> notes that they maintained military and trade alliances with Athens. Following the war, they were subjected to taxation by Athens, but still remained autonomous and culturally intact (<a class="citation" href="#ref-Thucydides" data-cites="Thucydides">Thucydides 1903, 8:VI.6</a>).</p>
-                        <p>During the 2nd-4th centuries BCE, the Elymian cities of Segesta and Eryx adopted markedly Hellenistic architectural styles. Most notably, at Segesta are a 4,000-seat Greek theater (<a class="citation" href="#ref-Dan04" data-cites="Dan04">Daniele et al. 2004</a>) and a monumental Hellenic temple (<a class="citation" href="#ref-Bia84" data-cites="Bia84">Bianchi and Barak 1984</a>).</p>
-                    </section> <!-- elymians -->
-                </section> <!-- comparative-analysis-of-indigenous-cultures -->
-                <section id="cross-cultural-exchange">
-                    <h3>Cross-cultural Exchange</h3>
-                    <p>The distinction between Greek and indigenous communities rapidly blurred in the centuries following colonization. Despite Sicels maintaining many of their social customs and cults, distinctively Greek practices appear side-by-side with indigenous in the archaeological record. <a class="citation" href="#ref-Boa80" data-cites="Boa80">Boardman (1980)</a> argues that individual Greeks may have moved into Sicel towns, leading to the establishment of a Greek quarter, followed by a wholly Greek town nearby. The existence of such cohabitative relationships would certainly bolster adoption of Greek culture within the indigenous communities, and is supported by the evidence of Ducetius’s apparent knowledge of the Greek language and willingness to reside in a mainland Greek city.</p>
-                    <p>Conversely, <a class="citation" href="#ref-Lei99" data-cites="Lei99">Leighton (1999)</a> proposes that indigenous Sicilians also entered Greek cities, affecting colonial Greek culture. Notably, the burial practices of Syracuse and Megara are startlingly different from their mainland home cities of Corinth and Megara, respectively. While they do not align directly with the practices of indigenous Sicilians, the practice of rock-cut trench graves at Syracuse would not be far divorced from the indigenous practice of rock-cut chamber tombs, especially compared to the Corinthian practice of monolithic sarcophagi, far less common in Sicily. Likewise, some 14% of tombs in Syracuse contain what appear to be family units, a practice unheard of in Corinth yet common to indigenous Sicilians.</p>
-                    <p>Segesta’s construction of a Hellenistic temple and theater are notable especially in that Greek colonization largely left Elymians independent. The theater displays strong consistency with Hellenistic architectural practice in its precise attention to acoustic resonance – levels of reverberation conform well to those of mainland Greek theaters (<a class="citation" href="#ref-Dan04" data-cites="Dan04">Daniele et al. 2004</a>). The temple, likewise, has many elements similar to those of mainland Greek temples, and differences are likely only due to the unfinished state of the monument. <a class="citation" href="#ref-Bur61" data-cites="Bur61">Burford (1961)</a> notes that the written record of the city includes construction orders that match Greek standards.</p>
-                </section> <!-- cross-cultural-exchange -->
-            </section> <!-- indigenous-relations -->
-            <section id="discussion">
-                <h2>Discussion</h2>
-                <p>The practice of colonization in Greek colonies is far more varied than simple territorial conquest. Throughout the island, relationships between indigenous Sicilians and Greek settlers differed from friendly trade relations to outright military conflict. As noted by <a class="citation" href="#ref-Bal12" data-cites="Bal12">Balco (2012)</a>, the overall process of indigenous cultural exchange happened over the period of centuries, where both the Greeks and the indigenous cultures contributed to a shared legacy. As our understanding of colonization and indigenous relations are marred by the contemporary practice of nation-state colonization, it is important to explore the practice of indigeneity in a different time period. The practices proposed by <a class="citation" href="#ref-Boa80" data-cites="Boa80">Boardman (1980)</a> and <a class="citation" href="#ref-Lei99" data-cites="Lei99">Leighton (1999)</a> of cross-border cohabitation are a marked departure from the earlier understanding of indigenous inhabitants as living outside a sharply delineated region of Greek influence which contains a “pure” Greek population. Such insights can assist in connecting indigenous relations to contemporary times, in which – just as in ancient Sicily – many indigenous peoples in settler-colonial states live not among themselves but integrated within the larger colonial culture.</p>
-            </section> <!-- discussion -->
+                        </figure>
+                        <p>The vast majority of our understanding of indigenous Sicilians comes from the Greek general <span class="citation" data-cites="Thucydides">Thucydides</span>, whose History of the Peloponnesian War devotes much of its sixth book to the history and current affairs of Sicilian colonies. <span class="citation" data-cites="Thucydides">Thucydides</span> describes three independent societies living within Sicily at the time of Greek colonization, namely Elymi, Sicani, and Sicels (for a map of the locations given by historical writers, see Figure <a href="#fig_Balco" data-reference-type="ref" data-reference="fig_Balco">1</a>). The Greeks believed Sicily to have been the home of Cyclopes and Laestrygonians, thus considering the three ethnic groups encountered to have been recent immigrants who displaced the creatures of legend (<a class="citation" href="#ref-Thucydides" data-cites="Thucydides">Thucydides 1903, 8:VI.2</a>). Modern scholars have however attributed these ethnic groups to inhabitation since at least 1270 BCE (<a class="citation" href="#ref-Lei99" data-cites="Lei99">Leighton 1999</a>).</p>
+                        <p><span class="citation" data-cites="Thucydides">Thucydides</span> described the Sicani as Iberian settlers who initially displaced the mythical beasts of Sicily (<a class="citation" href="#ref-Thucydides" data-cites="Thucydides">Thucydides 1903, 8:VI.2</a>). However, modern scholarship opposes this origin. While scholars today agree with <span class="citation" data-cites="Thucydides">Thucydides</span> that the Sicani had the longest history of Sicilian inhabitation at the time of Greek conquest, there is evidence for their descent from the Illyrian peoples of the Balkans (<a class="citation" href="#ref-Fin83" data-cites="Fin83">Fine 1983</a>). Culturally, historians have described a historical Sicani claim to have <q cite="#ref-Fre92">sprung from the earth</q> in Sicily (<a class="citation" href="#ref-Fre92" data-cites="Fre92">Freeman 1892, 12</a>), evidence of the people’s internal myth of indigeneity.</p>
+                        <p>On the Western portion of the island lay the Elymians, whose social structure revolved around the two large cities of Segesta and Eryx (<a class="citation" href="#ref-Thucydides" data-cites="Thucydides">Thucydides 1903, 8:VI.2</a>). The Greeks attributed their origin to the inhabitants of Troy, a view that would persist into Roman times (<a class="citation" href="#ref-Fre92" data-cites="Fre92">Freeman 1892</a>). There is no known evidence to suggest a Trojan origin, although it is possible that the Elymi descend from seafaring peoples in Asia Minor. Their language remains undeciphered, yet it has been asserted that it is likely Indo-European (<a class="citation" href="#ref-Mar12" data-cites="Mar12">Marchesini 2012</a>) in contrast to the language isolate of the Sicani.</p>
+                        <p>Finally, the Sicels inhabited the eastern portion of the island. At the time of Greek colonization, this group displayed bronzeworking skill and spoke a decidedly Indo-European language.</p>
+                        <figure id="fig_Leighton">
+                            <img src="sicily_fig_leighton.png" type="image/png" alt="Map of the island of Sicily, pockmarked by numbered dots and stars, most dense in the southeastern corner of the island." />
+                            <figcaption>
+                                <em class="figname" label="fig_Leighton">Figure 2.</em>
+                                Map of archaeological sites in Sicily. Dots represent indigenous sites, stars represent Greek and Phoenician sites. Reprinted from <cite href="#ref-Bal12">Sicily Before History</cite> (p. 222), by R. Leighton, 1999, London: Gerald Duckworth &amp; Co. Ltd. Copyright (<a class="citation" href="#ref-Lei99" data-cites="Lei99">1999</a>) by <a class="citation" href="#ref-Lei99" data-cites="Lei99">Robert Leighton</a>.
+                            </figcaption>
+                        </figure>
+                        <p>Despite these seemingly clear and named divisions of Sicily’s precolonial peoples, it has been recently called into question whether such distinct cultures can be identified archaeologically. <a class="citation" href="#ref-Lei99" data-cites="Lei99">Leighton (1999)</a> points out that there has been difficulty in outlining three independent material cultures, despite avid archaeological work on this island. In fact, the vast majority of known archaeological sites on Sicily are of indigenous communities (see Figure <a href="#fig_Leighton" data-reference-type="ref" data-reference="fig_Leighton">2</a>). Likewise, <a class="citation" href="#ref-Bal12" data-cites="Bal12">Balco (2012)</a> notes that many of the Greek histories of these three cultures differ greatly, often contradicting one another.</p>
+                    </section> <!-- indigenous-sicilian-context -->
+                    <section id="early-colonization">
+                        <h3>Early Colonization</h3>
+                        <section id="geographic-location">
+                            <h4>Geographic Location</h4>
+                            <p>Sicily is located in the center of the Mediterranean Sea, providing many advantages for colonizing empires. Its highly diverse soils (<a class="citation" href="#ref-Bal68" data-cites="Bal68">Ballatore and Fierotti 1968</a>) are exceptionally fertile, allowing for the production of olives, grapes, and grains, assets that have been vital to Mediterranean civilizations for millennia (<a class="citation" href="#ref-Bal12" data-cites="Bal12">Balco 2012</a>). The location relative to the European and North African mainlands provides further advantages, in control of inter-Mediterranean trade, a fact that did not go unnoticed by Greeks or Phoenicians (<a class="citation" href="#ref-DeA03" data-cites="DeA03">Angelis 2003</a>).</p>
+                        </section> <!-- geographic-location -->
+                        <section id="phoenician-settlement">
+                            <h4>Phoenician Settlement</h4>
+                            <p>Phoenicians have long been credited with early settlement of Sicily: <span class="citation" data-cites="Thucydides">Thucydides</span> gives a date of at least the 10th century BCE, and historians had frequently used that date for the first founding of Phoenician colonies. However, there is little to no archaeological evidence to support such an assertion. The first sign of any Phoenician settlement is the presence of imported Greek pottery on the western offshore island of Motya, which dates only to 720 BCE (<a class="citation" href="#ref-Lei99" data-cites="Lei99">Leighton 1999</a>). Carthaginians rapidly formed settlements on several islands off the coasts of Sicily, as was common practice for Phoenician settlement. However, <a class="citation" href="#ref-Fre92" data-cites="Fre92">Freeman (1892)</a> notes that only in the western cape were such settlements large enough as to be considered colonies, with claimed territory attached to the city proper. Motya specifically would grow to wield great influence in the region, benefitting from its location on a small island in a sheltered and easily-defended bay. In addition Phoenicians built cities inland, such as Solous and Panormos in a northern bay, which allowed for large volumes of trade with much of Europe from the position of this central Mediterranean island (<a class="citation" href="#ref-Fre92" data-cites="Fre92">Freeman 1892</a>).</p>
+                            <p>Phoenician contact with indigenous groups on Sicily is poorly documented in the historical record. <a class="citation" href="#ref-Lei99" data-cites="Lei99">Leighton (1999)</a> notes that Phoenician settlement <q cite="#ref-Lei99">is a history with no autonomous literary tradition</q>&#160;(p. 219). Thus, the historical analysis of Phoenician settlement is based almost exclusively on the writings of <span class="citation" data-cites="Thucydides">Thucydides</span>. Until the arrival of, and interactions with, Greek settlers it has been accepted that Phoenicians in the west had noncombative relations with the Elymi due to a lack of conflict in the archaeological record.</p>
+                        </section> <!-- phoenician-settlement -->
+                        <section id="greek-settlement">
+                            <h4>Greek Settlement</h4>
+                            <p><a class="citation" href="#ref-Hol91" data-cites="Hol91">Holloway (1991)</a> notes that in the historical record, <q cite="#ref-Hol91">the beginning of Greek settlement seems to be among the best documented events in the Greek history of the island</q>&#160;(p. 45). <span class="citation" data-cites="Thucydides">Thucydides</span> depicts a rapid race of Greek colonists for the conquest of Sicily’s east coast. Beginning with Naxos, several colonies were founded within a span of seven years, and Syracuse is listed as appearing within a year of Naxos’s construction (<a class="citation" href="#ref-Thucydides" data-cites="Thucydides">Thucydides 1903, 8:VI.3</a>). However, Greek pottery before the year 750 appears only at Syracuse, arriving almost simultaneously many years later at Naxos, Megara, and others. This discrepancy in chronology persists across most early Greek sites in Sicily, casting doubt on the accuracy of the historical record (see Table <a href="#table_Leighton" data-reference-type="ref" data-reference="table_Leighton">1</a>).</p>
+                            <div class="tableparent">
+                                <table id="table_Leighton">
+                                    <caption><em>Table 1</em>. Foundation dates (Thucydides) and Greek imported pottery in Greek colonies</caption>
+                                    <thead>
+                                        <tr>
+                                            <th>City</th>
+                                            <th>Foundation date (<span class="citation" data-cites="Thucydides">Thucydides</span>)</th>
+                                            <th>MG pottery &lt;&#160;750</th>
+                                            <th>LG pottery 750–700</th>
+                                            <th>EPC pottery 720–680</th>
+                                            <th>MPC pottery 680–650</th>
+                                            <th>LPC pottery 650–610</th>
+                                            <th>EC pottery &gt;&#160;610</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr><td>Naxos</td><td>734</td><td style="text-align: center;"></td><td style="text-align: center;">•</td><td style="text-align: center;">•</td><td style="text-align: center;">•</td><td style="text-align: center;">•</td><td style="text-align: center;">•</td></tr>
+                                        <tr><td>Syracuse</td><td>733</td><td style="text-align: center;">•</td><td style="text-align: center;">•</td><td style="text-align: center;">•</td><td style="text-align: center;">•</td><td style="text-align: center;">•</td><td style="text-align: center;">•</td></tr>
+                                        <tr><td>Lentini</td><td>729</td><td style="text-align: center;"></td><td style="text-align: center;">•</td><td style="text-align: center;">•</td><td style="text-align: center;">•</td><td style="text-align: center;">•</td><td style="text-align: center;">•</td></tr>
+                                        <tr><td>Catania</td><td>729</td><td style="text-align: center;"></td><td style="text-align: center;">•</td><td style="text-align: center;"></td><td style="text-align: center;"></td><td style="text-align: center;"></td><td style="text-align: center;"></td></tr>
+                                        <tr><td>Megara</td><td>728</td><td style="text-align: center;">?</td><td style="text-align: center;">•</td><td style="text-align: center;">•</td><td style="text-align: center;">•</td><td style="text-align: center;">•</td><td style="text-align: center;">•</td></tr>
+                                        <tr><td>Gela</td><td>688</td><td style="text-align: center;"></td><td style="text-align: center;">•</td><td style="text-align: center;">•</td><td style="text-align: center;">•</td><td style="text-align: center;">•</td><td style="text-align: center;">•</td></tr>
+                                        <tr><td>Selinux</td><td>628</td><td style="text-align: center;"></td><td style="text-align: center;"></td><td style="text-align: center;"></td><td style="text-align: center;">•</td><td style="text-align: center;">•</td><td style="text-align: center;">•</td></tr>
+                                    </tbody>
+                                </table>
+                                <figcaption>
+                                    <em>Note:</em> Reprinted from <cite href="#ref-Bal12">Sicily Before History</cite> (p. 222), by R. Leighton, 1999, London: Gerald Duckworth &amp; Co. Ltd. Copyright (<a class="citation" href="#ref-Lei99" data-cites="Lei99">1999</a>) by <a class="citation" href="#ref-Lei99" data-cites="Lei99">Robert Leighton</a>.
+                                </figcaption>
+                            </div>
+                            <p><a class="citation" href="#ref-Lei99" data-cites="Lei99">Leighton (1999)</a> however notes that there is evidence of decidedly Hellenic pottery and sculpture present in Sicily centuries before known colonies. It is posited thus that Sicily’s geographic position lent it to at least occasionally interact with Mediterranean trade networks long before the onset of <span lang="la" xml:lang="la">Magna Graecian</span> colonization.</p>
+                        </section> <!-- greek-settlement -->
+                    </section> <!-- early-colonization -->
+                </section> <!-- history-of-sicilian-colonization -->
+                <section id="indigenous-relations">
+                    <h2>Indigenous Relations</h2>
+                    <section id="comparative-analysis-of-indigenous-cultures">
+                        <h3>Comparative Analysis of Indigenous Cultures</h3>
+                        <p>If the divisions of the indigenous inhabitants given by ancient writers are to be taken for granted (<a class="citation" href="#ref-Bal12" data-cites="Bal12">for discussion of the necessity of critical interpretation, see Balco 2012</a>), we can see great diversity in the treatment and development of colonization between the groups. While all were militarily unmatched, Sicels, Sicani, and Elymi interacted differently with the Greek colonists.</p>
+                        <section id="sicels">
+                            <h4>Sicels</h4>
+                            <p>Very soon after the arrival of Greek colonists, Sicel communities adopted Hellenic vase styles and Greek script. Residing in the eastern portion of Sicily, it is likely that their close proximity to the first Greek colonies, and especially Syracuse, led to rapid adoption of Greek culture. However, <a class="citation" href="#ref-Hol91" data-cites="Hol91">Holloway (1991)</a> notes that many Sicel sites show prolonged persistence of traditional cults, many lasting without Hellenization into the Roman era.</p>
+                            <p>Despite maintaining many forms of their culture, Sicels were certainly subjugated by their new neighbors. Any Sicel residents near Dorian cities were rapidly diminished to serfdom to the Greek elite (<a class="citation" href="#ref-Fin83" data-cites="Fin83">Fine 1983</a>). Notably, nearly every Dorian city on the east coast appears to have been initially inhabited by Sicel communities (<a class="citation" href="#ref-Boa80" data-cites="Boa80">Boardman 1980</a>), confirmed in the historic record: <q cite="#ref-Thucydides">the first to arrive were Chalcidians from Euboea with Thucles, their founder … Syracuse was founded the year afterwards by Archias, … who began by driving out the Sicels from the island upon which the inner city now stands</q> (<a class="citation" href="#ref-Thucydides" data-cites="Thucydides">Thucydides 1903, 8:VI.3</a>). These evictions suggest the Greeks saw indigenous towns as exploitable not just for their resources but for the existence of a built environment. Syracuse would remain expansionist and come to take over much of the island through violence (<a class="citation" href="#ref-Sjo73" data-cites="Sjo73">Sjöqvist 1973</a>).</p>
+                            <p>By the mid-fifth century BCE, there is strong evidence that Sicels and Greeks had begun some processes of cultural cohesion. From 459-456 BCE, Sicels dissatisfied with serfdom under Syracuse’s attempted to gain autonomy. Following the Sicel leader Ducetius, they were eventually crushed and reduced again to a subject population. However, it is notable that Ducetius himself surrendered and was granted the right to Dorian protection, eventually moving to Syracuse (<a class="citation" href="#ref-Hol91" data-cites="Hol91">Holloway 1991</a>). Thus, despite general dissatisfaction with Hellenic hegemony, at least the elites of Sicel communities had become well-versed in Greek customs and language, to the point of being able to negotiate safe passage to and inhabitation in Corinth.</p>
+                        </section> <!-- sicels -->
+                        <section id="sicani">
+                            <h4>Sicani</h4>
+                            <p>Many indigenous Sicani sites were either razed entirely or taken over violently by expansionist colonists from Syracuse (<a class="citation" href="#ref-Boa80" data-cites="Boa80">Boardman 1980</a>), not unlike the practice performed upon the Sicels. However, Chalcidian Greeks appear to have penetrated central Sicily from the north coast with little archaeological evidence of conflict (<a class="citation" href="#ref-Sjo73" data-cites="Sjo73">Sjöqvist 1973</a>). It is likely that this penetration is the result of rapid cross-cultural exchange rather than violent conquest, as the Sicani leave little trace in the archaeological record post-colonization. However, it should be noted that the map of archaeological sites in Sicily (Figure <a href="#fig_Leighton" data-reference-type="ref" data-reference="fig_Leighton">2</a>) leaves a wide expanse uninvestigated in the north-central region, which is often cited as the home of the Sicani civilization (see Figure <a href="#fig_Leighton" data-reference-type="ref" data-reference="fig_Leighton">2</a>).</p>
+                        </section> <!-- sicani -->
+                        <section id="elymians">
+                            <h4>Elymians</h4>
+                            <p>Unlike the other two indigenous groups in Sicily, the Elymi were not militarily conquered by either Phoenicians or Greeks. Phoenicians are frequently noted as having frequent trade with the Elymi, having located their most permanent settlements on the islands surrounding Elymian territory. During the Pelopponeisan War, <span class="citation" data-cites="Thucydides">Thucydides</span> notes that they maintained military and trade alliances with Athens. Following the war, they were subjected to taxation by Athens, but still remained autonomous and culturally intact (<a class="citation" href="#ref-Thucydides" data-cites="Thucydides">Thucydides 1903, 8:VI.6</a>).</p>
+                            <p>During the 2nd-4th centuries BCE, the Elymian cities of Segesta and Eryx adopted markedly Hellenistic architectural styles. Most notably, at Segesta are a 4,000-seat Greek theater (<a class="citation" href="#ref-Dan04" data-cites="Dan04">Daniele et al. 2004</a>) and a monumental Hellenic temple (<a class="citation" href="#ref-Bia84" data-cites="Bia84">Bianchi and Barak 1984</a>).</p>
+                        </section> <!-- elymians -->
+                    </section> <!-- comparative-analysis-of-indigenous-cultures -->
+                    <section id="cross-cultural-exchange">
+                        <h3>Cross-cultural Exchange</h3>
+                        <p>The distinction between Greek and indigenous communities rapidly blurred in the centuries following colonization. Despite Sicels maintaining many of their social customs and cults, distinctively Greek practices appear side-by-side with indigenous in the archaeological record. <a class="citation" href="#ref-Boa80" data-cites="Boa80">Boardman (1980)</a> argues that individual Greeks may have moved into Sicel towns, leading to the establishment of a Greek quarter, followed by a wholly Greek town nearby. The existence of such cohabitative relationships would certainly bolster adoption of Greek culture within the indigenous communities, and is supported by the evidence of Ducetius’s apparent knowledge of the Greek language and willingness to reside in a mainland Greek city.</p>
+                        <p>Conversely, <a class="citation" href="#ref-Lei99" data-cites="Lei99">Leighton (1999)</a> proposes that indigenous Sicilians also entered Greek cities, affecting colonial Greek culture. Notably, the burial practices of Syracuse and Megara are startlingly different from their mainland home cities of Corinth and Megara, respectively. While they do not align directly with the practices of indigenous Sicilians, the practice of rock-cut trench graves at Syracuse would not be far divorced from the indigenous practice of rock-cut chamber tombs, especially compared to the Corinthian practice of monolithic sarcophagi, far less common in Sicily. Likewise, some 14% of tombs in Syracuse contain what appear to be family units, a practice unheard of in Corinth yet common to indigenous Sicilians.</p>
+                        <p>Segesta’s construction of a Hellenistic temple and theater are notable especially in that Greek colonization largely left Elymians independent. The theater displays strong consistency with Hellenistic architectural practice in its precise attention to acoustic resonance – levels of reverberation conform well to those of mainland Greek theaters (<a class="citation" href="#ref-Dan04" data-cites="Dan04">Daniele et al. 2004</a>). The temple, likewise, has many elements similar to those of mainland Greek temples, and differences are likely only due to the unfinished state of the monument. <a class="citation" href="#ref-Bur61" data-cites="Bur61">Burford (1961)</a> notes that the written record of the city includes construction orders that match Greek standards.</p>
+                    </section> <!-- cross-cultural-exchange -->
+                </section> <!-- indigenous-relations -->
+                <section id="discussion">
+                    <h2>Discussion</h2>
+                    <p>The practice of colonization in Greek colonies is far more varied than simple territorial conquest. Throughout the island, relationships between indigenous Sicilians and Greek settlers differed from friendly trade relations to outright military conflict. As noted by <a class="citation" href="#ref-Bal12" data-cites="Bal12">Balco (2012)</a>, the overall process of indigenous cultural exchange happened over the period of centuries, where both the Greeks and the indigenous cultures contributed to a shared legacy. As our understanding of colonization and indigenous relations are marred by the contemporary practice of nation-state colonization, it is important to explore the practice of indigeneity in a different time period. The practices proposed by <a class="citation" href="#ref-Boa80" data-cites="Boa80">Boardman (1980)</a> and <a class="citation" href="#ref-Lei99" data-cites="Lei99">Leighton (1999)</a> of cross-border cohabitation are a marked departure from the earlier understanding of indigenous inhabitants as living outside a sharply delineated region of Greek influence which contains a “pure” Greek population. Such insights can assist in connecting indigenous relations to contemporary times, in which – just as in ancient Sicily – many indigenous peoples in settler-colonial states live not among themselves but integrated within the larger colonial culture.</p>
+                </section> <!-- discussion -->
+            </section>
             <section id="references">
                 <h2>References</h2>
                 <ol id="refs" class="references hanging-indent" role="doc-bibliography">
