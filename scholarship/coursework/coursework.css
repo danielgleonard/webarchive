@@ -2,12 +2,13 @@ article > header > h1 {
 	font-size: 2em;
 }
 
-article > section > section > section > section {
+article > section > section > section > section > section {
 	margin-top: 1em;
 	margin-bottom: 1em;
 }
 
-article > section > section > section > section > h5 {
+article > section > section > section > section > section > h5,
+article > section > section > section > section > section > p:first-of-type {
 	display: inline;
 	font-size: 1em;
 }
