@@ -53,9 +53,9 @@
 		</script>
 	</head>
 	<body vocab="https://schema.org/">
-		<article>
+		<article typeof="ScholarlyArticle">
 			<header>
-				<h1>
+				<h1 property="name headline">
 					<span id="title">Games, schooling, and surveillance</span>
 					<br />
 					<span id="subtitle">Notes on technology in a global pandemic</span>
@@ -65,12 +65,14 @@
 					<br/>
 					<a href="../../../../">Directory index</a>
 				</aside>
+				<meta property="pageStart" content="83" />
+				<meta property="pageEnd" content="92" />
 				<a id="pdf" rel="alternate" href="./covid.pdf" media="print" type="application/pdf">🖨︎ Printable version (PDF)</a>
 				<a id="tex" rel="alternate" href="./covid.tex" type="application/x-tex"><span class="latex">L<sup>a</sup>T<sub>e</sub>X</span> source</a>
 				<dl id="pageinfo">
 					<dt>Submitted</dt>
-					<dd>
-						<time datetime="2020-05-12T15:37:51-05:00">May 12, 2020</time>
+					<dd property="datePublished">
+						<time typeof="DateTime" content="2020-05-12T15:37:51-05:00" datetime="2020-05-12T15:37:51-05:00">May 12, 2020</time>
 					</dd>
 					<dt>Author</dt>
 					<dd rel="author" typeof="Person">
@@ -78,19 +80,23 @@
 						<span property="additionalName">G.</span>
 						<span property="familyName">Leonard</span>
 					</dd>
-					<dt>Course</dt>
-					<dd typeof="Course">
-						<span property="courseCode">
-							ANTH 374
-						</span> 
-						<span property="name">
-							Anthropology of Science and Technology
-						</span>
-					</dd>
-					<dt>Institution</dt>
-					<dd typeof="EducationalOrganization">
-						<span property="name">University of Illinois at Urbana-Champaign</span>
-					</dd>
+					<div property="exampleOfWork" typeof="Course">
+						<dt>Course</dt>
+						<dd>
+							<span property="courseCode">
+								ANTH 374
+							</span> 
+							<span property="name">
+								Anthropology of Science and Technology
+							</span>
+							<!-- <meta property="url" content="https://courses.illinois.edu/schedule/2020/SPRING/ANTH/374" /> -->
+							<meta property="description" content="Examination of science as a cultural system. Utilizing ethnographic methods and social theories, the course will locate scientific knowledge, institutions and practices within enduring anthropological questions around rationality and truth, meaning, personhood, sociality, power inequalities, social transformations, and social justice." />
+						</dd>
+						<dt>Institution</dt>
+						<dd property="provider" typeof="EducationalOrganization">
+							<span property="name">University of Illinois at Urbana-Champaign</span>
+						</dd>
+					</div>
 					<dt>Instructor</dt>
 					<dd typeof="Person">
 						<span property="honorificPrefix">Dr.</span>
@@ -98,10 +104,11 @@
 						<span property="familyName">Davis</span>
 					</dd>
 				</dl>
+				<link property="image" type="image/png" href="https://archive.danleonard.us/scholarship/coursework/illinois/ANTH/374/screenshot_2020-04-18_91.121.134.152.png" />
 			</header>
 			<section id="abstract">
 				<h2>Abstract</h2>
-				<p>
+				<p property="abstract">
 					The <abbr title="Coronavirus Disease 2019">COVID-19</abbr> crisis
 					has caused a radical change in contemporary
 					society. Whether its effects are temporary or long-lasting has yet
@@ -140,394 +147,396 @@
 					<dd>message of the day</dd>
 				</dl>
 			</section>
-			<section id="games-and-interpersonal-relations">
-				<h2>Games and Interpersonal Relations</h2>
-				<p>
-					As we collectively transition into a more reclusive lifestyle,
-					video games provide a sense of escapism for many, including myself.
-					The sychronicity afforded by online video games allows But what does
-					it mean to play with others online when online is all that one can
-					experience?
-					Sicart (<a class="citation" href="#ref-Sicart2014" data-cites="Sicart2014">2014</a>)
-					describes how one’s day is structured around the experience of play, in that
-					<q cite="#ref=Sicart2014">my life takes place in the time between play</q>
-					(<a class="citation" href="#ref-Sicart2014" data-cites="Sicart2014">Sicart 2014, 6</a>).
-					But for those who must now only interact through others in the form of a virtual
-					environment, the use of play as the bounds of social interaction serves the dual
-					purpose of creating both play and the daily life between.
-				</p>
-				<section id="minecraft">
-					<h3>Minecraft</h3>
+			<section id="main" property="articleBody">
+				<section id="games-and-interpersonal-relations">
+					<h2>Games and Interpersonal Relations</h2>
 					<p>
-						<em class="citation" data-cites="Minecraft">Minecraft</em>
-						(<a class="citation" href="#ref-Minecraft" data-cites="Minecraft">Mojang AB 2020</a>)
-						is a platform ripe for anthropological analysis.
-						Its simple and relaxed rules allow for the production of
-						creative works in the eyes of its player.
-						Notably, the structure of
-						<em class="citation" data-cites="Minecraft">Minecraft</em>
-						on the Internet is one of complete independence.
-						Any person, even one who does not themselves own a copy of the game,
-						may host server software on a home computer and expose it to
-						the Internet without notifying the creators of the game
-						or any upstream authority.
-						In contrast with the <q cite="#ref-Galloway2004">control</q>
-						exerted by a player’s requirement to
-						<q cite="#ref-Galloway2004">execute an algorithm in order to win</q>
-						(<a class="citation" href="#ref-Galloway2004" data-cites="Galloway2004">Galloway 2004, 35</a>)
-						in single-player role-playing games,
-						<em class="citation" data-cites="Minecraft">Minecraft</em>
-						allows for social interaction relatively unimpeded by goals
-						or the Players are thus free to create social structures and
-						communities in virtual space accessible only to those who
-						know the specific <abbr title="Internet Protocol">IP</abbr>
-						address of the host computer.
+						As we collectively transition into a more reclusive lifestyle,
+						video games provide a sense of escapism for many, including myself.
+						The sychronicity afforded by online video games allows But what does
+						it mean to play with others online when online is all that one can
+						experience?
+						Sicart (<a class="citation" href="#ref-Sicart2014" data-cites="Sicart2014">2014</a>)
+						describes how one’s day is structured around the experience of play, in that
+						<q cite="#ref=Sicart2014">my life takes place in the time between play</q>
+						(<a class="citation" href="#ref-Sicart2014" data-cites="Sicart2014">Sicart 2014, 6</a>).
+						But for those who must now only interact through others in the form of a virtual
+						environment, the use of play as the bounds of social interaction serves the dual
+						purpose of creating both play and the daily life between.
 					</p>
-					<figure id="fig_1">
-						<img src="plot.svg" title="Figure 1" type="image/svg+xml"
-							alt="A graph entitled “Minecraft servers online” containing two lines, green and blue. The X-axis is labeled “date” and runs from March to May. The Y-axis is broken into two scales for each line. The green line is total Minecraft servers, in hundreds of thousands. The blue line is those mentioning “coronavirus” and is in the hundreds. Both lines rise steadily before peaking in mid-April, with a gap in late April." />
-						<figcaption aria-hidden="true">
-							<em class="figname" label="fig_1">Figure 1.</em>
-							Graphed references to <q>coronavirus</q> alongside total <em class="citation" data-cites="Minecraft">Minecraft</em> servers online.
-						</figcaption>
-					</figure>
-					<p>
-						As described by Ringland et al. (<a class="citation" href="#ref-Ringland2016" data-cites="Ringland2016">2016</a>) in the context of a <em class="citation" data-cites="Minecraft">Minecraft</em> server for children with autism, these virtual spaces can be decidedly formative in social development and in escapism from the real world. Surveying how these communities change and adapt in a global environment of forced physical isolation can provide insight into what it means to play. One of the more easily-surveyable parts of a server is its <abbr title="Message of the Day">MOTD</abbr>, the text prompt displayed when a server is queried for its online status but before a player chooses to connect to it. By default this is set to read <q>A Minecraft Server</q> but is easily customizable to any string the owner desires. As the first thing every user sees when attempting to connect, whether a new or returning player, it serves as the initial and most basic form of identity establishment for the server’s community. How this text message is presented thus provides a corpus of text for analysis in real-time.
-					</p>
-					<section id="on-addresses-and-server-discovery">
-						<h4>On IP addresses and server discovery</h4>
+					<section id="minecraft">
+						<h3>Minecraft</h3>
 						<p>
-							In the standard conception of the Internet,<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> there are approximately four billion individual addresses<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> available for assignment to connected devices. While this number appears immense at a human scale, it is in fact fairly easy for computers to scan and enumerate these addresses, allowing researchers to view trends on the Internet at large. The program <em class="citation" data-cites="zmap"><code>ZMap</code></em> (<a class="citation" href="#ref-zmap" data-cites="zmap">Regents of the University of Michigan 2017</a>) can perform a scan of the entire address space in under an hour, which was used initially to gauge potential for this survey. However, its authors caution against its frequent use causing excess network traffic, advising users to consult with network administrators before deployment (<a class="citation" href="#ref-zmap-paper" data-cites="zmap-paper">Durumeric, Wustrow, and Halderman 2013</a>). To prevent burdening University of Illinois’ network administration staff during a critical period of escalation in remote network use, I utilized the commercial monitoring service Shodan (<a class="citation" href="#ref-Shodan" data-cites="Shodan">Al-Alami, Hadi, and Al-Bahadili 2017</a>) to quantify the number of <em class="citation" data-cites="Minecraft">Minecraft</em> servers online.
+							<em class="citation" data-cites="Minecraft">Minecraft</em>
+							(<a class="citation" href="#ref-Minecraft" data-cites="Minecraft">Mojang AB 2020</a>)
+							is a platform ripe for anthropological analysis.
+							Its simple and relaxed rules allow for the production of
+							creative works in the eyes of its player.
+							Notably, the structure of
+							<em class="citation" data-cites="Minecraft">Minecraft</em>
+							on the Internet is one of complete independence.
+							Any person, even one who does not themselves own a copy of the game,
+							may host server software on a home computer and expose it to
+							the Internet without notifying the creators of the game
+							or any upstream authority.
+							In contrast with the <q cite="#ref-Galloway2004">control</q>
+							exerted by a player’s requirement to
+							<q cite="#ref-Galloway2004">execute an algorithm in order to win</q>
+							(<a class="citation" href="#ref-Galloway2004" data-cites="Galloway2004">Galloway 2004, 35</a>)
+							in single-player role-playing games,
+							<em class="citation" data-cites="Minecraft">Minecraft</em>
+							allows for social interaction relatively unimpeded by goals
+							or the Players are thus free to create social structures and
+							communities in virtual space accessible only to those who
+							know the specific <abbr title="Internet Protocol">IP</abbr>
+							address of the host computer.
 						</p>
-						<p>
-							On <time datetime="2020-03-19">March 19, 2020</time>, I initiated a program to scan the entire Internet every half-hour for such homemade <em class="citation" data-cites="Minecraft">Minecraft</em> servers. The only data points taken were the total number of services on <abbr title="Internet Protocol">IP</abbr> port 25565 using the exact phrase <q>Minecraft Server</q> and how many of those included the word <q>coronavirus</q> in their <abbr title="Message of the Day">MOTD</abbr>. A plot of the data collected is shown in Fig. <a href="#fig_1" data-reference-type="ref" data-reference="fig_1">1</a>. As expected, there is a clear increase in the number of servers referencing <abbr title="Severe acute respiratory syndrome coronavirus 2">SARS-CoV-2</abbr> in some way. However, I find the total rate to be exceptionally great. From the time I started recording, at the beginning of the <abbr title="Coronavirus Disease 2019">COVID-19</abbr> crisis in the United States, there has been a near-doubling worldwide in the total number of servers online. I see this as an unmistakable sign that many people across the world have chosen to build online communities in direct response to the social distancing mandated in the real world.
-						</p>
-					</section>
-					<section id="notes-on-messages">
-						<h4>Notes on messages</h4>
-						<p>
-							I chose the specific search term <q>coronavirus</q> because it is relatively consistent across languages. Wikidata contributors (<a class="citation" href="#ref-Wikidata_virus" data-cites="Wikidata_virus">2020</a>) have connected the pages on the Wikipedia entry for <abbr title="Severe acute respiratory syndrome coronavirus 2">SARS-CoV-2</abbr> in 100 languages, allowing an easy comparison of the encyclopedic reference naming for the virus. The language that appears in the header of the English Wikipedia, <q cite="#ref-Wikipedia_virus">colloquially known as coronavirus</q> (<a class="citation" href="#ref-Wikipedia_virus" data-cites="Wikipedia_virus">Wikipedia contributors 2020b</a>) is present in nearly every language that uses the Latin script. Even the Russian Wikipedia uses the Latin script to write the word <q>coronavirus</q> before even the first mention of a transliteration to <q cite="#ref-Wikipedia_virus_ru"><em lang="ru" xml:lang="ru">коронавирусом</em></q> (<a class="citation" href="#ref-Wikipedia_virus_ru" data-cites="Wikipedia_virus_ru">Wikipedia contributors 2020a</a>). Thus, I took this to imply that worldwide and across language barriers, the term <q>coronavirus</q> is the colloquial word in use to describe the current situation and its viral cause. As can be seen in the selected messages of Table <a href="#tbl_motd" data-reference-type="ref" data-reference="tbl_motd">1</a>, this assumption proved to be quite true.
-						</p>
-						<div class="tableparent">
-							<table id="tbl_motd">
-								<caption label="tbl_motd">
-									Table 1: Selected server welcome messages and their
-									approximate (non-authrotiative) geographic locations.
-								</caption>
-								<thead>
-									<tr>
-										<th>IP Address</th>
-										<th>Locality</th>
-										<th>Country</th>
-										<th>Message of the Day (<abbr>MOTD</abbr>)</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>066.130.185.011</td>
-										<td>Montreal, QC</td>
-										<td>Canada</td>
-										<td>Fucking Coronavirus</td>
-									</tr>
-									<tr>
-										<td>071.017.240.126</td>
-										<td>Saskatoon, SK</td>
-										<td>Canada</td>
-										<td>The Best Coronavirus Advoidance Server</td>
-									</tr>
-									<tr>
-										<td>018.231.049.135</td>
-										<td>São Paulo</td>
-										<td>Brazil</td>
-										<td>Todos unidos pelo coronavirus</td>
-									</tr>
-									<tr>
-										<td>176.151.006.042</td>
-										<td>Paris</td>
-										<td>France</td>
-										<td>Fuck Le Coronavirus</td>
-									</tr>
-									<tr>
-										<td>091.121.134.152</td>
-										<td></td>
-										<td>France</td>
-										<td>Coronavirus Quarantine</td>
-									</tr>
-									<tr>
-										<td>085.014.194.170</td>
-										<td>Kassel</td>
-										<td>Germany</td>
-										<td>Laggt wegen Coronavirus. Nicht mein Problem</td>
-									</tr>
-									<tr>
-										<td>104.193.181.051</td>
-										<td>Amsterdam</td>
-										<td>Netherlands</td>
-										<td>Coronavirus Safe Zone</td>
-									</tr>
-									<tr>
-										<td>109.194.114.106</td>
-										<td></td>
-										<td>Russia</td>
-										<td>MineChest – Coronavirus</td>
-									</tr>
-									<tr>
-										<td>079.150.161.039</td>
-										<td>Alicante</td>
-										<td>Spain</td>
-										<td>CORONAVIRUS LAND</td>
-									</tr>
-									<tr>
-										<td>176.105.036.053</td>
-										<td>Kiev</td>
-										<td>Ukraine</td>
-										<td>coronavirus be gone</td>
-									</tr>
-									<tr>
-										<td>104.154.135.127</td>
-										<td></td>
-										<td>United States</td>
-										<td>Vik’s Coronavirus Emotional Support Server</td>
-									</tr>
-									<tr>
-										<td>069.036.214.137</td>
-										<td>Sparta, NC</td>
-										<td>United States</td>
-										<td>This server has the coronavirus</td>
-									</tr>
-									<tr>
-										<td>068.117.129.071</td>
-										<td>Eau Claire, WI</td>
-										<td>United States</td>
-										<td>There’s no coronavirus in Minecraft</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-						<p>
-							Of the <abbr title="Message of the Day">MOTD</abbr>s I found, most fit into one of two camps: dissatisfaction or sanctuary. The former messages took the form of expressions of anger or annoyance at the current moment or its viral cause, for instance <q>Fuck Le Coronavirus,</q> <q>coronavirus be gone.</q> The latter messages displayed an explicit sense of escapism, reminding users that because <q>There’s no coronavirus in <em class="citation" data-cites="Minecraft">Minecraft</em></q> they should retreat from the world into <q>The Best Coronavirus Avoidance Server.</q> While certainly meant to be humorous in that no one would expect <abbr title="Severe acute respiratory syndrome coronavirus 2">SARS-CoV-2</abbr> to be transmissable through a <em class="citation" data-cites="Minecraft">Minecraft</em> world, the messages do belie a very real sense that the constructed world of <em class="citation" data-cites="Minecraft">Minecraft</em> is in a sense tangible, that entering it is an escape to a world unmarked by the conflict of a global pandemic. One server makes this sense more explicit: <q>Vic’s Coronavirus Emotional Support Server</q> takes as a given that the current state of the world is frighening and that playing <em class="citation" data-cites="Minecraft">Minecraft</em> is a worthwhile escape. The server is by no means a simulated Freudian couch, with a server operator prodding questions and providing emotional support to incoming player-patients. Rather, the <abbr title="Message of the Day">MOTD</abbr> makes the argument that the act of playing in and of itself is emotional support, that entering the game and potentially interacting with others is a healthy way to spend time under the global quarantine.
-						</p>
-						<p>
-							Barker (<a class="citation" href="#ref-Barker2019" data-cites="Barker2019">2019</a>) describes how video games allow players to interact with the construct of time, and yet simultaneously have the sense of time organized for them by the game itself <q cite="#ref-Barker2019">as an exemplar of Deleuze and Guattiari’s abstract machine</q> (<a class="citation" href="#ref-Barker2019" data-cites="Barker2019">Barker 2019, 90</a>). In the context of escaping a global pandemic, where players desire to visit the <q>Coronavirus Safe Zone,</q> they implicitly are utilizing the game for this purpose – allowing it to control their sense of time such that the real-world future and its post-pandemic era come ever sooner. Thus in this instance the relinquishment of time to the machine is the end-goal rather than a side-effect of gameplay. Players not only hope to escape from the crisis but to return only when a post-crisis is at hand.
-						</p>
-					</section>
-					<section id="player-ethnography">
-						<h4>Player ethnography</h4>
-						<p>
-							Considering the youthful age skew of <em class="citation" data-cites="Minecraft">Minecraft</em>’s playerbase (<a class="citation" href="#ref-Mavoa2018" data-cites="Mavoa2018">Mavoa, Carter, and Gibbs 2018</a>; <a class="citation" href="#ref-Kopecky2014" data-cites="Kopecky2014">Kopecky et al. 2014</a>) and its frequent application in settings of children with developmental disability (<a class="citation" href="#ref-Ringland2016" data-cites="Ringland2016">Ringland et al. 2016</a>), it would have very likely violated the limits of ethical undergraduate research for me to ask questions of the hosts and players about their experiences in quarantine. Such prompts I devised for this purpose, which could be utilized by a tenure-track academic interested in ethnography of online video game communities in a more formal study, are thus outlined and explained.
-						</p>
-						<section id="who-controls-this-server">
-							<h5>Who controls this server?</h5>
-							<p>
-								This question primarily is focused on teasing out who created and runs the server, in order to separate their perception of it from the perceptions of their clients. I would expect some difference in the interpersonal relations between the host and their players, athough mediated by their relations outside the game.
-							</p>
-						</section>
-						<section id="how-is-it-hosted">
-							<h5>How is it hosted?</h5>
-							<p>
-								The fact any computer is able to host a server allows people to host games on their home computer, a common practice amongst <em class="citation" data-cites="Minecraft">Minecraft</em> players. While it is common to think of online spaces as being wholly divorced from the physical world, the limitations of computer hardware may influence how the community designs their world, possibly to minimize processing overhead. I expect quarantine to require such impromptu servers on low-end hardware to proliferate, leading to unspoken or overt rules on how the gameplay should relate to the hardware.
-							</p>
-						</section>
-						<section id="how-long-has-it-been-running">
-							<h5>How long has it been running?</h5>
-							<p>
-								Has the server begun as a result of <abbr title="Coronavirus Disease 2019">COVID-19</abbr>? If not, I would be curious to see how long it has been in operation. This could demonstrate a division between virtual replacement of formerly in-person friendships versus an already-existing online community.
-							</p>
-						</section>
-						<section id="has-the-covid-crisis-changed-how-you-play-video-games">
-							<h5>Has the <abbr title="Coronavirus Disease 2019">COVID-19</abbr> crisis changed how you play video games?</h5>
-							<p>
-								I expect that most players would have increased the time spent online as the in-person interaction in the world diminishes. This is certainly borne out by the notable increase in total servers online (Fig. <a href="#fig_1" data-reference-type="ref" data-reference="fig_1">1</a>), an indication of an increase in video game usage. I also wonder however if the way video games are used or viewed has changed in the eyes of their players. For those relationships that are now exclusively virtual, does the video game environment take on a form beyond simple escapism – becoming a true medium of interaction? Is the shared virtual environment now an extension of their domestic space in which they once hosted guests?
-							</p>
-						</section>
-						<section id="do-you-know-your-fellow-players-in-real-life">
-							<h5>Do you know your fellow players in real life?</h5>
-							<p>
-								Much has been written about purely-online relationships in video gaming, where formation of relationships occurs within the online environment (<a class="citation" href="#ref-Gallup2016" data-cites="Gallup2016">Gallup et al. 2016</a>; <a class="citation" href="#ref-Marsh3014" data-cites="Marsh3014">Marsh 2014</a>; <a class="citation" href="#ref-Williams2006" data-cites="Williams2006">Williams et al. 2006</a>). Such social interactions would of course be present in these <em class="citation" data-cites="Minecraft">Minecraft</em> situations; however I find it unlikely that the quarantine situation would radically affect relationships that are already primarily or exclusively online. More academically fascinating to me how what were recently in-person friendships transition to exclusive online play. How has the <abbr title="Coronavirus Disease 2019">COVID-19</abbr> crisis affected the relationships between these players?
-							</p>
-						</section>
-					</section>
-					<section id="server-contents">
-						<h4>Server contents</h4>
-						<figure id="fig_2">
-							<img src="screenshot_2020-04-18_91.121.134.152.png" title="Figure 2" type="image/png"
-								alt="A screenshot of the video game Minecraft. Visible is a peaceful area with small signage for players. In large text against a wall is written “WELCOME 2 QUARANTINE” in wood blocks." />
+						<figure id="fig_1">
+							<img src="plot.svg" title="Figure 1" type="image/svg+xml"
+								alt="A graph entitled “Minecraft servers online” containing two lines, green and blue. The X-axis is labeled “date” and runs from March to May. The Y-axis is broken into two scales for each line. The green line is total Minecraft servers, in hundreds of thousands. The blue line is those mentioning “coronavirus” and is in the hundreds. Both lines rise steadily before peaking in mid-April, with a gap in late April." />
 							<figcaption aria-hidden="true">
-								<em class="figname" label="fig_2">Figure 2.</em>
-								The welcome area to a server in France entitled <q>Coronavirus Quarantine.</q>
-							</figcaption>
-						</figure>
-						<figure id="fig_3">
-							<img src="screenshot_2020-04-25_goldycraft.png" title="Figure 3" type="image/png"
-								alt="A screenshot of the video game Minecraft. Visible is a built-up area acting as a mockup of the University of Minnesota Twin-Cities central campus." />
-							<figcaption aria-hidden="true">
-								<em class="figname" label="fig_3">Figure 3.</em>
-								Looking Northwest from a bridge over the light rail line on a <em class="citation" data-cites="Minecraft">Minecraft</em> server dedicated to reproduction of the University of Minnesota Twin-Cities campus.
+								<em class="figname" label="fig_1">Figure 1.</em>
+								Graphed references to <q>coronavirus</q> alongside total <em class="citation" data-cites="Minecraft">Minecraft</em> servers online.
 							</figcaption>
 						</figure>
 						<p>
-							One aspect of the social structure of these servers that is far less likely to run afoul of research ethics in its analysis is the built environment. On one server, the welcome area consisted of an enormous sign reading <q>WELCOME 2 QUARANTINE</q> (Fig. <a href="#fig_2" data-reference-type="ref" data-reference="fig_2">2</a>), indicating a dedication of the game to the idea of a quarantine escape beyond simply a comedic <abbr title="Message of the Day">MOTD</abbr>.
+							As described by Ringland et al. (<a class="citation" href="#ref-Ringland2016" data-cites="Ringland2016">2016</a>) in the context of a <em class="citation" data-cites="Minecraft">Minecraft</em> server for children with autism, these virtual spaces can be decidedly formative in social development and in escapism from the real world. Surveying how these communities change and adapt in a global environment of forced physical isolation can provide insight into what it means to play. One of the more easily-surveyable parts of a server is its <abbr title="Message of the Day">MOTD</abbr>, the text prompt displayed when a server is queried for its online status but before a player chooses to connect to it. By default this is set to read <q>A Minecraft Server</q> but is easily customizable to any string the owner desires. As the first thing every user sees when attempting to connect, whether a new or returning player, it serves as the initial and most basic form of identity establishment for the server’s community. How this text message is presented thus provides a corpus of text for analysis in real-time.
+						</p>
+						<section id="on-addresses-and-server-discovery">
+							<h4>On IP addresses and server discovery</h4>
+							<p>
+								In the standard conception of the Internet,<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> there are approximately four billion individual addresses<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> available for assignment to connected devices. While this number appears immense at a human scale, it is in fact fairly easy for computers to scan and enumerate these addresses, allowing researchers to view trends on the Internet at large. The program <em class="citation" data-cites="zmap"><code>ZMap</code></em> (<a class="citation" href="#ref-zmap" data-cites="zmap">Regents of the University of Michigan 2017</a>) can perform a scan of the entire address space in under an hour, which was used initially to gauge potential for this survey. However, its authors caution against its frequent use causing excess network traffic, advising users to consult with network administrators before deployment (<a class="citation" href="#ref-zmap-paper" data-cites="zmap-paper">Durumeric, Wustrow, and Halderman 2013</a>). To prevent burdening University of Illinois’ network administration staff during a critical period of escalation in remote network use, I utilized the commercial monitoring service Shodan (<a class="citation" href="#ref-Shodan" data-cites="Shodan">Al-Alami, Hadi, and Al-Bahadili 2017</a>) to quantify the number of <em class="citation" data-cites="Minecraft">Minecraft</em> servers online.
+							</p>
+							<p>
+								On <time datetime="2020-03-19">March 19, 2020</time>, I initiated a program to scan the entire Internet every half-hour for such homemade <em class="citation" data-cites="Minecraft">Minecraft</em> servers. The only data points taken were the total number of services on <abbr title="Internet Protocol">IP</abbr> port 25565 using the exact phrase <q>Minecraft Server</q> and how many of those included the word <q>coronavirus</q> in their <abbr title="Message of the Day">MOTD</abbr>. A plot of the data collected is shown in Fig. <a href="#fig_1" data-reference-type="ref" data-reference="fig_1">1</a>. As expected, there is a clear increase in the number of servers referencing <abbr title="Severe acute respiratory syndrome coronavirus 2">SARS-CoV-2</abbr> in some way. However, I find the total rate to be exceptionally great. From the time I started recording, at the beginning of the <abbr title="Coronavirus Disease 2019">COVID-19</abbr> crisis in the United States, there has been a near-doubling worldwide in the total number of servers online. I see this as an unmistakable sign that many people across the world have chosen to build online communities in direct response to the social distancing mandated in the real world.
+							</p>
+						</section>
+						<section id="notes-on-messages">
+							<h4>Notes on messages</h4>
+							<p>
+								I chose the specific search term <q>coronavirus</q> because it is relatively consistent across languages. Wikidata contributors (<a class="citation" href="#ref-Wikidata_virus" data-cites="Wikidata_virus">2020</a>) have connected the pages on the Wikipedia entry for <abbr title="Severe acute respiratory syndrome coronavirus 2">SARS-CoV-2</abbr> in 100 languages, allowing an easy comparison of the encyclopedic reference naming for the virus. The language that appears in the header of the English Wikipedia, <q cite="#ref-Wikipedia_virus">colloquially known as coronavirus</q> (<a class="citation" href="#ref-Wikipedia_virus" data-cites="Wikipedia_virus">Wikipedia contributors 2020b</a>) is present in nearly every language that uses the Latin script. Even the Russian Wikipedia uses the Latin script to write the word <q>coronavirus</q> before even the first mention of a transliteration to <q cite="#ref-Wikipedia_virus_ru"><em lang="ru" xml:lang="ru">коронавирусом</em></q> (<a class="citation" href="#ref-Wikipedia_virus_ru" data-cites="Wikipedia_virus_ru">Wikipedia contributors 2020a</a>). Thus, I took this to imply that worldwide and across language barriers, the term <q>coronavirus</q> is the colloquial word in use to describe the current situation and its viral cause. As can be seen in the selected messages of Table <a href="#tbl_motd" data-reference-type="ref" data-reference="tbl_motd">1</a>, this assumption proved to be quite true.
+							</p>
+							<div class="tableparent">
+								<table id="tbl_motd">
+									<caption label="tbl_motd">
+										Table 1: Selected server welcome messages and their
+										approximate (non-authrotiative) geographic locations.
+									</caption>
+									<thead>
+										<tr>
+											<th>IP Address</th>
+											<th>Locality</th>
+											<th>Country</th>
+											<th>Message of the Day (<abbr>MOTD</abbr>)</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>066.130.185.011</td>
+											<td>Montreal, QC</td>
+											<td>Canada</td>
+											<td>Fucking Coronavirus</td>
+										</tr>
+										<tr>
+											<td>071.017.240.126</td>
+											<td>Saskatoon, SK</td>
+											<td>Canada</td>
+											<td>The Best Coronavirus Advoidance Server</td>
+										</tr>
+										<tr>
+											<td>018.231.049.135</td>
+											<td>São Paulo</td>
+											<td>Brazil</td>
+											<td>Todos unidos pelo coronavirus</td>
+										</tr>
+										<tr>
+											<td>176.151.006.042</td>
+											<td>Paris</td>
+											<td>France</td>
+											<td>Fuck Le Coronavirus</td>
+										</tr>
+										<tr>
+											<td>091.121.134.152</td>
+											<td></td>
+											<td>France</td>
+											<td>Coronavirus Quarantine</td>
+										</tr>
+										<tr>
+											<td>085.014.194.170</td>
+											<td>Kassel</td>
+											<td>Germany</td>
+											<td>Laggt wegen Coronavirus. Nicht mein Problem</td>
+										</tr>
+										<tr>
+											<td>104.193.181.051</td>
+											<td>Amsterdam</td>
+											<td>Netherlands</td>
+											<td>Coronavirus Safe Zone</td>
+										</tr>
+										<tr>
+											<td>109.194.114.106</td>
+											<td></td>
+											<td>Russia</td>
+											<td>MineChest – Coronavirus</td>
+										</tr>
+										<tr>
+											<td>079.150.161.039</td>
+											<td>Alicante</td>
+											<td>Spain</td>
+											<td>CORONAVIRUS LAND</td>
+										</tr>
+										<tr>
+											<td>176.105.036.053</td>
+											<td>Kiev</td>
+											<td>Ukraine</td>
+											<td>coronavirus be gone</td>
+										</tr>
+										<tr>
+											<td>104.154.135.127</td>
+											<td></td>
+											<td>United States</td>
+											<td>Vik’s Coronavirus Emotional Support Server</td>
+										</tr>
+										<tr>
+											<td>069.036.214.137</td>
+											<td>Sparta, NC</td>
+											<td>United States</td>
+											<td>This server has the coronavirus</td>
+										</tr>
+										<tr>
+											<td>068.117.129.071</td>
+											<td>Eau Claire, WI</td>
+											<td>United States</td>
+											<td>There’s no coronavirus in Minecraft</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<p>
+								Of the <abbr title="Message of the Day">MOTD</abbr>s I found, most fit into one of two camps: dissatisfaction or sanctuary. The former messages took the form of expressions of anger or annoyance at the current moment or its viral cause, for instance <q>Fuck Le Coronavirus,</q> <q>coronavirus be gone.</q> The latter messages displayed an explicit sense of escapism, reminding users that because <q>There’s no coronavirus in <em class="citation" data-cites="Minecraft">Minecraft</em></q> they should retreat from the world into <q>The Best Coronavirus Avoidance Server.</q> While certainly meant to be humorous in that no one would expect <abbr title="Severe acute respiratory syndrome coronavirus 2">SARS-CoV-2</abbr> to be transmissable through a <em class="citation" data-cites="Minecraft">Minecraft</em> world, the messages do belie a very real sense that the constructed world of <em class="citation" data-cites="Minecraft">Minecraft</em> is in a sense tangible, that entering it is an escape to a world unmarked by the conflict of a global pandemic. One server makes this sense more explicit: <q>Vic’s Coronavirus Emotional Support Server</q> takes as a given that the current state of the world is frighening and that playing <em class="citation" data-cites="Minecraft">Minecraft</em> is a worthwhile escape. The server is by no means a simulated Freudian couch, with a server operator prodding questions and providing emotional support to incoming player-patients. Rather, the <abbr title="Message of the Day">MOTD</abbr> makes the argument that the act of playing in and of itself is emotional support, that entering the game and potentially interacting with others is a healthy way to spend time under the global quarantine.
+							</p>
+							<p>
+								Barker (<a class="citation" href="#ref-Barker2019" data-cites="Barker2019">2019</a>) describes how video games allow players to interact with the construct of time, and yet simultaneously have the sense of time organized for them by the game itself <q cite="#ref-Barker2019">as an exemplar of Deleuze and Guattiari’s abstract machine</q> (<a class="citation" href="#ref-Barker2019" data-cites="Barker2019">Barker 2019, 90</a>). In the context of escaping a global pandemic, where players desire to visit the <q>Coronavirus Safe Zone,</q> they implicitly are utilizing the game for this purpose – allowing it to control their sense of time such that the real-world future and its post-pandemic era come ever sooner. Thus in this instance the relinquishment of time to the machine is the end-goal rather than a side-effect of gameplay. Players not only hope to escape from the crisis but to return only when a post-crisis is at hand.
+							</p>
+						</section>
+						<section id="player-ethnography">
+							<h4>Player ethnography</h4>
+							<p>
+								Considering the youthful age skew of <em class="citation" data-cites="Minecraft">Minecraft</em>’s playerbase (<a class="citation" href="#ref-Mavoa2018" data-cites="Mavoa2018">Mavoa, Carter, and Gibbs 2018</a>; <a class="citation" href="#ref-Kopecky2014" data-cites="Kopecky2014">Kopecky et al. 2014</a>) and its frequent application in settings of children with developmental disability (<a class="citation" href="#ref-Ringland2016" data-cites="Ringland2016">Ringland et al. 2016</a>), it would have very likely violated the limits of ethical undergraduate research for me to ask questions of the hosts and players about their experiences in quarantine. Such prompts I devised for this purpose, which could be utilized by a tenure-track academic interested in ethnography of online video game communities in a more formal study, are thus outlined and explained.
+							</p>
+							<section id="who-controls-this-server">
+								<h5>Who controls this server?</h5>
+								<p>
+									This question primarily is focused on teasing out who created and runs the server, in order to separate their perception of it from the perceptions of their clients. I would expect some difference in the interpersonal relations between the host and their players, athough mediated by their relations outside the game.
+								</p>
+							</section>
+							<section id="how-is-it-hosted">
+								<h5>How is it hosted?</h5>
+								<p>
+									The fact any computer is able to host a server allows people to host games on their home computer, a common practice amongst <em class="citation" data-cites="Minecraft">Minecraft</em> players. While it is common to think of online spaces as being wholly divorced from the physical world, the limitations of computer hardware may influence how the community designs their world, possibly to minimize processing overhead. I expect quarantine to require such impromptu servers on low-end hardware to proliferate, leading to unspoken or overt rules on how the gameplay should relate to the hardware.
+								</p>
+							</section>
+							<section id="how-long-has-it-been-running">
+								<h5>How long has it been running?</h5>
+								<p>
+									Has the server begun as a result of <abbr title="Coronavirus Disease 2019">COVID-19</abbr>? If not, I would be curious to see how long it has been in operation. This could demonstrate a division between virtual replacement of formerly in-person friendships versus an already-existing online community.
+								</p>
+							</section>
+							<section id="has-the-covid-crisis-changed-how-you-play-video-games">
+								<h5>Has the <abbr title="Coronavirus Disease 2019">COVID-19</abbr> crisis changed how you play video games?</h5>
+								<p>
+									I expect that most players would have increased the time spent online as the in-person interaction in the world diminishes. This is certainly borne out by the notable increase in total servers online (Fig. <a href="#fig_1" data-reference-type="ref" data-reference="fig_1">1</a>), an indication of an increase in video game usage. I also wonder however if the way video games are used or viewed has changed in the eyes of their players. For those relationships that are now exclusively virtual, does the video game environment take on a form beyond simple escapism – becoming a true medium of interaction? Is the shared virtual environment now an extension of their domestic space in which they once hosted guests?
+								</p>
+							</section>
+							<section id="do-you-know-your-fellow-players-in-real-life">
+								<h5>Do you know your fellow players in real life?</h5>
+								<p>
+									Much has been written about purely-online relationships in video gaming, where formation of relationships occurs within the online environment (<a class="citation" href="#ref-Gallup2016" data-cites="Gallup2016">Gallup et al. 2016</a>; <a class="citation" href="#ref-Marsh3014" data-cites="Marsh3014">Marsh 2014</a>; <a class="citation" href="#ref-Williams2006" data-cites="Williams2006">Williams et al. 2006</a>). Such social interactions would of course be present in these <em class="citation" data-cites="Minecraft">Minecraft</em> situations; however I find it unlikely that the quarantine situation would radically affect relationships that are already primarily or exclusively online. More academically fascinating to me how what were recently in-person friendships transition to exclusive online play. How has the <abbr title="Coronavirus Disease 2019">COVID-19</abbr> crisis affected the relationships between these players?
+								</p>
+							</section>
+						</section>
+						<section id="server-contents">
+							<h4>Server contents</h4>
+							<figure id="fig_2">
+								<img src="screenshot_2020-04-18_91.121.134.152.png" title="Figure 2" type="image/png"
+									alt="A screenshot of the video game Minecraft. Visible is a peaceful area with small signage for players. In large text against a wall is written “WELCOME 2 QUARANTINE” in wood blocks." />
+								<figcaption aria-hidden="true">
+									<em class="figname" label="fig_2">Figure 2.</em>
+									The welcome area to a server in France entitled <q>Coronavirus Quarantine.</q>
+								</figcaption>
+							</figure>
+							<figure id="fig_3">
+								<img src="screenshot_2020-04-25_goldycraft.png" title="Figure 3" type="image/png"
+									alt="A screenshot of the video game Minecraft. Visible is a built-up area acting as a mockup of the University of Minnesota Twin-Cities central campus." />
+								<figcaption aria-hidden="true">
+									<em class="figname" label="fig_3">Figure 3.</em>
+									Looking Northwest from a bridge over the light rail line on a <em class="citation" data-cites="Minecraft">Minecraft</em> server dedicated to reproduction of the University of Minnesota Twin-Cities campus.
+								</figcaption>
+							</figure>
+							<p>
+								One aspect of the social structure of these servers that is far less likely to run afoul of research ethics in its analysis is the built environment. On one server, the welcome area consisted of an enormous sign reading <q>WELCOME 2 QUARANTINE</q> (Fig. <a href="#fig_2" data-reference-type="ref" data-reference="fig_2">2</a>), indicating a dedication of the game to the idea of a quarantine escape beyond simply a comedic <abbr title="Message of the Day">MOTD</abbr>.
+							</p>
+							<p>
+								Another form of construction is the recreation of a real environment no longer accessible during quarantine. As college students are forced to flee home, many experience a homesickness in the loss of their familiar campuses. Thanks to a semester spent in a University of Minnesota program, I have found myself in a Facebook group entitled <q>UMN Memes for Frozen Northern Teens,</q> which satirizes life on the campus. As quarantine escalated, I saw calls for assistance in constructing a faithful reproduction of the entire university campus. This server experienced a rapid increase in membership, and is now effectively a virtual clone of the university (Fig. <a href="#fig_3" data-reference-type="ref" data-reference="fig_3">3</a>).
+							</p>
+							<p>
+								This was not limited to Minnesotans, as was noted by Anderson (<a class="citation" href="#ref-Anderson2020" data-cites="Anderson2020">2020</a>) in a blog post surveying several concurrent projects in universities as disparate as South Louisiana Community College and Boston University. Far from escapism, the use of online <em class="citation" data-cites="Minecraft">Minecraft</em> servers permits a counterintuitive return to the real world: an experience of one’s own environment both idealized in its unchaging pristine state, locked at high noon and subject to the will of whomever controls the server; yet simultaneously flawed in that it remains only an approximation bound to the <q cite="#ref-Manovich3001">rules that operate in the universe constructed by the game</q> (<a class="citation" href="#ref-Manovich3001" data-cites="Manovich3001">Manovich 2001, 222</a>), in this case a finite material selection restricted to 1 cubes.
+							</p>
+						</section>
+					</section>
+					<section id="tabletop-games">
+						<h3>Tabletop Games</h3>
+						<p>
+							Board games play an integral role in human culture, with evidence of their existence apparent for millenia in areas as disparate as Mesoamerica (<a class="citation" href="#ref-Voorhies2013" data-cites="Voorhies2013">Voorhies 2013</a>) and Southern Africa (<a class="citation" href="#ref-Townshend1979" data-cites="Townshend1979">Townshend 1979</a>). During a period of social distancing, this specific form of social interaction is impossible as people are physically isolated. The video game <em class="citation" data-cites="Tabletop">Tabletop Simulator</em> (<a class="citation" href="#ref-Tabletop" data-cites="Tabletop">Berserk Games 2020</a>) however allows a simulation of the board game experience. By simply being a physics engine connected to a multiplayer network, players can use a computer to play effectively any board or card game as if they were around a table in real life. Throughout the <abbr title="Coronavirus Disease 2019">COVID-19</abbr> crisis, I have had the opportunity to play a wide variety of card games with friends using this technology, which has been enjoyable. However, the experience is by no means equivalent to playing in real life.
 						</p>
 						<p>
-							Another form of construction is the recreation of a real environment no longer accessible during quarantine. As college students are forced to flee home, many experience a homesickness in the loss of their familiar campuses. Thanks to a semester spent in a University of Minnesota program, I have found myself in a Facebook group entitled <q>UMN Memes for Frozen Northern Teens,</q> which satirizes life on the campus. As quarantine escalated, I saw calls for assistance in constructing a faithful reproduction of the entire university campus. This server experienced a rapid increase in membership, and is now effectively a virtual clone of the university (Fig. <a href="#fig_3" data-reference-type="ref" data-reference="fig_3">3</a>).
+							The initial hurdle in using <em class="citation" data-cites="Tabletop">Tabletop Simulator</em> is in mastering the controls. When in real life drawing an extra card from a stack could be easily corrected by placing it back on top using one’s non-dominant hand or an expert manipulation of one’s fingers, it becomes a hassle when limited to a mouse pointer. It is easy to misplace or mismaneuver items on the table, causing the game to slow down in a way one would never see in a real life game.
 						</p>
 						<p>
-							This was not limited to Minnesotans, as was noted by Anderson (<a class="citation" href="#ref-Anderson2020" data-cites="Anderson2020">2020</a>) in a blog post surveying several concurrent projects in universities as disparate as South Louisiana Community College and Boston University. Far from escapism, the use of online <em class="citation" data-cites="Minecraft">Minecraft</em> servers permits a counterintuitive return to the real world: an experience of one’s own environment both idealized in its unchaging pristine state, locked at high noon and subject to the will of whomever controls the server; yet simultaneously flawed in that it remains only an approximation bound to the <q cite="#ref-Manovich3001">rules that operate in the universe constructed by the game</q> (<a class="citation" href="#ref-Manovich3001" data-cites="Manovich3001">Manovich 2001, 222</a>), in this case a finite material selection restricted to 1 cubes.
+							The more salient difference – and what I consider to be more anthropologically intriguing – between the experiences of real-life tabletop gameplay and that of <em class="citation" data-cites="Tabletop">Tabletop Simulator</em> is the lack of human connection. While I have always played the games with some audio chat running to allow talking to my friends, playing <em class="citation" data-cites="Tabletop">Tabletop Simulator</em> has allowed me to discover how much gesture and facial expressions mediate communication in the setting of a tabletop game. In a game of poker, for instance, it becomes exceptionally difficult to tell if an opponent is bluffing: without facial expressions all a player can use is their voice, and an unreliable source of voice at that. Players can feign network problems for going silent rather than attempt to lie if they feel as if their tone of voice may betray them. Even the most simple mechanic of gameplay – taking turns – becomes a slow and arduous process. While I see no real difference between saying <q>okay, your turn</q> in real life versus virtually, it somehow becomes more alien and even confusing within . I cannot tease out what makes turn-taking so seamless in real life gameplay, and following the end of quarantine I intend to study gameplay carefully to see what visual cues accompany play that are absent from <em class="citation" data-cites="Tabletop">Tabletop Simulator</em>.
 						</p>
 					</section>
 				</section>
-				<section id="tabletop-games">
-					<h3>Tabletop Games</h3>
+				<section id="video-chat">
+					<h2>Video Chat</h2>
 					<p>
-						Board games play an integral role in human culture, with evidence of their existence apparent for millenia in areas as disparate as Mesoamerica (<a class="citation" href="#ref-Voorhies2013" data-cites="Voorhies2013">Voorhies 2013</a>) and Southern Africa (<a class="citation" href="#ref-Townshend1979" data-cites="Townshend1979">Townshend 1979</a>). During a period of social distancing, this specific form of social interaction is impossible as people are physically isolated. The video game <em class="citation" data-cites="Tabletop">Tabletop Simulator</em> (<a class="citation" href="#ref-Tabletop" data-cites="Tabletop">Berserk Games 2020</a>) however allows a simulation of the board game experience. By simply being a physics engine connected to a multiplayer network, players can use a computer to play effectively any board or card game as if they were around a table in real life. Throughout the <abbr title="Coronavirus Disease 2019">COVID-19</abbr> crisis, I have had the opportunity to play a wide variety of card games with friends using this technology, which has been enjoyable. However, the experience is by no means equivalent to playing in real life.
+						The experience of videoconferencing is not in any sense new to twenty-first century American life. However, the change from in-person classes to virtual brings with it a somewhat novel social experience. In one class on paleolithics, it was no longer possible to fracture rocks in the controlled environment of a classroom. Instead, we were tasked with going outdoors and finding rocks that looked promising for the task despite our inexpertise in identifying rock types. Artifacts had to be displayed via grainy webcam video rather than felt in students’ hands, undoubtedly detracting from a tangible understanding of how fracture patterns work and indicate technological properties.
 					</p>
 					<p>
-						The initial hurdle in using <em class="citation" data-cites="Tabletop">Tabletop Simulator</em> is in mastering the controls. When in real life drawing an extra card from a stack could be easily corrected by placing it back on top using one’s non-dominant hand or an expert manipulation of one’s fingers, it becomes a hassle when limited to a mouse pointer. It is easy to misplace or mismaneuver items on the table, causing the game to slow down in a way one would never see in a real life game.
-					</p>
-					<p>
-						The more salient difference – and what I consider to be more anthropologically intriguing – between the experiences of real-life tabletop gameplay and that of <em class="citation" data-cites="Tabletop">Tabletop Simulator</em> is the lack of human connection. While I have always played the games with some audio chat running to allow talking to my friends, playing <em class="citation" data-cites="Tabletop">Tabletop Simulator</em> has allowed me to discover how much gesture and facial expressions mediate communication in the setting of a tabletop game. In a game of poker, for instance, it becomes exceptionally difficult to tell if an opponent is bluffing: without facial expressions all a player can use is their voice, and an unreliable source of voice at that. Players can feign network problems for going silent rather than attempt to lie if they feel as if their tone of voice may betray them. Even the most simple mechanic of gameplay – taking turns – becomes a slow and arduous process. While I see no real difference between saying <q>okay, your turn</q> in real life versus virtually, it somehow becomes more alien and even confusing within . I cannot tease out what makes turn-taking so seamless in real life gameplay, and following the end of quarantine I intend to study gameplay carefully to see what visual cues accompany play that are absent from <em class="citation" data-cites="Tabletop">Tabletop Simulator</em>.
+						In another class, the discussion sections began quarantine with concurrent video chat, where all two dozen students had video trained on their faces for the hour-long class. As the semester progressed, fewer and fewer students chose to enable video, preferring to only communicate via audio. I actually had a hard drive failure on my laptop mid-quarantine and had to move to a desktop with no webcam, thus ending any ability to join video chat for the rest of the semester. In the final discussion section of this class, not a single student had their video enabled. This occurred without any explicit discussion of the rules regarding discussion participation; rather, students collectively decided not to show their faces and seemingly overwhelmed the TA to the point it became the norm. The students’ ability to control the structure and social setting of a class would be shocking if it occurred in an in-person setting, yet when over Zoom it was effortlessly accepted.
 					</p>
 				</section>
-			</section>
-			<section id="video-chat">
-				<h2>Video Chat</h2>
-				<p>
-					The experience of videoconferencing is not in any sense new to twenty-first century American life. However, the change from in-person classes to virtual brings with it a somewhat novel social experience. In one class on paleolithics, it was no longer possible to fracture rocks in the controlled environment of a classroom. Instead, we were tasked with going outdoors and finding rocks that looked promising for the task despite our inexpertise in identifying rock types. Artifacts had to be displayed via grainy webcam video rather than felt in students’ hands, undoubtedly detracting from a tangible understanding of how fracture patterns work and indicate technological properties.
-				</p>
-				<p>
-					In another class, the discussion sections began quarantine with concurrent video chat, where all two dozen students had video trained on their faces for the hour-long class. As the semester progressed, fewer and fewer students chose to enable video, preferring to only communicate via audio. I actually had a hard drive failure on my laptop mid-quarantine and had to move to a desktop with no webcam, thus ending any ability to join video chat for the rest of the semester. In the final discussion section of this class, not a single student had their video enabled. This occurred without any explicit discussion of the rules regarding discussion participation; rather, students collectively decided not to show their faces and seemingly overwhelmed the TA to the point it became the norm. The students’ ability to control the structure and social setting of a class would be shocking if it occurred in an in-person setting, yet when over Zoom it was effortlessly accepted.
-				</p>
-			</section>
-			<section id="contact-tracing-and-the-future-of-the-personal-smartphone">
-				<h2>Contact Tracing and the Future of the Personal Smartphone</h2>
-				<p>
-					In an epidemic, some degree of trust in authority is required of the public at large. Doctors, for example, are the sole holders of the requisite training to diagnose and treat patients. Public health officials are understood to likewise have knowledge in disease prevention, and are thus entrusted with the ability to advise and dictate behavior. This conscious choice to entrust the powerful with greater authority during an emergency is neither novel nor concerning in and of itself, but the use of tecnhology in the <abbr title="Coronavirus Disease 2019">COVID-19</abbr> crisis and its aftermath is interesting in its potential to affect social and power relations.
-				</p>
-				<h3 id="surveillance">Surveillance</h3>
-				<p>
-					In attempting to inhibit the transmission of <abbr title="Severe acute respiratory syndrome coronavirus 2">SARS-CoV-2</abbr>, scientists and public agencies have explored the viability of the use of surveillance technologies. Ferretti et al. (<a class="citation" href="#ref-Ferretti2020" data-cites="Ferretti2020">2020</a>) argue that manual contact tracing methods thus far employed (interviews with patients, individual isolation) are insufficient at halting the spread of disease. They explicitly call for a technological solution as the only effective method of disease prevention, specifically via smartphone tracking.
-				</p>
-				<p>
-					In China, where <abbr title="Severe acute respiratory syndrome coronavirus 2">SARS-CoV-2</abbr> was first identified, the initial stages of smartphone surveillance were implemented. In order to access public transportation and some other services outside the home, citizens were required to use a smartphone app which opaquely identified themselves as permitted or prohibited from the service they attempted to access (<a class="citation" href="#ref-NYT.alipay" data-cites="NYT.alipay">Mozur, Zhong, and Krolik 2020</a>). Studying public response to the SARS outbreak at the turn of the twenty-first century, Lee (<a class="citation" href="#ref-Lee2009" data-cites="Lee2009">2009</a>) note that public health crises often cause the public to pay great attention to and critique the bureaucratic nature of the state. The state’s ability to control movement, from blocking access to the subway to changing the date of the New Year (<a class="citation" href="#ref-Chen2020" data-cites="Chen2020">Chen et al. 2020</a>), is far more easily percieved under these crisis situations.
-				</p>
-				<h3 id="contact-tracing">Contact Tracing</h3>
-				<p>
-					Scholars of computer science and mathematics have worked toward some method of performing the contact tracing outlined by Ferretti et al. (<a class="citation" href="#ref-Ferretti2020" data-cites="Ferretti2020">2020</a>). The most prominent of these is currently <abbr title="Decentralized privacy-preserving proximity tracing">DP-3T</abbr>, an evolving suite of algorithms under development in Europe by Troncoso et al. (<a class="citation" href="#ref-DP-3T" data-cites="DP-3T">2020</a>). The main methodology of <abbr title="Decentralized privacy-preserving proximity tracing">DP-3T</abbr> is the continuous transmission and reception of emphemeral identifiers by all enabled devices, such that every device in the system would possess a log of every device which it had encountered in the past. When a person is declared infected, the ephemeral signals transmitted over the course of their infectious period would be publicised, allowing every device which had encountered the infected person’s phone to notify its user of potential exposure. The <abbr title="Decentralized privacy-preserving proximity tracing">DP-3T</abbr> designers have gone to great lengths to design a fully-anonymous system without location data or tracking potential, and their cryptographic work is commendable. However, the authors’ original release of the proposal was explicitly just that – a proposal: <q cite="#ref-DP-3T">we are publishing this document to seek feedback from a broad audience on the high-level design, its security and privacy … so that further protection mechanisms can be added</q> (<a class="citation" href="#ref-DP-3T" data-cites="DP-3T">Troncoso et al. 2020, 2</a>).
-				</p>
-				<p>
-					Despite these qualms, <a class="citation" href="#ref-AppleCT.Announcement" data-cites="AppleCT.Announcement">Apple, Inc. and Google, Inc. (2020d)</a> announced a collaborative derivative project to introduce this form of contact tracing to millions of smartphones. Along with releasing documentation for software developers at public health institutions to implement the system (<a class="citation" href="#ref-AppleCT.API" data-cites="AppleCT.API">2020c</a>), they have also published information on how the Bluetooth (<a class="citation" href="#ref-AppleCT.Bluetooth" data-cites="AppleCT.Bluetooth">2020a</a>) and crypotography (<a class="citation" href="#ref-AppleCT.Crypto" data-cites="AppleCT.Crypto">2020b</a>) are expected to operate. While the latter two documents include statements on privacy protection, they lack the discussion of protections against state-level adversaries that make up much of the <abbr title="Decentralized privacy-preserving proximity tracing">DP-3T</abbr> proposal. Regardless, it is expected that by the end of the year, devices manufactured by <a class="citation" href="#ref-AppleCT.Announcement" data-cites="AppleCT.Announcement">Apple, Inc. and Google, Inc. (2020d)</a> will be constantly broadcasting and listening for these contact signals. If the <abbr title="Coronavirus Disease 2019">COVID-19</abbr> crisis persists by the time this becomes an integral part of smartphone operating systems, it will likely be the norm for people to experience notifications warning them of previous contact with an infectious person.
-				</p>
-				<p>
-					While the privacy implications of broadcasting one’s presence are of course wide-reaching, I am intrigued by what this will mean for our personal relations to our devices. The implication made by both the cryptographic research team and the corporate manufacturers is that our devices are extensions of our bodies. Our expulsion of viral particles emanating from our respiration, an exclusively physical and biological act, is in the minds of the proposals inexorably tied to the virtual signals of our smartphones emanating from our pockets. Every physical interaction between people, no matter how brief, will be logged. So long as both participants have up-to-date smartphones, they will exchange information. While phone notifications of potential infection persist, people will become more and more aware of this logging and transmission, further entrenching the idea of the phone as a part of the body.
-				</p>
-				<h3 id="access-and-cross-cultural-considerations">Access and Cross-Cultural Considerations</h3>
-				<p>
-					Not everyone has a smartphone. In fact, it is likely that smartphone owners constitute a minority of the global population (<a class="citation" href="#ref-pew.phone" data-cites="pew.phone">Poushter 2016</a>). People’s lack of smartphones can occur for socioeconomic, political, or reasons of personal choice. Should smartphones become a major part of public health diagnosis and communication, those most likely to possess them (the young, the educated, and the rich) will have greater access to warnings regarding illness. Those without still have biological bodies capable of transmitting and receiving illness, but without the technological appendage capable of transmitting and receiving signals, they are excluded from perceptions of epidemic transmission.
-				</p>
-				<p>
-					Conceptions of privacy differ amongst societies. The implementation of a sudden and global change to smartphones could cause rifts between people and between societies. The conception of privacy in Islamic societies, as detailed by Abokhodair and Vieweg (<a class="citation" href="#ref-Abokhodair2016" data-cites="Abokhodair2016">2016</a>), for instance, may be alien to the software developers in California who are implementing the contact tracing systems.
-				</p>
-				<p>
-					The moment the first batch of notifications appear on smartphones reading <q>you have been near someone infected with <abbr title="Coronavirus Disease 2019">COVID-19</abbr> in the last fourteen days</q> I believe will be a moment that both the individual recipients and global society as a whole find unforgettable. The relation of technology to the body will not be the same after this crisis.
-				</p>
+				<section id="contact-tracing-and-the-future-of-the-personal-smartphone">
+					<h2>Contact Tracing and the Future of the Personal Smartphone</h2>
+					<p>
+						In an epidemic, some degree of trust in authority is required of the public at large. Doctors, for example, are the sole holders of the requisite training to diagnose and treat patients. Public health officials are understood to likewise have knowledge in disease prevention, and are thus entrusted with the ability to advise and dictate behavior. This conscious choice to entrust the powerful with greater authority during an emergency is neither novel nor concerning in and of itself, but the use of tecnhology in the <abbr title="Coronavirus Disease 2019">COVID-19</abbr> crisis and its aftermath is interesting in its potential to affect social and power relations.
+					</p>
+					<h3 id="surveillance">Surveillance</h3>
+					<p>
+						In attempting to inhibit the transmission of <abbr title="Severe acute respiratory syndrome coronavirus 2">SARS-CoV-2</abbr>, scientists and public agencies have explored the viability of the use of surveillance technologies. Ferretti et al. (<a class="citation" href="#ref-Ferretti2020" data-cites="Ferretti2020">2020</a>) argue that manual contact tracing methods thus far employed (interviews with patients, individual isolation) are insufficient at halting the spread of disease. They explicitly call for a technological solution as the only effective method of disease prevention, specifically via smartphone tracking.
+					</p>
+					<p>
+						In China, where <abbr title="Severe acute respiratory syndrome coronavirus 2">SARS-CoV-2</abbr> was first identified, the initial stages of smartphone surveillance were implemented. In order to access public transportation and some other services outside the home, citizens were required to use a smartphone app which opaquely identified themselves as permitted or prohibited from the service they attempted to access (<a class="citation" href="#ref-NYT.alipay" data-cites="NYT.alipay">Mozur, Zhong, and Krolik 2020</a>). Studying public response to the SARS outbreak at the turn of the twenty-first century, Lee (<a class="citation" href="#ref-Lee2009" data-cites="Lee2009">2009</a>) note that public health crises often cause the public to pay great attention to and critique the bureaucratic nature of the state. The state’s ability to control movement, from blocking access to the subway to changing the date of the New Year (<a class="citation" href="#ref-Chen2020" data-cites="Chen2020">Chen et al. 2020</a>), is far more easily percieved under these crisis situations.
+					</p>
+					<h3 id="contact-tracing">Contact Tracing</h3>
+					<p>
+						Scholars of computer science and mathematics have worked toward some method of performing the contact tracing outlined by Ferretti et al. (<a class="citation" href="#ref-Ferretti2020" data-cites="Ferretti2020">2020</a>). The most prominent of these is currently <abbr title="Decentralized privacy-preserving proximity tracing">DP-3T</abbr>, an evolving suite of algorithms under development in Europe by Troncoso et al. (<a class="citation" href="#ref-DP-3T" data-cites="DP-3T">2020</a>). The main methodology of <abbr title="Decentralized privacy-preserving proximity tracing">DP-3T</abbr> is the continuous transmission and reception of emphemeral identifiers by all enabled devices, such that every device in the system would possess a log of every device which it had encountered in the past. When a person is declared infected, the ephemeral signals transmitted over the course of their infectious period would be publicised, allowing every device which had encountered the infected person’s phone to notify its user of potential exposure. The <abbr title="Decentralized privacy-preserving proximity tracing">DP-3T</abbr> designers have gone to great lengths to design a fully-anonymous system without location data or tracking potential, and their cryptographic work is commendable. However, the authors’ original release of the proposal was explicitly just that – a proposal: <q cite="#ref-DP-3T">we are publishing this document to seek feedback from a broad audience on the high-level design, its security and privacy … so that further protection mechanisms can be added</q> (<a class="citation" href="#ref-DP-3T" data-cites="DP-3T">Troncoso et al. 2020, 2</a>).
+					</p>
+					<p>
+						Despite these qualms, <a class="citation" href="#ref-AppleCT.Announcement" data-cites="AppleCT.Announcement">Apple, Inc. and Google, Inc. (2020d)</a> announced a collaborative derivative project to introduce this form of contact tracing to millions of smartphones. Along with releasing documentation for software developers at public health institutions to implement the system (<a class="citation" href="#ref-AppleCT.API" data-cites="AppleCT.API">2020c</a>), they have also published information on how the Bluetooth (<a class="citation" href="#ref-AppleCT.Bluetooth" data-cites="AppleCT.Bluetooth">2020a</a>) and crypotography (<a class="citation" href="#ref-AppleCT.Crypto" data-cites="AppleCT.Crypto">2020b</a>) are expected to operate. While the latter two documents include statements on privacy protection, they lack the discussion of protections against state-level adversaries that make up much of the <abbr title="Decentralized privacy-preserving proximity tracing">DP-3T</abbr> proposal. Regardless, it is expected that by the end of the year, devices manufactured by <a class="citation" href="#ref-AppleCT.Announcement" data-cites="AppleCT.Announcement">Apple, Inc. and Google, Inc. (2020d)</a> will be constantly broadcasting and listening for these contact signals. If the <abbr title="Coronavirus Disease 2019">COVID-19</abbr> crisis persists by the time this becomes an integral part of smartphone operating systems, it will likely be the norm for people to experience notifications warning them of previous contact with an infectious person.
+					</p>
+					<p>
+						While the privacy implications of broadcasting one’s presence are of course wide-reaching, I am intrigued by what this will mean for our personal relations to our devices. The implication made by both the cryptographic research team and the corporate manufacturers is that our devices are extensions of our bodies. Our expulsion of viral particles emanating from our respiration, an exclusively physical and biological act, is in the minds of the proposals inexorably tied to the virtual signals of our smartphones emanating from our pockets. Every physical interaction between people, no matter how brief, will be logged. So long as both participants have up-to-date smartphones, they will exchange information. While phone notifications of potential infection persist, people will become more and more aware of this logging and transmission, further entrenching the idea of the phone as a part of the body.
+					</p>
+					<h3 id="access-and-cross-cultural-considerations">Access and Cross-Cultural Considerations</h3>
+					<p>
+						Not everyone has a smartphone. In fact, it is likely that smartphone owners constitute a minority of the global population (<a class="citation" href="#ref-pew.phone" data-cites="pew.phone">Poushter 2016</a>). People’s lack of smartphones can occur for socioeconomic, political, or reasons of personal choice. Should smartphones become a major part of public health diagnosis and communication, those most likely to possess them (the young, the educated, and the rich) will have greater access to warnings regarding illness. Those without still have biological bodies capable of transmitting and receiving illness, but without the technological appendage capable of transmitting and receiving signals, they are excluded from perceptions of epidemic transmission.
+					</p>
+					<p>
+						Conceptions of privacy differ amongst societies. The implementation of a sudden and global change to smartphones could cause rifts between people and between societies. The conception of privacy in Islamic societies, as detailed by Abokhodair and Vieweg (<a class="citation" href="#ref-Abokhodair2016" data-cites="Abokhodair2016">2016</a>), for instance, may be alien to the software developers in California who are implementing the contact tracing systems.
+					</p>
+					<p>
+						The moment the first batch of notifications appear on smartphones reading <q>you have been near someone infected with <abbr title="Coronavirus Disease 2019">COVID-19</abbr> in the last fourteen days</q> I believe will be a moment that both the individual recipients and global society as a whole find unforgettable. The relation of technology to the body will not be the same after this crisis.
+					</p>
+				</section>
 			</section>
 			<section id="references">
 				<h2>References</h2>
 				<ol id="refs" class="references hanging-indent" role="doc-bibliography">
-					<li id="ref-Abokhodair2016">
+					<li id="ref-Abokhodair2016" property="citation">
 						<p>Abokhodair, Norah, and Sarah Vieweg. 2016. <q>Privacy &amp; Social Media in the Context of the Arab Gulf.</q> In <em>Proceedings of the 2016 ACM Conference on Designing Interactive Systems</em>, 672–83. DIS ’16. New York, NY, USA: Association for Computing Machinery. doi:<a href="https://doi.org/10.1145/2901790.2901873">10.1145/2901790.2901873</a>.</p>
 					</li>
-					<li id="ref-Shodan">
+					<li id="ref-Shodan" property="citation">
 						<p>Al-Alami, H., A. Hadi, and H. Al-Bahadili. 2017. <q>Vulnerability Scanning of Iot Devices in Jordan Using Shodan.</q> In <em>2nd International Conference on the Applications of Information Technology in Developing Renewable Energy Processes Systems (IT-DREPS)</em>, 1–6. doi:<a href="https://doi.org/10.1109/IT-DREPS.2017.8277814">10.1109/IT-DREPS.2017.8277814</a>.</p>
 					</li>
-					<li id="ref-Anderson2020">
+					<li id="ref-Anderson2020" property="citation">
 						<p>Anderson, Pearse. 2020. <q>Campus Is Closed, so College Students Are Rebuilding Their Schools in Minecraft.</q> <em>The Verge</em>, March. <a href="https://www.theverge.com/2020/3/31/21200972/college-students-graduation-minecraft-coronavirus-school-closures">https://www.theverge.com/2020/3/31/21200972/college-students-graduation-minecraft-coronavirus-school-closures</a>.</p>
 					</li>
-					<li id="ref-AppleCT.Bluetooth">
+					<li id="ref-AppleCT.Bluetooth" property="citation">
 						<p>Apple, Inc., and Google, Inc. 2020a. <em>Contact Tracing Bluetooth Specification</em> (version 1.1). <a href="https://covid19-static.cdn-apple.com/applications/covid19/current/static/contact-tracing/pdf/ContactTracing-BluetoothSpecificationv1.1.pdf">https://covid19-static.cdn-apple.com/applications/covid19/current/static/contact-tracing/pdf/ContactTracing-BluetoothSpecificationv1.1.pdf</a>.</p>
 					</li>
-					<li id="ref-AppleCT.Crypto">
+					<li id="ref-AppleCT.Crypto" property="citation">
 						<p>———. 2020b. <em>Contact Tracing Cryptography Specification</em> (version 1). <a href="https://covid19-static.cdn-apple.com/applications/covid19/current/static/contact-tracing/pdf/ContactTracing-CryptographySpecification.pdf">https://covid19-static.cdn-apple.com/applications/covid19/current/static/contact-tracing/pdf/ContactTracing-CryptographySpecification.pdf</a>.</p>
 					</li>
-					<li id="ref-AppleCT.API">
+					<li id="ref-AppleCT.API" property="citation">
 						<p>———. 2020c. <em>Contact Tracing Framework Documentation</em> (version 1). <a href="https://covid19-static.cdn-apple.com/applications/covid19/current/static/contact-tracing/pdf/ContactTracing-FrameworkDocumentation.pdf">https://covid19-static.cdn-apple.com/applications/covid19/current/static/contact-tracing/pdf/ContactTracing-FrameworkDocumentation.pdf</a>.</p>
 					</li>
-					<li id="ref-AppleCT.Announcement">
+					<li id="ref-AppleCT.Announcement" property="citation">
 						<p>———. 2020d. <q>Apple and Google Partner on COVID-19 Contact Tracing Technology,</q> April. <a href="https://www.apple.com/newsroom/2020/04/apple-and-google-partner-on-covid-19-contact-tracing-technology/">https://www.apple.com/newsroom/2020/04/apple-and-google-partner-on-covid-19-contact-tracing-technology/</a>.</p>
 					</li>
-					<li id="ref-Barker2019">
+					<li id="ref-Barker2019" property="citation">
 						<p>Barker, Timothy. 2019. <q>Cultural Techniques of Play: A Media Philosophical Approach to the Study of Time, History, and Memory in Games.</q> <em>Configurations</em> 27 (1): 87–110. doi:<a href="https://doi.org/10.1353/con.2019.0003">10.1353/con.2019.0003</a>.</p>
 					</li>
-					<li id="ref-Tabletop">
+					<li id="ref-Tabletop" property="citation">
 						<p>Berserk Games. 2020. <q>Tabletop Simulator.</q> <a href="https://tabletopsimulator.com">https://tabletopsimulator.com</a>.</p>
 					</li>
-					<li id="ref-Chen2020">
+					<li id="ref-Chen2020" property="citation">
 						<p>Chen, Simiao, Juntao Yang, Weizhong Yang, Chen Wang, and Till Bärnighausen. 2020. <q>COVID-19 Control in China During Mass Population Movements at New Year.</q> <em>The Lancet</em> 395 (10226): 764–66. doi:<a href="https://doi.org/10.1016/S0140-6736(20)30421-9">10.1016/S0140-6736(20)30421-9</a>.</p>
 					</li>
 					<li id="ref-zmap-paper">
 						<p>Durumeric, Zakir, Eric Wustrow, and J. Alex Halderman. 2013. <q>ZMap: Fast Internet-Wide Scanning and Its Security Applications.</q> In <em>22nd USENIX Security Symposium (USENIX Security 13)</em>, 605–20. Washington, D.C.: USENIX Association.</p>
 					</li>
-					<li id="ref-Ferretti2020">
+					<li id="ref-Ferretti2020" property="citation">
 						<p>Ferretti, Luca, Chris Wymant, Michelle Kendall, Lele Zhao, Anel Nurtay, Lucie Abeler-Dörner, Michael Parker, David Bonsall, and Christophe Fraser. 2020. <q>Quantifying SARS-CoV-2 Transmission Suggests Epidemic Control with Digital Contact Tracing.</q> <em>Science</em> 368 (6487). doi:<a href="https://doi.org/10.1126/science.abb6936">10.1126/science.abb6936</a>.</p>
 					</li>
-					<li id="ref-Galloway2004">
+					<li id="ref-Galloway2004" property="citation">
 						<p>Galloway, Alexander R. 2004. <q>Playing the Code: Allegories of Control in Civilization.</q> <em>Radical Philosophy</em>, no. 128: 33–40.</p>
 					</li>
-					<li id="ref-Gallup2016">
+					<li id="ref-Gallup2016" property="citation">
 						<p>Gallup, Jennifer, Barbara Serianni, Christine Duff, and Adam Gallup. 2016. <q>An Exploration of Friendships and Socialization for Adolescents with Autism Engaged in Massively Multiplayer Online Role-Playing Games (MMORPG).</q> <em>Education and Training in Autism and Developmental Disabilities</em> 51 (3): 223–37. doi:<a href="https://doi.org/10.2307/24827520">10.2307/24827520</a>.</p>
 					</li>
-					<li id="ref-Kopecky2014">
+					<li id="ref-Kopecky2014" property="citation">
 						<p>Kopecky, K., J. Kusa, L. Hejsek, M. Polak, and H. Maresova. 2014. <q>Language Analysis of Czech Prepubescent and Postpubescent Players of Minecraft Game.</q> In <em>SGEM2014 Conference Proceedings</em>, 3:1071–8. 1. International Multidisciplinary Scientific Conference on Social Sciences; Arts. doi:<a href="https://doi.org/10.5593/sgemsocial2014/B13/S3.139">10.5593/sgemsocial2014/B13/S3.139</a>.</p>
 					</li>
-					<li id="ref-Lee2009">
+					<li id="ref-Lee2009" property="citation">
 						<p>Lee, Kaman. 2009. <q>How the Hong Kong Government Lost the Public Trust in SARS: Insights for Government Communication in a Health Crisis.</q> <em>Public Relations Review</em> 35 (1): 74–76. doi:<a href="https://doi.org/10.1016/j.pubrev.2008.06.003">10.1016/j.pubrev.2008.06.003</a>.</p>
 					</li>
-					<li id="ref-Manovich3001">
+					<li id="ref-Manovich3001" property="citation">
 						<p>Manovich, Lev. 2001. <em>The Language of New Media</em>. Leonardo. Cambridge, MA: MIT Press.</p>
 					</li>
-					<li id="ref-Marsh3014">
+					<li id="ref-Marsh3014" property="citation">
 						<p>Marsh, Jackie. 2014. <q>The Relationship Between Online and Offline Play: Friendship and Exclusion.</q> In <em>Children’s Games in the New Media Age: Childlore, Media and the Playground</em>, 109–32. London: Routledge.</p>
 					</li>
-					<li id="ref-Mavoa2018">
+					<li id="ref-Mavoa2018" property="citation">
 						<p>Mavoa, Jane, Marcus Carter, and Martin Gibbs. 2018. <q>Children and Minecraft: A Survey of Children’s Digital Play.</q> <em>New Media &amp; Society</em> 20 (9): 3283–3303. doi:<a href="https://doi.org/10.1177/1461444817745320">10.1177/1461444817745320</a>.</p>
 					</li>
-					<li id="ref-Minecraft">
+					<li id="ref-Minecraft" property="citation">
 						<p>Mojang AB. 2020. <q>Minecraft.</q> <a href="https://minecraft.net">https://minecraft.net</a>.</p>
 					</li>
-					<li id="ref-NYT.alipay">
+					<li id="ref-NYT.alipay" property="citation">
 						<p>Mozur, Paul, Raymond Zhong, and Aaron Krolik. 2020. <q>In Coronavirus Fight, China Gives Citizens a Color Code, with Red Flags.</q> <em>The New York Times</em>, March, A1.</p>
 					</li>
-					<li id="ref-pew.phone">
+					<li id="ref-pew.phone" property="citation">
 						<p>Poushter, Jacob. 2016. <q>Smartphone Ownership and Internet Usage Continues to Climb in Emerging Economies.</q> <em>Pew Research Center</em>, February.</p>
 					</li>
-					<li id="ref-zmap">
+					<li id="ref-zmap" property="citation">
 						<p>Regents of the University of Michigan. 2017. <q><code>ZMap</code>.</q></p>
 					</li>
-					<li id="ref-Ringland2016">
+					<li id="ref-Ringland2016" property="citation">
 						<p>Ringland, Kathryn E., Christine T. Wolf, Heather Faucett, Lynn Dombrowski, and Gillian R. Hayes. 2016. <q>‘Will I Always Be Not Social?’: Re-Conceptualizing Sociality in the Context of a Minecraft Community for Autism.</q> In <em>Proceedings of the 2016 Chi Conference on Human Factors in Computing Systems</em>, 1256–69. CHI ’16. New York, NY, USA: Association for Computing Machinery. doi:<a href="https://doi.org/10.1145/2858036.2858038">10.1145/2858036.2858038</a>.</p>
 					</li>
-					<li id="ref-Sicart2014">
+					<li id="ref-Sicart2014" property="citation">
 						<p>Sicart, Miguel. 2014. <em>Play Matters</em>. Cambridge, MA: MIT Press.</p>
 					</li>
-					<li id="ref-Townshend1979">
+					<li id="ref-Townshend1979" property="citation">
 						<p>Townshend, Philip. 1979. <q>Mankala in Eastern and Southern Africa: A Distributional Analysis.</q> <em>Azania: Archaeological Research in Africa</em> 14 (1): 109–38. doi:<a href="https://doi.org/10.1080/00672707909511266">10.1080/00672707909511266</a>.</p>
 					</li>
-					<li id="ref-DP-3T">
+					<li id="ref-DP-3T" property="citation">
 						<p>Troncoso, Carmela, Mathias Payer, Jean-Pierre Hubaux, Marcel Salathè, Janes Larus, Edouard Bugnion, Wouter Lueks, et al. 2020. <em>Decentralized Privacy-Preserving Proximity Tracing</em>. <a href="https://github.com/DP-3T/documents/blob/master/DP3T%20White%20Paper.pdf">https://github.com/DP-3T/documents/blob/master/DP3T%20White%20Paper.pdf</a>.</p>
 					</li>
-					<li id="ref-Voorhies2013">
+					<li id="ref-Voorhies2013" property="citation">
 						<p>Voorhies, Barbara. 2013. <q>The Deep Prehistory of Indian Gaming: Possible Late Archaic Period Game Boards at the Tlacuachero Shellmound, Chiapas, Mexico.</q> <em>Latin American Antiquity</em> 24 (1): 98–115. doi:<a href="https://doi.org/10.7183/1045-6635.24.1.98">10.7183/1045-6635.24.1.98</a>.</p>
 					</li>
-					<li id="ref-Wikidata_virus">
+					<li id="ref-Wikidata_virus" property="citation">
 						<p>Wikidata contributors. 2020. <q>Q82069695.</q> In <em>Wikidata</em>. <a href="https://www.wikidata.org/wiki/Q82069695?oldid=1179015413">https://www.wikidata.org/wiki/Q82069695?oldid=1179015413</a>.</p>
 					</li>
-					<li id="ref-Wikipedia_virus_ru">
+					<li id="ref-Wikipedia_virus_ru" property="citation">
 						<p>Wikipedia contributors. 2020a. <q>SARS-CoV-2.</q> In <em>Wikipedia: The Free Encyclopedia</em>. <a href="https://ru.wikipedia.org/wiki/SARS-CoV-2?oldid=106542782">https://ru.wikipedia.org/wiki/SARS-CoV-2?oldid=106542782</a>.</p>
 					</li>
-					<li id="ref-Wikipedia_virus">
+					<li id="ref-Wikipedia_virus" property="citation">
 						<p>———. 2020b. <q>Severe Acute Respiratory Syndrome Coronavirus 2.</q> In <em>Wikipedia: The Free Encyclopedia</em>. <a href="https://en.wikipedia.org/wiki/Severe_acute_respiratory_syndrome_coronavirus_2?oldid=955837403">https://en.wikipedia.org/wiki/Severe_acute_respiratory_syndrome_coronavirus_2?oldid=955837403</a>.</p>
 					</li>
-					<li id="ref-Williams2006">
+					<li id="ref-Williams2006" property="citation">
 						<p>Williams, Dmitri, Nicolas Ducheneaut, Li Xiong, Yuanyuan Zhang, Nick Yee, and Eric Nickell. 2006. <q>From Tree House to Barracks: The Social Life of Guils in World of Warcraft.</q> <em>Games and Culture</em> 1 (4): 338–61. doi:<a href="https://doi.org/10.1177/1555412006292616">10.1177/1555412006292616</a>.</p>
 					</li>
 				</ol>
