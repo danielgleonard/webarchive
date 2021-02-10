@@ -73,9 +73,9 @@
         </style>
     </head>
     <body vocab="https://schema.org/">
-        <article>
-            <header>
-                <h1>
+		<article typeof="ScholarlyArticle">
+			<header>
+				<h1 property="name headline">
                     <span id="title">Non-bacterial components of the primate microbiome:</span>
                     <br />
                     <span id="subtitle">Against a bacterial bias</span>
@@ -85,6 +85,8 @@
                     <br/>
                     <a href="../../../../">Directory index</a>
                 </aside>
+				<meta property="pageStart" content="52" />
+				<meta property="pageEnd" content="59" />
                 <a id="pdf" rel="alternate" href="./microbiome.pdf" media="print" type="application/pdf">🖨︎ Printable version (PDF)</a>
                 <a id="tex" rel="alternate" href="./microbiome.tex" type="application/x-tex"><span class="latex">L<sup>a</sup>T<sub>e</sub>X</span> source</a>
                 <dl id="pageinfo">
@@ -98,21 +100,25 @@
                         <span property="additionalName">G.</span>
                         <span property="familyName">Leonard</span>
                     </dd>
-                    <dt>Course</dt>
-                    <dd typeof="Course">
-                        <span property="courseCode">
-                            ANTH 438
-                        </span> 
-                        <span property="name">
-                            Primate Life History Evolution
-                        </span>
-                    </dd>
-                    <dt>Institution</dt>
-                    <dd typeof="EducationalOrganization">
-                        <span property="name">University of Illinois at Urbana-Champaign</span>
-                    </dd>
+					<div property="exampleOfWork" typeof="Course">
+						<dt>Course</dt>
+                        <dd>
+                            <span property="courseCode">
+                                ANTH 438
+                            </span> 
+                            <span property="name">
+                                Primate Life History Evolution
+                            </span>
+							<!-- <meta property="url" content="https://courses.illinois.edu/schedule/2019/FALL/ANTH/438" /> -->
+							<meta property="description" content="Life history seeks to explain why differences exist in the pathways that organisms follow from conception to death. Examination of the diversity in the evolution of primate (including human) life histories." />
+                        </dd>
+                        <dt>Institution</dt>
+                        <dd property="provider" typeof="EducationalOrganization">
+                            <span property="name">University of Illinois at Urbana-Champaign</span>
+                        </dd>
+                    </div>
                     <dt>Instructor</dt>
-                    <dd typeof="Person">
+                    <dd property="editor" typeof="Person">
                         <span property="honorificPrefix">Dr.</span>
                         <span property="givenName">Kathryn</span>
                         <span property="additionalName">B.</span>
@@ -120,57 +126,60 @@
                         <span property="familyName">Clancy</span>
                     </dd>
                 </dl>
+                <link property="image" type="image/svg+xml" href="https://archive.danleonard.us/scholarship/coursework/illinois/ANTH/438/microbiome.svg" />
             </header>
-            <section id="introduction">
-                <h2>Introduction</h2>
-                <p>Since the discovery that the world in which we live is entirely filled with organisms too small to see with the eye, biologists have drawn a line between the microorganism and the multicellular organism. However, the search for the evolutionary apex of cellular organisms has blurred this line, from the theory of lateral gene flow (<a class="citation" href="#ref-Woe98" data-cites="Woe98">Woese 1998</a>) to the discovery that archaea and eukarya share more in common with each other than either shares with bacteria (<a class="citation" href="#ref-Woe77" data-cites="Woe77">Woese and Fox 1977</a>). In researching the microbiome – the physical commensal relationship between animals and their microbial inhabitants – it is important to consider the full diversity of microbial taxa. This paper seeks to investigate biases in microbiome research toward specific microbial taxa and seek out how the less-studied varieties of microbial inhabitants may have effects unaccounted for.</p>
-                <p>Despite a growth of research interest in archaea since its identification by <a class="citation" href="#ref-Woe77" data-cites="Woe77">Woese and Fox (1977)</a>, little research has been conducted into their relationships to other organisms, such as humans. As the domain was originally understood as a clade of extremophiles due to their original isolation from geothermal vents (<a class="citation" href="#ref-DeL01" data-cites="DeL01">DeLong and Pace 2001</a>), it would be expected that archaea would be a minor part of more familiar environments; however, it is now known that members of archaea exist with great frequency in non-extreme environments, such as plankton, lakes, and soils (<a class="citation" href="#ref-DeL01" data-cites="DeL01">DeLong and Pace 2001</a>). Regardless, research into the composition of human microbiota retains a strong bias toward bacteria (<a class="citation" href="#ref-Llo16" data-cites="Llo16">Lloyd-Price, Abu-Ali, and Huttenhower 2016</a>; <a class="citation" href="#ref-The12" data-cites="The12">Huttenhower et al. 2012</a>). Comparative primatology has often failed to expand microbiota research beyond bacteria, frequently excluding unknown or infrequent phyla from results of DNA extraction (<a class="citation" href="#ref-Gar19" data-cites="Gar19">Garber et al. 2019</a>; <a class="citation" href="#ref-Mal18" data-cites="Mal18">Mallott and Amato 2018</a>; <a class="citation" href="#ref-Ork19" data-cites="Ork19">Orkin et al. 2019</a>; <a class="citation" href="#ref-Ork191" data-cites="Ork191">Orkin, Webb, and Melin 2019</a>). At its extreme, the term “microbe” has been used synonymously with the term “bacteria” despite the far more precise definition of the latter (<a class="citation" href="#ref-Mal18" data-cites="Mal18">for an example, see Mallott and Amato 2018</a>).</p>
-            </section>
-            <section id="analysis-of-previous-research">
-                <h2>Analysis of previous research</h2>
-                <p>In order to assay the relative biases of microbiome research it would be necessary to compare the references to microbial phyla in published literature to the prevalence of such microbes in microbiomes. As much research into the human microbiome is undertaken from a medical perspective, NCBI PubMed contains a wealth of full-text and abstracts in its catalog, which is easily indexed for specific terms and phrases. Thus, NCBI PubMed’s article archive was chosen as a sample for language analysis.</p>
-                <figure id="figure-1">
-                    <img src="microbiome.svg" type="image/svg+xml" title="Figure 1"
-                        alt="Barplot showing references on logarithmic scale, color-coded by domain. In order from greatest to fewest references: Bacteria (nonspecific); Proteobacteria; Firmicutes; Chordata; Bacteroidetes; Viruses (nonspecific); Ascomycota; Actinobacteria; Eukaryota (nonspecific); unclassified bacterial viruses; dsDNA viruses, no RNA stages; sRNA viruses; Streptophyta; Apicomplexa; Arthropoda; Fusobacteria; Retro-transcribing viruses; Nematoda; Euryarchaeota; Spirochaetes; Verrucomicrobia; Tenericutes; Basidiomycota; Chlamydiae; Chloroflexi; Platyhelminthes; Chytridiomycota." />
-                    <figcaption>
-                        <em class="figname">Figure 1.</em>
-                        References to phyla in a PubMed search for the phrase
-                        “human microbiome.” References less specific than
-                        phylum are recorded as “<em>domain</em>
-                        (nonspecific),” domains are presented as colors. All
-                        references to humans were excluded, and would have
-                        been sorted into Chordata.
-                    </figcaption>
-                </figure>
-                <section id="methods">
-                    <h3>Methods</h3>
-                    <p>A search for the exact phrase “human microbiome” was conducted on NCBI PubMed in October 2019, fetching 1,779 results, which were downloaded as an XML file. Using R version 3.6.1 (<a class="citation" href="#ref-RCo19" data-cites="RCo19">R Core Team 2019</a>) on Microsoft Windows 10 18362.418, these results were indexed with <code>pubmed.mineR</code> version 1.0.16 (<a class="citation" href="#ref-Ran19" data-cites="Ran19">Rani, Ramachandran, and Shah 2019</a>) and queried for metadata from the NCBI PubTator service (<a class="citation" href="#ref-Wei19" data-cites="Wei19">Wei et al. 2019</a>). PubTator analyzes the text of PubMed abstracts and full-text articles to determine the names of species and taxonomic tanks mentioned in such articles. Excluding mentions to <em>Homo sapiens</em>, the taxonomic ranks were looked up in the NCBI Taxonomy Database (<a class="citation" href="#ref-Nat19" data-cites="Nat19"><em>NCBI Taxonomy Database</em> 2019</a>) using <code>ncbitax2lin</code> (<a class="citation" href="#ref-Xue19" data-cites="Xue19">Xue 2019</a>) to convert the database to CSV.</p>
-                    <p>References to taxonomic ranks more specific than phylum were simplified to phyla, and less specific references were recorded as “<em>domain</em> (nonspecific).” In the case of viruses, which have separate ranking system, the NCBI value “no rank – 0” was used in place of phylum. The number of references to each phylum was totaled and categorized by domain. All R code executed is presented in <a href="#appendix-a">Appendix A</a>.</p>
+            <section id="main" property="articleBody">
+                <section id="introduction">
+                    <h2>Introduction</h2>
+                    <p>Since the discovery that the world in which we live is entirely filled with organisms too small to see with the eye, biologists have drawn a line between the microorganism and the multicellular organism. However, the search for the evolutionary apex of cellular organisms has blurred this line, from the theory of lateral gene flow (<a class="citation" href="#ref-Woe98" data-cites="Woe98">Woese 1998</a>) to the discovery that archaea and eukarya share more in common with each other than either shares with bacteria (<a class="citation" href="#ref-Woe77" data-cites="Woe77">Woese and Fox 1977</a>). In researching the microbiome – the physical commensal relationship between animals and their microbial inhabitants – it is important to consider the full diversity of microbial taxa. This paper seeks to investigate biases in microbiome research toward specific microbial taxa and seek out how the less-studied varieties of microbial inhabitants may have effects unaccounted for.</p>
+                    <p>Despite a growth of research interest in archaea since its identification by <a class="citation" href="#ref-Woe77" data-cites="Woe77">Woese and Fox (1977)</a>, little research has been conducted into their relationships to other organisms, such as humans. As the domain was originally understood as a clade of extremophiles due to their original isolation from geothermal vents (<a class="citation" href="#ref-DeL01" data-cites="DeL01">DeLong and Pace 2001</a>), it would be expected that archaea would be a minor part of more familiar environments; however, it is now known that members of archaea exist with great frequency in non-extreme environments, such as plankton, lakes, and soils (<a class="citation" href="#ref-DeL01" data-cites="DeL01">DeLong and Pace 2001</a>). Regardless, research into the composition of human microbiota retains a strong bias toward bacteria (<a class="citation" href="#ref-Llo16" data-cites="Llo16">Lloyd-Price, Abu-Ali, and Huttenhower 2016</a>; <a class="citation" href="#ref-The12" data-cites="The12">Huttenhower et al. 2012</a>). Comparative primatology has often failed to expand microbiota research beyond bacteria, frequently excluding unknown or infrequent phyla from results of DNA extraction (<a class="citation" href="#ref-Gar19" data-cites="Gar19">Garber et al. 2019</a>; <a class="citation" href="#ref-Mal18" data-cites="Mal18">Mallott and Amato 2018</a>; <a class="citation" href="#ref-Ork19" data-cites="Ork19">Orkin et al. 2019</a>; <a class="citation" href="#ref-Ork191" data-cites="Ork191">Orkin, Webb, and Melin 2019</a>). At its extreme, the term “microbe” has been used synonymously with the term “bacteria” despite the far more precise definition of the latter (<a class="citation" href="#ref-Mal18" data-cites="Mal18">for an example, see Mallott and Amato 2018</a>).</p>
                 </section>
-                <section id="results">
-                    <h3>Results</h3>
-                    <p>Of the 1,779 articles indexed, 1,730 mentioned a taxonomic rank or species. This totaled 5,354 individual mentions, of which 2,419 were to species or ranks other than humans. As visible in <a href="#figure-1">Figure 1</a>, bacteria made up the majority of references, with the phyla Proteobacteria and Firmicutes second only to nonspecific references to bacteria as a domain. Eukarya were second to bacteria in total number of references; however, the most frequently discussed phylum within the domain was Chordata, which likely stems from discussion of vertebrate microbiomes such as Mus musculus rather than indicating the presence of chordates in the human microbiome. Viruses were referenced moderately frequently, with nonspecific virus references making up the greatest proportion of the domain’s coverage, followed by bacteriophages. Finally, archaea were referenced least frequently of all, with nine total references amounting to less than any viral phylum.</p>
+                <section id="analysis-of-previous-research">
+                    <h2>Analysis of previous research</h2>
+                    <p>In order to assay the relative biases of microbiome research it would be necessary to compare the references to microbial phyla in published literature to the prevalence of such microbes in microbiomes. As much research into the human microbiome is undertaken from a medical perspective, NCBI PubMed contains a wealth of full-text and abstracts in its catalog, which is easily indexed for specific terms and phrases. Thus, NCBI PubMed’s article archive was chosen as a sample for language analysis.</p>
+                    <figure id="figure-1">
+                        <img src="microbiome.svg" type="image/svg+xml" title="Figure 1"
+                            alt="Barplot showing references on logarithmic scale, color-coded by domain. In order from greatest to fewest references: Bacteria (nonspecific); Proteobacteria; Firmicutes; Chordata; Bacteroidetes; Viruses (nonspecific); Ascomycota; Actinobacteria; Eukaryota (nonspecific); unclassified bacterial viruses; dsDNA viruses, no RNA stages; sRNA viruses; Streptophyta; Apicomplexa; Arthropoda; Fusobacteria; Retro-transcribing viruses; Nematoda; Euryarchaeota; Spirochaetes; Verrucomicrobia; Tenericutes; Basidiomycota; Chlamydiae; Chloroflexi; Platyhelminthes; Chytridiomycota." />
+                        <figcaption>
+                            <em class="figname">Figure 1.</em>
+                            References to phyla in a PubMed search for the phrase
+                            “human microbiome.” References less specific than
+                            phylum are recorded as “<em>domain</em>
+                            (nonspecific),” domains are presented as colors. All
+                            references to humans were excluded, and would have
+                            been sorted into Chordata.
+                        </figcaption>
+                    </figure>
+                    <section id="methods">
+                        <h3>Methods</h3>
+                        <p>A search for the exact phrase “human microbiome” was conducted on NCBI PubMed in October 2019, fetching 1,779 results, which were downloaded as an XML file. Using R version 3.6.1 (<a class="citation" href="#ref-RCo19" data-cites="RCo19">R Core Team 2019</a>) on Microsoft Windows 10 18362.418, these results were indexed with <code>pubmed.mineR</code> version 1.0.16 (<a class="citation" href="#ref-Ran19" data-cites="Ran19">Rani, Ramachandran, and Shah 2019</a>) and queried for metadata from the NCBI PubTator service (<a class="citation" href="#ref-Wei19" data-cites="Wei19">Wei et al. 2019</a>). PubTator analyzes the text of PubMed abstracts and full-text articles to determine the names of species and taxonomic tanks mentioned in such articles. Excluding mentions to <em>Homo sapiens</em>, the taxonomic ranks were looked up in the NCBI Taxonomy Database (<a class="citation" href="#ref-Nat19" data-cites="Nat19"><em>NCBI Taxonomy Database</em> 2019</a>) using <code>ncbitax2lin</code> (<a class="citation" href="#ref-Xue19" data-cites="Xue19">Xue 2019</a>) to convert the database to CSV.</p>
+                        <p>References to taxonomic ranks more specific than phylum were simplified to phyla, and less specific references were recorded as “<em>domain</em> (nonspecific).” In the case of viruses, which have separate ranking system, the NCBI value “no rank – 0” was used in place of phylum. The number of references to each phylum was totaled and categorized by domain. All R code executed is presented in <a href="#appendix-a">Appendix A</a>.</p>
+                    </section>
+                    <section id="results">
+                        <h3>Results</h3>
+                        <p>Of the 1,779 articles indexed, 1,730 mentioned a taxonomic rank or species. This totaled 5,354 individual mentions, of which 2,419 were to species or ranks other than humans. As visible in <a href="#figure-1">Figure 1</a>, bacteria made up the majority of references, with the phyla Proteobacteria and Firmicutes second only to nonspecific references to bacteria as a domain. Eukarya were second to bacteria in total number of references; however, the most frequently discussed phylum within the domain was Chordata, which likely stems from discussion of vertebrate microbiomes such as Mus musculus rather than indicating the presence of chordates in the human microbiome. Viruses were referenced moderately frequently, with nonspecific virus references making up the greatest proportion of the domain’s coverage, followed by bacteriophages. Finally, archaea were referenced least frequently of all, with nine total references amounting to less than any viral phylum.</p>
+                    </section>
                 </section>
-            </section>
-            <section id="the-role-of-non-bacterial-organisms-in-the-microbiome">
-                <h2>The Role of Non-Bacterial Organisms in the Microbiome</h2>
-                <section id="eukarya">
-                    <h3>Eukarya</h3>
-                    <p>Yeasts have been found to colonize infant guts gradually, with an isolation rate of 13% at 28-46 days old (<a class="citation" href="#ref-Ben84" data-cites="Ben84">Benno, Sawada, and Mitsuoka 1984</a>) and 50% as soon as four months of age (<a class="citation" href="#ref-Ell75" data-cites="Ell75">Ellis-Pegler, Crabtree, and Lambert 1975</a>). Notably, this rate of colonization was consistent between breast-fed and formula-fed infants, in contrast to the colonization rates of bacterial phyla which differ significantly between the two feeding mechanisms. From a life-history perspective, this presents a novel question of how yeast colonize the infant gut and whether the mechanism by which breastmilk contains microbiota associated with the mother’s gut microbiome (<a class="citation" href="#ref-Mar13" data-cites="Mar13">Martin and Sela 2013</a>) is also capable of providing yeast, whose eukaryotic cells differ in size by orders of magnitude from prokaryotic cells.</p>
-                    <p>However, research conducted on yeast inhabitants of animals focuses primarily on their pathological role. The genus <em>Candida</em> is well known for its role in infectious disease in humans, particularly in the immunocompromised (<a class="citation" href="#ref-Kou11" data-cites="Kou11">Kourkoumpetis et al. 2011</a>). However, species of yeast, including many <em>Candida</em> spp., have frequently been identified on the human body, including the vagina, gut, and skin, without any associated mycosis (<a class="citation" href="#ref-Man10" data-cites="Man10">Manolakaki et al. 2010</a>). Even for species known to be infectious agents, between 12% (<a class="citation" href="#ref-Cho86" data-cites="Cho86">Chow et al. 1986</a>) and 80% (<a class="citation" href="#ref-Soe07" data-cites="Soe07">Soebel 2007</a>) of asymptomatic healthy women are vaginal carriers. In place of viewing yeast through the lens of infection, it should be considered as a part of the ecosystem that makes up the human body. How it reaches and colonizes infants, and why its prevalence makes up far less of the population than do bacterial commensals, merits further study.</p>
+                <section id="the-role-of-non-bacterial-organisms-in-the-microbiome">
+                    <h2>The Role of Non-Bacterial Organisms in the Microbiome</h2>
+                    <section id="eukarya">
+                        <h3>Eukarya</h3>
+                        <p>Yeasts have been found to colonize infant guts gradually, with an isolation rate of 13% at 28-46 days old (<a class="citation" href="#ref-Ben84" data-cites="Ben84">Benno, Sawada, and Mitsuoka 1984</a>) and 50% as soon as four months of age (<a class="citation" href="#ref-Ell75" data-cites="Ell75">Ellis-Pegler, Crabtree, and Lambert 1975</a>). Notably, this rate of colonization was consistent between breast-fed and formula-fed infants, in contrast to the colonization rates of bacterial phyla which differ significantly between the two feeding mechanisms. From a life-history perspective, this presents a novel question of how yeast colonize the infant gut and whether the mechanism by which breastmilk contains microbiota associated with the mother’s gut microbiome (<a class="citation" href="#ref-Mar13" data-cites="Mar13">Martin and Sela 2013</a>) is also capable of providing yeast, whose eukaryotic cells differ in size by orders of magnitude from prokaryotic cells.</p>
+                        <p>However, research conducted on yeast inhabitants of animals focuses primarily on their pathological role. The genus <em>Candida</em> is well known for its role in infectious disease in humans, particularly in the immunocompromised (<a class="citation" href="#ref-Kou11" data-cites="Kou11">Kourkoumpetis et al. 2011</a>). However, species of yeast, including many <em>Candida</em> spp., have frequently been identified on the human body, including the vagina, gut, and skin, without any associated mycosis (<a class="citation" href="#ref-Man10" data-cites="Man10">Manolakaki et al. 2010</a>). Even for species known to be infectious agents, between 12% (<a class="citation" href="#ref-Cho86" data-cites="Cho86">Chow et al. 1986</a>) and 80% (<a class="citation" href="#ref-Soe07" data-cites="Soe07">Soebel 2007</a>) of asymptomatic healthy women are vaginal carriers. In place of viewing yeast through the lens of infection, it should be considered as a part of the ecosystem that makes up the human body. How it reaches and colonizes infants, and why its prevalence makes up far less of the population than do bacterial commensals, merits further study.</p>
+                    </section>
+                    <section id="archaea">
+                        <h3>Archaea</h3>
+                        <p>In 1966 it was discovered that humans both respire and flatulate methane, which is not known to be biologically produced by any bacteria or eukaryote. Following this observation, methanogenic prokaryotes, from what would later be called the archaea, were identified in human feces (<a class="citation" href="#ref-Not68" data-cites="Not68">Nottingham and Hungate 1968</a>). The archaeal domain remains the only taxon with members known to be biological producers of methane (<a class="citation" href="#ref-Tha06" data-cites="Tha06">Thauer and Shima 2006</a>), and as such is unique in its residence within the human gut. Despite widespread colonization by a diverse array of archaeal species, the ecological niche which they occupy within the human body and whether they are transferred vertically or environmentally remains unknown (<a class="citation" href="#ref-Dri11" data-cites="Dri11">Dridi, Raoult, and Drancourt 2011</a>). It has been theorized that many more lineages of archaea remain undiscovered, as the DNA analysis methods used to identify bacterial genomes are incompatible with archaeal cell walls (<a class="citation" href="#ref-Hor15" data-cites="Hor15">Horz 2015</a>).</p>
+                    </section>
+                    <section id="viruses">
+                        <h3>Viruses</h3>
+                        <p>Despite not fitting many definitions of biological life, viruses are the most diverse form of biological material on the planet. They are known to outnumber bacteria by a factor of nearly ten (<a class="citation" href="#ref-Ore97" data-cites="Ore97">Oren, Bratbak, and Heldal 1997</a>) and are a major driver of evolution in prokaryotes. Although humans are susceptible to a wide variety of viruses, the viral community in the microbiome, so fast it has itself been called a <q cite="#ref-Wyl12">virome</q> (<a class="citation" href="#ref-Wyl12" data-cites="Wyl12">Wylie, Weinstock, and Storch 2012</a>), is dominated primarily by bacteriophages whose sequences are novel (<a class="citation" href="#ref-Dut14" data-cites="Dut14">Dutilh et al. 2014</a>). The phages identifiable by genetic sequence are primarily those known to attack bacterial phyla associated with the microbiome, yet appear to be vastly more diverse than the virome of the ocean (<a class="citation" href="#ref-Wal14" data-cites="Wal14">Waller et al. 2014</a>). Unlike the theories of bacterial colonization, how such a vast and dynamic virome is able to establish itself by adulthood remains unknown. The effect of age, and whether milk carries a virome of similar diversity would be intriguing avenues for further study.</p>
+                    </section>
                 </section>
-                <section id="archaea">
-                    <h3>Archaea</h3>
-                    <p>In 1966 it was discovered that humans both respire and flatulate methane, which is not known to be biologically produced by any bacteria or eukaryote. Following this observation, methanogenic prokaryotes, from what would later be called the archaea, were identified in human feces (<a class="citation" href="#ref-Not68" data-cites="Not68">Nottingham and Hungate 1968</a>). The archaeal domain remains the only taxon with members known to be biological producers of methane (<a class="citation" href="#ref-Tha06" data-cites="Tha06">Thauer and Shima 2006</a>), and as such is unique in its residence within the human gut. Despite widespread colonization by a diverse array of archaeal species, the ecological niche which they occupy within the human body and whether they are transferred vertically or environmentally remains unknown (<a class="citation" href="#ref-Dri11" data-cites="Dri11">Dridi, Raoult, and Drancourt 2011</a>). It has been theorized that many more lineages of archaea remain undiscovered, as the DNA analysis methods used to identify bacterial genomes are incompatible with archaeal cell walls (<a class="citation" href="#ref-Hor15" data-cites="Hor15">Horz 2015</a>).</p>
+                <section id="limitations">
+                    <h2>Limitations</h2>
+                    <p>Utilizing both life-history and ecological frameworks for approaching non-bacterial components of the microbiome, it is clear that the roles such taxa play within our bodies is underexplored. While this paper sought to touch on these issues, it is limited by both methodology and its brevity. The use of NCBI PubMed for language analysis suffers from a bias toward medical research, and so microbiome research will often consider the roles of known pathological agents rather than in-depth discussions of all possible inhabitants. Eukarya is also a domain of organisms highly diverse in physical makeup and metabolic strategy, while only yeasts were discussed here. The roles of other unicellular parasites (for instance, <em>Toxoplasma gondii</em>) and of helminthic worms, which each form diverse monophyletic groups, can also be explored via the lens of the microbiome’s life-history. More research is needed in this area to investigate how the diverse community of microbes within humans evolved and what role it plays even in the absence of pathology.</p>
                 </section>
-                <section id="viruses">
-                    <h3>Viruses</h3>
-                    <p>Despite not fitting many definitions of biological life, viruses are the most diverse form of biological material on the planet. They are known to outnumber bacteria by a factor of nearly ten (<a class="citation" href="#ref-Ore97" data-cites="Ore97">Oren, Bratbak, and Heldal 1997</a>) and are a major driver of evolution in prokaryotes. Although humans are susceptible to a wide variety of viruses, the viral community in the microbiome, so fast it has itself been called a <q cite="#ref-Wyl12">virome</q> (<a class="citation" href="#ref-Wyl12" data-cites="Wyl12">Wylie, Weinstock, and Storch 2012</a>), is dominated primarily by bacteriophages whose sequences are novel (<a class="citation" href="#ref-Dut14" data-cites="Dut14">Dutilh et al. 2014</a>). The phages identifiable by genetic sequence are primarily those known to attack bacterial phyla associated with the microbiome, yet appear to be vastly more diverse than the virome of the ocean (<a class="citation" href="#ref-Wal14" data-cites="Wal14">Waller et al. 2014</a>). Unlike the theories of bacterial colonization, how such a vast and dynamic virome is able to establish itself by adulthood remains unknown. The effect of age, and whether milk carries a virome of similar diversity would be intriguing avenues for further study.</p>
-                </section>
-            </section>
-            <section id="limitations">
-                <h2>Limitations</h2>
-                <p>Utilizing both life-history and ecological frameworks for approaching non-bacterial components of the microbiome, it is clear that the roles such taxa play within our bodies is underexplored. While this paper sought to touch on these issues, it is limited by both methodology and its brevity. The use of NCBI PubMed for language analysis suffers from a bias toward medical research, and so microbiome research will often consider the roles of known pathological agents rather than in-depth discussions of all possible inhabitants. Eukarya is also a domain of organisms highly diverse in physical makeup and metabolic strategy, while only yeasts were discussed here. The roles of other unicellular parasites (for instance, <em>Toxoplasma gondii</em>) and of helminthic worms, which each form diverse monophyletic groups, can also be explored via the lens of the microbiome’s life-history. More research is needed in this area to investigate how the diverse community of microbes within humans evolved and what role it plays even in the absence of pathology.</p>
             </section>
             <section id="references">
                 <h2>References</h2>
