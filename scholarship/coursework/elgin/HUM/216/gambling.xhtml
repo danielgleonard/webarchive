@@ -52,9 +52,9 @@
 		</script>
     </head>
     <body vocab="https://schema.org/">
-        <article>
-            <header>
-                <h1>
+		<article typeof="ScholarlyArticle">
+			<header>
+				<h1 property="name headline">
                     <span id="title">Ethical perspectives on gambling</span>
                 </h1>
                 <aside>
@@ -62,12 +62,14 @@
                     <br/>
                     <a href="../../../../">Directory index</a>
                 </aside>
+				<meta property="pageStart" content="48" />
+				<meta property="pageEnd" content="51" />
                 <a id="pdf" rel="alternate" href="./gambling.pdf" media="print" type="application/pdf">🖨︎ Printable version (PDF)</a>
                 <a id="tex" rel="alternate" href="./gambling.tex" type="application/x-tex"><span class="latex">L<sup>a</sup>T<sub>e</sub>X</span> source</a>
                 <dl id="pageinfo">
                     <dt>Submitted</dt>
-                    <dd>
-                        <time datetime="2019-07-23T19:00:00-05:00">July 23, 2016</time>
+                    <dd property="datePublished">
+						<time typeof="DateTime" content="2019-07-23T19:00:00-05:00" datetime="2019-07-23T19:00:00-05:00">July 23, 2016</time>
                     </dd>
                     <dt>Author</dt>
                     <dd rel="author" typeof="Person">
@@ -75,95 +77,100 @@
                         <span property="additionalName">G.</span>
                         <span property="familyName">Leonard</span>
                     </dd>
-                    <dt>Course</dt>
-                    <dd typeof="Course">
-                        <span property="courseCode">
-                            HUM 216
-                        </span> 
-                        <span property="name">
-                            Ethics
-                        </span>
-                    </dd>
-                    <dt>Institution</dt>
-                    <dd typeof="EducationalOrganization">
-                        <span property="name">Elgin Community College</span>
-                    </dd>
+					<div property="exampleOfWork" typeof="Course">
+                        <dt>Course</dt>
+                        <dd>
+                            <span property="courseCode">
+                                HUM 216
+                            </span> 
+                            <span property="name">
+                                Ethics
+                            </span>
+							<meta property="description" content="This course studies the principal ethical theories and concepts of human conduct and character and critically evaluates these concepts and their practical implications." />
+                        </dd>
+                        <dt>Institution</dt>
+                        <dd property="provider" typeof="EducationalOrganization">
+                            <span property="name">Elgin Community College</span>
+                        </dd>
+                    </div>
                     <dt>Instructor</dt>
-                    <dd typeof="Person">
+                    <dd property="editor" typeof="Person">
                         <span property="honorificPrefix">Dr.</span>
                         <span property="givenName">Ronald</span>
                         <span property="familyName">Purser</span>
                     </dd>
                 </dl>
             </header>
-            <section id="introduction">
-                <h2>Introduction</h2>
-                <p>The practice of gambling traces its roots deep into the prehistory of humanity, with games of chance appearing in the archaeological records of populations as disparate as Babylonian civilization (<a class="citation" href="#ref-Nig62" data-cites="Nig62">Nightingale 1962</a>) and native North America (<a class="citation" href="#ref-DeB01" data-cites="DeB01">DeBoer 2001</a>; <a class="citation" href="#ref-Voo13" data-cites="Voo13">Voorhies 2013</a>). However, their practice has long been fraught with dispute over its moral standing. This is especially so in the modern era, where the practice of gambling has been industrialized into a major industry just as movements arise to oppose addictive products and practices. This paper constitutes a brief overview of historical and contemporary arguments regarding the morality and ethics of games of chance.</p>
-            </section> <!-- introduction -->
-            <section id="historical-perspectives">
-                <h2>Historical Perspectives</h2>
-                <section id="aristotelian-ethics">
-                    <h3>Aristotelian Ethics</h3>
-                    <p>In considering actions of chance, Aristotle eschews his “golden mean” ethical theories, seeking to explain the morality of chance through metaphysics. Aristotle’s conception of moral righteousness centered the idea of chance as an inherent property of moral action. In the <em>Physics</em> he drew a line between actions of “chance” and those of simple “spontaneity.” Actions rooted in chance can only be performed and experienced by moral beings, in contrast to the spontaneity of the natural world exerted by non-moral beings. He finds this to be true in considering the result – an action experienced as “chance” can provide good fortune, and good fortune is synonymous with happiness. As only moral beings can experience happiness, the chance that can result in good fortune must be a moral action. <q cite="#ref-AristotlePhysics">Thus an inanimate thing or a lower animal or a child cannot do anything by chance, because it is incapable of deliberate intention; nor can ‘good fortune’ or ‘ill fortune’ be ascribed to them, except metaphorically</q> (<a class="citation" href="#ref-AristotlePhysics" data-cites="AristotlePhysics">Aristotle 2015, II.6</a>). While not ruling on the moral righteousness of gambling as a financial exercise, it can be inferred that it is – to some extent – acceptable, as those who engage in gambling transactions can experience good fortune.</p>
-                </section> <!-- aristotelian-ethics -->
-                <section id="religious-ethics">
-                    <h3>Religious Ethics</h3>
-                    <section id="native-american">
-                        <h4>Native American</h4>
-                        <p>Divine will manifests strongly in the practice of many non-Western gambling rituals. For the Zuñi of southwestern North America, gambling was an practice watched over by as many as eight different gods, all of whom demanded sacrifice and prayer from the pious to win (<a class="citation" href="#ref-Ste03" data-cites="Ste03">Stevenson 1903</a>; <a class="citation" href="#ref-Bin07" data-cites="Bin07">Binde 2007</a>). Spiritual power was exemplified in gambling success across the continent, where spiritual skill superseded random chance as the main effector of any game’s outcome.</p>
-                        <p>To some Native Americans, games of chance had real impact on the world. The Iroquois (<a class="citation" href="#ref-Bea96" data-cites="Bea96">Beauchamp 1896</a>) and the Huron (<a class="citation" href="#ref-Her56" data-cites="Her56">Herman 1956</a>) both practiced gambling as a way of healing illness, extending even to the tribe’s crops. Iroquois ceremonies were heavily based around gambling, and religious leaders actively encouraged gambling:</p>
-                        <blockquote>
-                            <p>games were not only played at their religious festivals ‘but special days were set frequently apart for their celebration.’ Betting upon the result was common among the Iroquois. As this practice was never reprobated by their religious teachers, but on the contrary, rather encouraged, it frequently led to the most reckless indulgence. It often happened that the Indian gambled away every valuable article which he possessed; his tomahawk, his medal, his ornaments, and even his blanket</p>
-                            <footer>
-                                <cite>(<a class="citation" href="#ref-Cul07" data-cites="Cul07">Culin 1907, 116</a>)</cite>
-                            </footer>
-                        </blockquote>
-                        <p>As arbiters of virtue and morality in Native American society, religious leaders’ endorsement demonstrates a clear moral virtue in gambling. Despite participants leaving destitute, the practice was seen as spiritually necessary.</p>
-                    </section> <!-- native-american -->
-                    <section id="abrahamic">
-                        <h4>Abrahamic</h4>
-                        <p>Christian critiques of gambling are as diverse as the tendencies of the religion itself. Some scholars argue that gambling provides competition for religion itself: <a class="citation" href="#ref-Ful74" data-cites="Ful74">Fuller (1974)</a> called the practice a <q cite="#ref-Ful74">secular religion</q> which instills fear of idolatry in the hearts of Christians. Early Christians were also quick to denounce games of chance, where gambling was almost universally reprehensible to pre-reformation Christian churches. Today the Roman Catholic Church permits gambling in moderation, endorsing Aristotelian “golden mean” thinking in which the practice is no longer deontologically immoral, although there remain Catholics staunchly opposed to any endorsement of the practice. Protestantism emphasizes work ethic and piety in a way that justifies opposition to gambling, which is especially pronounced in Lutheran churches (<a class="citation" href="#ref-Bin07" data-cites="Bin07">Binde 2007</a>).</p>
-                        <p>Islam has been explicit in prohibiting gambling since its inception. The Qur’an explicitly forbids the practice in the same verses in which alcohol is famously prohibited:</p>
-                        <blockquote>
-                            <p>They ask you about wine and gambling. Say, ‘In them is great sin and [yet, some] benefit for people. But their sin is greater than their benefit.’ And they ask you what they should spend. Say, ‘The excess [beyond needs].’ Thus Allah makes clear to you the verses [of revelation] that you might give thought.</p>
-                            <footer>
-                                <cite>(Surah al-Baqarah 219)</cite>
-                            </footer>
-                        </blockquote>
-                        <blockquote>
-                            <p>O you who have believed, indeed, intoxicants, gambling, [sacrificing on] stone alters [to other than Allah ], and divining arrows are but defilement from the work of Satan, so avoid it that you may be successful. / Satan only wants to cause between you animosity and hatred through intoxicants and gambling and to avert you from the remembrance of Allah and from prayer. So will you not desist?</p>
-                            <footer>
-                                <cite>(Surah al-Ma’idah 90-91)</cite>
-                            </footer>
-                        </blockquote>
-                        <p>Notable in the Qur’an’s prohibition is three explicit ethical justifications for prohibition: utilitarian comparisons of sin versus benefit, <q cite="Qur’an">their sin is greater than their benefit;</q> Aristotle’s golden mean, <q cite="#ref-AristotlePhysics">excess [beyond means];</q> and gambling as idolatrous distraction from religion, <q cite="Qur’an">Satan only wants to … avert you from … Allah.</q> Islamic practice has maintained this prohibition to the current day. Just as many Islamic countries forbid the importation and production alcohol, so do they prohibit any practice of gambling within their borders (<a class="citation" href="#ref-Bin07" data-cites="Bin07">Binde 2007</a>).</p>
-                    </section> <!-- abrahamic -->
-                </section> <!-- religious-ethics -->
-            </section> <!-- historical-perspectives -->
-            <section id="modern-gambling">
-                <h2>Modern Gambling</h2>
-                <p>The industrial era has brought with it the casino, an industrial machine designed to entrap and extract money from its clientele. As the old maxim “the house always wins” so concisely states, casinos are mathematically perfected to ensure a steady stream of income, and with the advent of computers this can be adjusted at will by tenths of a percent (<a class="citation" href="#ref-Kin98" data-cites="Kin98">Kindt 1998</a>). Likewise, many states around the world provide government-operated lotteries, ostensibly to raise funds for the state. These developments bring with them a new host of ethical questions regarding the morality not just of the act of playing a game of chance but of providing gambling to citizens or permitting the existence of its industry.</p>
-                <section id="ethics-in-democracy">
-                    <h3>Ethics in Democracy</h3>
-                    <p>The rise of American gambling in the 1980s and 1990s manifested as a rapid slate of legalization amongst local and state governments. While the high margins of success in representative bodies’ pushes for legalization were seen as a democratic mandate, <a class="citation" href="#ref-Kin98" data-cites="Kin98">Kindt (1998)</a> argues that the vast majority of citizens are opposed to industrial gambling, but were not allowed to decline or oftentimes even voice an opinion on the proposals. To political scientists like Kindt, the ethical dilemma of modern gambling – what was once one’s personal contract with God – is now the ethics of whether people should have a voice in their laws.</p>
-                </section> <!-- ethics-in-democracy -->
-                <section id="consequentialism">
-                    <h3>Consequentialism</h3>
-                    <p>While the pre-modern era considered gambling within the religious sphere, modern scholars have begun considering gambling as a practice with positive and negative effects. Consequentialists today look at the effect of gambling on populations, studying the ultimate effect of allowing the practice.</p>
-                    <section id="social-ills">
-                        <h4>Social Ills</h4>
-                        <p>Social scientists point out that the introduction of gambling brings with it unintended social consequences. Crime, addiction, and impoverishment are strongly correlated with casinos, yet very little attention is paid to these effects. Gambling researchers have argued that these are direct results of allowing gambling, indicating that the harms to society outweigh any benefit that could be experienced by the participants (<a class="citation" href="#ref-Sto99" data-cites="Sto99">Stokowski 1999</a>).</p>
-                    </section> <!-- social-ills -->
-                    <section id="economic-benefits">
-                        <h4>Economic Benefits</h4>
-                        <p>Wherever casinos operate, there must be labor paid to staff the facility and lodging for tourists. This has led many economists to argue that gambling is a moral good, and that like many other industries its promotion and expansion directly benefits the communities in which it resides. <a class="citation" href="#ref-Gil12" data-cites="Gil12">Gillespie (2012)</a> argues that the revenue generated from gambling operations provides a steady stream of money to both economic development for the area and to the government’s coffers via taxation. Such an argument is heard throughout the politics surrounding gambling, where states tax the industry heavily and separately from standard corporate taxation.</p>
-                    </section> <!-- economic-benefits -->
-                </section> <!-- consequentialism -->
-            </section> <!-- modern-gambling -->
-            <section id="conclusion">
-                <h2>Conclusion</h2>
-                <p>Tens of thousands of years after its first appearance in human society, gambling remains a contentious issue. The arguments for and against the practice are diverse, drawing from many ethical views and genealogies. In contemporary politics, gambling’s spread remains ongoing in many areas of the world, where it will come across a wide variety of support and opposition. It is important to study the industry that has risen in the modern era to represent gambling on a massive scale, for its reach extends into disputes over ethics in government (<a class="citation" href="#ref-Kin98" data-cites="Kin98">Kindt 1998</a>) as well as into local communities (<a class="citation" href="#ref-Sto99" data-cites="Sto99">Stokowski 1999</a>; <a class="citation" href="#ref-Gil12" data-cites="Gil12">Gillespie 2012</a>). Where it spreads in the future will be dependent on people’s ethical views of the practice, which have historically been both diverse and mutable.</p>
-            </section> <!--  -->
+			<section id="main" property="articleBody">
+                <section id="introduction">
+                    <h2>Introduction</h2>
+                    <p>The practice of gambling traces its roots deep into the prehistory of humanity, with games of chance appearing in the archaeological records of populations as disparate as Babylonian civilization (<a class="citation" href="#ref-Nig62" data-cites="Nig62">Nightingale 1962</a>) and native North America (<a class="citation" href="#ref-DeB01" data-cites="DeB01">DeBoer 2001</a>; <a class="citation" href="#ref-Voo13" data-cites="Voo13">Voorhies 2013</a>). However, their practice has long been fraught with dispute over its moral standing. This is especially so in the modern era, where the practice of gambling has been industrialized into a major industry just as movements arise to oppose addictive products and practices. This paper constitutes a brief overview of historical and contemporary arguments regarding the morality and ethics of games of chance.</p>
+                </section> <!-- introduction -->
+                <section id="historical-perspectives">
+                    <h2>Historical Perspectives</h2>
+                    <section id="aristotelian-ethics">
+                        <h3>Aristotelian Ethics</h3>
+                        <p>In considering actions of chance, Aristotle eschews his “golden mean” ethical theories, seeking to explain the morality of chance through metaphysics. Aristotle’s conception of moral righteousness centered the idea of chance as an inherent property of moral action. In the <em>Physics</em> he drew a line between actions of “chance” and those of simple “spontaneity.” Actions rooted in chance can only be performed and experienced by moral beings, in contrast to the spontaneity of the natural world exerted by non-moral beings. He finds this to be true in considering the result – an action experienced as “chance” can provide good fortune, and good fortune is synonymous with happiness. As only moral beings can experience happiness, the chance that can result in good fortune must be a moral action. <q cite="#ref-AristotlePhysics">Thus an inanimate thing or a lower animal or a child cannot do anything by chance, because it is incapable of deliberate intention; nor can ‘good fortune’ or ‘ill fortune’ be ascribed to them, except metaphorically</q> (<a class="citation" href="#ref-AristotlePhysics" data-cites="AristotlePhysics">Aristotle 2015, II.6</a>). While not ruling on the moral righteousness of gambling as a financial exercise, it can be inferred that it is – to some extent – acceptable, as those who engage in gambling transactions can experience good fortune.</p>
+                    </section> <!-- aristotelian-ethics -->
+                    <section id="religious-ethics">
+                        <h3>Religious Ethics</h3>
+                        <section id="native-american">
+                            <h4>Native American</h4>
+                            <p>Divine will manifests strongly in the practice of many non-Western gambling rituals. For the Zuñi of southwestern North America, gambling was an practice watched over by as many as eight different gods, all of whom demanded sacrifice and prayer from the pious to win (<a class="citation" href="#ref-Ste03" data-cites="Ste03">Stevenson 1903</a>; <a class="citation" href="#ref-Bin07" data-cites="Bin07">Binde 2007</a>). Spiritual power was exemplified in gambling success across the continent, where spiritual skill superseded random chance as the main effector of any game’s outcome.</p>
+                            <p>To some Native Americans, games of chance had real impact on the world. The Iroquois (<a class="citation" href="#ref-Bea96" data-cites="Bea96">Beauchamp 1896</a>) and the Huron (<a class="citation" href="#ref-Her56" data-cites="Her56">Herman 1956</a>) both practiced gambling as a way of healing illness, extending even to the tribe’s crops. Iroquois ceremonies were heavily based around gambling, and religious leaders actively encouraged gambling:</p>
+                            <blockquote>
+                                <p>games were not only played at their religious festivals ‘but special days were set frequently apart for their celebration.’ Betting upon the result was common among the Iroquois. As this practice was never reprobated by their religious teachers, but on the contrary, rather encouraged, it frequently led to the most reckless indulgence. It often happened that the Indian gambled away every valuable article which he possessed; his tomahawk, his medal, his ornaments, and even his blanket</p>
+                                <footer>
+                                    <cite>(<a class="citation" href="#ref-Cul07" data-cites="Cul07">Culin 1907, 116</a>)</cite>
+                                </footer>
+                            </blockquote>
+                            <p>As arbiters of virtue and morality in Native American society, religious leaders’ endorsement demonstrates a clear moral virtue in gambling. Despite participants leaving destitute, the practice was seen as spiritually necessary.</p>
+                        </section> <!-- native-american -->
+                        <section id="abrahamic">
+                            <h4>Abrahamic</h4>
+                            <p>Christian critiques of gambling are as diverse as the tendencies of the religion itself. Some scholars argue that gambling provides competition for religion itself: <a class="citation" href="#ref-Ful74" data-cites="Ful74">Fuller (1974)</a> called the practice a <q cite="#ref-Ful74">secular religion</q> which instills fear of idolatry in the hearts of Christians. Early Christians were also quick to denounce games of chance, where gambling was almost universally reprehensible to pre-reformation Christian churches. Today the Roman Catholic Church permits gambling in moderation, endorsing Aristotelian “golden mean” thinking in which the practice is no longer deontologically immoral, although there remain Catholics staunchly opposed to any endorsement of the practice. Protestantism emphasizes work ethic and piety in a way that justifies opposition to gambling, which is especially pronounced in Lutheran churches (<a class="citation" href="#ref-Bin07" data-cites="Bin07">Binde 2007</a>).</p>
+                            <p>Islam has been explicit in prohibiting gambling since its inception. The Qur’an explicitly forbids the practice in the same verses in which alcohol is famously prohibited:</p>
+                            <blockquote>
+                                <p>They ask you about wine and gambling. Say, ‘In them is great sin and [yet, some] benefit for people. But their sin is greater than their benefit.’ And they ask you what they should spend. Say, ‘The excess [beyond needs].’ Thus Allah makes clear to you the verses [of revelation] that you might give thought.</p>
+                                <footer>
+                                    <cite>(Surah al-Baqarah 219)</cite>
+                                </footer>
+                            </blockquote>
+                            <blockquote>
+                                <p>O you who have believed, indeed, intoxicants, gambling, [sacrificing on] stone alters [to other than Allah ], and divining arrows are but defilement from the work of Satan, so avoid it that you may be successful. / Satan only wants to cause between you animosity and hatred through intoxicants and gambling and to avert you from the remembrance of Allah and from prayer. So will you not desist?</p>
+                                <footer>
+                                    <cite>(Surah al-Ma’idah 90-91)</cite>
+                                </footer>
+                            </blockquote>
+                            <p>Notable in the Qur’an’s prohibition is three explicit ethical justifications for prohibition: utilitarian comparisons of sin versus benefit, <q cite="Qur’an">their sin is greater than their benefit;</q> Aristotle’s golden mean, <q cite="#ref-AristotlePhysics">excess [beyond means];</q> and gambling as idolatrous distraction from religion, <q cite="Qur’an">Satan only wants to … avert you from … Allah.</q> Islamic practice has maintained this prohibition to the current day. Just as many Islamic countries forbid the importation and production alcohol, so do they prohibit any practice of gambling within their borders (<a class="citation" href="#ref-Bin07" data-cites="Bin07">Binde 2007</a>).</p>
+                        </section> <!-- abrahamic -->
+                    </section> <!-- religious-ethics -->
+                </section> <!-- historical-perspectives -->
+                <section id="modern-gambling">
+                    <h2>Modern Gambling</h2>
+                    <p>The industrial era has brought with it the casino, an industrial machine designed to entrap and extract money from its clientele. As the old maxim “the house always wins” so concisely states, casinos are mathematically perfected to ensure a steady stream of income, and with the advent of computers this can be adjusted at will by tenths of a percent (<a class="citation" href="#ref-Kin98" data-cites="Kin98">Kindt 1998</a>). Likewise, many states around the world provide government-operated lotteries, ostensibly to raise funds for the state. These developments bring with them a new host of ethical questions regarding the morality not just of the act of playing a game of chance but of providing gambling to citizens or permitting the existence of its industry.</p>
+                    <section id="ethics-in-democracy">
+                        <h3>Ethics in Democracy</h3>
+                        <p>The rise of American gambling in the 1980s and 1990s manifested as a rapid slate of legalization amongst local and state governments. While the high margins of success in representative bodies’ pushes for legalization were seen as a democratic mandate, <a class="citation" href="#ref-Kin98" data-cites="Kin98">Kindt (1998)</a> argues that the vast majority of citizens are opposed to industrial gambling, but were not allowed to decline or oftentimes even voice an opinion on the proposals. To political scientists like Kindt, the ethical dilemma of modern gambling – what was once one’s personal contract with God – is now the ethics of whether people should have a voice in their laws.</p>
+                    </section> <!-- ethics-in-democracy -->
+                    <section id="consequentialism">
+                        <h3>Consequentialism</h3>
+                        <p>While the pre-modern era considered gambling within the religious sphere, modern scholars have begun considering gambling as a practice with positive and negative effects. Consequentialists today look at the effect of gambling on populations, studying the ultimate effect of allowing the practice.</p>
+                        <section id="social-ills">
+                            <h4>Social Ills</h4>
+                            <p>Social scientists point out that the introduction of gambling brings with it unintended social consequences. Crime, addiction, and impoverishment are strongly correlated with casinos, yet very little attention is paid to these effects. Gambling researchers have argued that these are direct results of allowing gambling, indicating that the harms to society outweigh any benefit that could be experienced by the participants (<a class="citation" href="#ref-Sto99" data-cites="Sto99">Stokowski 1999</a>).</p>
+                        </section> <!-- social-ills -->
+                        <section id="economic-benefits">
+                            <h4>Economic Benefits</h4>
+                            <p>Wherever casinos operate, there must be labor paid to staff the facility and lodging for tourists. This has led many economists to argue that gambling is a moral good, and that like many other industries its promotion and expansion directly benefits the communities in which it resides. <a class="citation" href="#ref-Gil12" data-cites="Gil12">Gillespie (2012)</a> argues that the revenue generated from gambling operations provides a steady stream of money to both economic development for the area and to the government’s coffers via taxation. Such an argument is heard throughout the politics surrounding gambling, where states tax the industry heavily and separately from standard corporate taxation.</p>
+                        </section> <!-- economic-benefits -->
+                    </section> <!-- consequentialism -->
+                </section> <!-- modern-gambling -->
+                <section id="conclusion">
+                    <h2>Conclusion</h2>
+                    <p>Tens of thousands of years after its first appearance in human society, gambling remains a contentious issue. The arguments for and against the practice are diverse, drawing from many ethical views and genealogies. In contemporary politics, gambling’s spread remains ongoing in many areas of the world, where it will come across a wide variety of support and opposition. It is important to study the industry that has risen in the modern era to represent gambling on a massive scale, for its reach extends into disputes over ethics in government (<a class="citation" href="#ref-Kin98" data-cites="Kin98">Kindt 1998</a>) as well as into local communities (<a class="citation" href="#ref-Sto99" data-cites="Sto99">Stokowski 1999</a>; <a class="citation" href="#ref-Gil12" data-cites="Gil12">Gillespie 2012</a>). Where it spreads in the future will be dependent on people’s ethical views of the practice, which have historically been both diverse and mutable.</p>
+                </section> <!-- conclusion -->
+            </section>
             <section id="references">
                 <h2>References</h2>
                 <ol id="refs" class="references hanging-indent" role="doc-bibliography">
