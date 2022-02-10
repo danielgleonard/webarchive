@@ -80,8 +80,8 @@
 	\ifdefempty{\@authorFirst}{}{, \StrLeft{\@authorFirst}{1}.}
 	\ifdefempty{\@authorMiddle}{}{\StrLeft{\@authorMiddle}{1}.}
 }
-\lfoot{\scriptsize Retrieved from\\ \href{\@baseurl}{\@baseurl}}
-\rfoot{Page \thepage\ of \pageref{LastPage}}
+% \lfoot{\scriptsize Retrieved from\\ \href{\@baseurl}{\@baseurl}}
+\cfoot{Page \thepage\ of \pageref{LastPage}}
 
 \renewcommand{\title}[1]{\gdef\@docTitle{#1} \gdef\@title{#1}}
 \renewcommand{\author}[3]{
@@ -160,7 +160,7 @@
 	pdflang={en-US},
 	pdfdisplaydoctitle=true,
 	unicode=true,
-	baseurl=\@baseurl
+	% baseurl=\@baseurl
 }
 
 \AtBeginDocument{
