@@ -22,7 +22,7 @@
 \fi
 
 \RequirePackage{hyperref}
-\RequirePackage{datetime}
+\RequirePackage[showdow,useregional]{datetime2}
 \RequirePackage{graphicx}
 \RequirePackage{wrapfig}
 \RequirePackage{csquotes}
