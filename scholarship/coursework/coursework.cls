@@ -129,6 +129,7 @@
   \null
   \vskip 2em%
   \begin{center}%
+  \setlength{\parindent}{0em}
   \let \footnote \thanks
 	{\LARGE \@title \ifdefempty{\@subtitle}{}{\\\Large\@subtitle} \par}%
 	\vskip 1.5em%
